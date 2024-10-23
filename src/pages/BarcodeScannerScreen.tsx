@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
-import { useCart } from './CartContext'
+import { useCart } from '../context/CartContext'
 import React from 'react'
 
 export default function BarcodeScannerScreen() {

@@ -1,22 +1,27 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import { CartProvider } from './CartContext'
-import SearchScreen from './SearchScreen'
-import ProductListScreen from './ProductListScreen'
-import ProductLocationScreen from './ProductLocationScreen'
-import BarcodeScannerScreen from './BarcodeScannerScreen'
-import CartScreen from './CartScreen'
+import { CartProvider } from './context/CartContext'
+import CartIcon from './components/CartIcon'
+import SearchScreen from './pages/SearchScreen'
+import ProductListScreen from './pages/ProductListScreen'
+import ProductLocationScreen from './pages/ProductLocationScreen'
+import BarcodeScannerScreen from './pages/BarcodeScannerScreen'
+import CartScreen from './pages/CartScreen'
+import CheckoutScreen from './components/CheckoutScreen'
 
 export default function App() {
   return (
     <CartProvider>
       <Router>
-        <div className="min-h-screen bg-gray-100">
+      <div className="min-h-screen bg-gray-100 relative">
+          <CartIcon />
           <Routes>
             <Route path="/" element={<SearchScreen />} />
             <Route path="/products/:query" element={<ProductListScreen />} />
             <Route path="/location/:productId" element={<ProductLocationScreen />} />
             <Route path="/scan/:productId" element={<BarcodeScannerScreen />} />
             <Route path="/cart" element={<CartScreen />} />
+            <Route path="/checkout" element={<CheckoutScreen />} />
+            
           </Routes>
         </div>
       </Router>

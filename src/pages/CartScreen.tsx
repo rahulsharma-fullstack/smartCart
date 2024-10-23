@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { useCart } from './CartContext'
+import { useCart } from '../context/CartContext'
 import React from 'react'
 
 // Mock data for demonstration
