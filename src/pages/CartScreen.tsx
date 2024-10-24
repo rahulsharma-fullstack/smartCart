@@ -17,7 +17,7 @@ const recommendations = {
   4: [2, 3],
 }
 
-export default function CartScreen() {
+ function CartScreen() {
   const navigate = useNavigate()
   const { cart } = useCart()
 

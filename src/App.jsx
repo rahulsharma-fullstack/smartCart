@@ -5,7 +5,7 @@ import SearchScreen from './pages/SearchScreen'
 import ProductListScreen from './pages/ProductListScreen'
 import ProductLocationScreen from './pages/ProductLocationScreen'
 import BarcodeScannerScreen from './pages/BarcodeScannerScreen'
-import CartScreen from './pages/CartScreen'
+// import CartScreen from './pages/CartScreen'
 import CheckoutScreen from './components/CheckoutScreen'
 
 export default function App() {
@@ -19,7 +19,7 @@ export default function App() {
             <Route path="/products/:query" element={<ProductListScreen />} />
             <Route path="/location/:productId" element={<ProductLocationScreen />} />
             <Route path="/scan/:productId" element={<BarcodeScannerScreen />} />
-            <Route path="/cart" element={<CartScreen />} />
+            <Route path="/cart" element={<CheckoutScreen />} />
             <Route path="/checkout" element={<CheckoutScreen />} />
             
           </Routes>

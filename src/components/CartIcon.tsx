@@ -29,7 +29,7 @@ export default function CartIcon() {
     >
       <div 
         className="bg-orange-400 p-2 rounded-full shadow-lg cursor-pointer transition-all duration-300 hover:bg-orange-500"
-        onClick={() => navigate('/cart')}
+       
       >
         <ShoppingCart className="w-6 h-6 text-white" />
         {totalItems > 0 && (

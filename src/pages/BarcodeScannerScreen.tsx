@@ -14,7 +14,7 @@ export default function BarcodeScannerScreen() {
     setTimeout(() => {
       setScanning(false)
       addToCart(productId)
-      navigate('/cart')
+      navigate('/')
     }, 2000)
   }
 
