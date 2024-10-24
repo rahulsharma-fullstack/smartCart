@@ -1,0 +1,1202 @@
+{
+    "1": {
+      "id": 1,
+      "name": "Skimmed Milk",
+      "price": 2.09,
+      "category": "Dairy"
+    },
+    "2": {
+      "id": 2,
+      "name": "Whole Milk",
+      "price": 2.19,
+      "category": "Dairy"
+    },
+    "3": {
+      "id": 3,
+      "name": "Almond Milk",
+      "price": 2.29,
+      "category": "Dairy"
+    },
+    "4": {
+      "id": 4,
+      "name": "Soy Milk",
+      "price": 2.39,
+      "category": "Dairy"
+    },
+    "5": {
+      "id": 5,
+      "name": "Whole Wheat Bread",
+      "price": 2.49,
+      "category": "Dairy"
+    },
+    "6": {
+      "id": 6,
+      "name": "Multigrain Bread",
+      "price": 2.59,
+      "category": "Dairy"
+    },
+    "7": {
+      "id": 7,
+      "name": "White Bread",
+      "price": 2.69,
+      "category": "Dairy"
+    },
+    "8": {
+      "id": 8,
+      "name": "Orange Juice",
+      "price": 2.79,
+      "category": "Dairy"
+    },
+    "9": {
+      "id": 9,
+      "name": "Apple Juice",
+      "price": 2.89,
+      "category": "Dairy"
+    },
+    "10": {
+      "id": 10,
+      "name": "Grape Juice",
+      "price": 2.99,
+      "category": "Dairy"
+    },
+    "11": {
+      "id": 11,
+      "name": "Organic Eggs",
+      "price": 3.09,
+      "category": "Dairy"
+    },
+    "12": {
+      "id": 12,
+      "name": "Cage-Free Eggs",
+      "price": 3.19,
+      "category": "Dairy"
+    },
+    "13": {
+      "id": 13,
+      "name": "Regular Eggs",
+      "price": 3.29,
+      "category": "Dairy"
+    },
+    "14": {
+      "id": 14,
+      "name": "Salted Butter",
+      "price": 3.39,
+      "category": "Dairy"
+    },
+    "15": {
+      "id": 15,
+      "name": "Unsalted Butter",
+      "price": 3.49,
+      "category": "Dairy"
+    },
+    "16": {
+      "id": 16,
+      "name": "Chicken Breast",
+      "price": 3.59,
+      "category": "Dairy"
+    },
+    "17": {
+      "id": 17,
+      "name": "Chicken Thighs",
+      "price": 3.69,
+      "category": "Dairy"
+    },
+    "18": {
+      "id": 18,
+      "name": "Chicken Drumsticks",
+      "price": 3.79,
+      "category": "Dairy"
+    },
+    "19": {
+      "id": 19,
+      "name": "Espresso Coffee",
+      "price": 3.89,
+      "category": "Dairy"
+    },
+    "20": {
+      "id": 20,
+      "name": "Latte Coffee",
+      "price": 3.99,
+      "category": "Dairy"
+    },
+    "21": {
+      "id": 21,
+      "name": "Black Coffee",
+      "price": 4.09,
+      "category": "Dairy"
+    },
+    "22": {
+      "id": 22,
+      "name": "Potato Chips",
+      "price": 4.19,
+      "category": "Dairy"
+    },
+    "23": {
+      "id": 23,
+      "name": "Tortilla Chips",
+      "price": 4.29,
+      "category": "Dairy"
+    },
+    "24": {
+      "id": 24,
+      "name": "Vegetable Chips",
+      "price": 4.39,
+      "category": "Dairy"
+    },
+    "25": {
+      "id": 25,
+      "name": "Basmati Rice",
+      "price": 4.49,
+      "category": "Dairy"
+    },
+    "26": {
+      "id": 26,
+      "name": "Brown Rice",
+      "price": 4.59,
+      "category": "Dairy"
+    },
+    "27": {
+      "id": 27,
+      "name": "Sushi Rice",
+      "price": 4.69,
+      "category": "Dairy"
+    },
+    "28": {
+      "id": 28,
+      "name": "Skimmed Milk",
+      "price": 4.79,
+      "category": "Bakery"
+    },
+    "29": {
+      "id": 29,
+      "name": "Whole Milk",
+      "price": 4.89,
+      "category": "Bakery"
+    },
+    "30": {
+      "id": 30,
+      "name": "Almond Milk",
+      "price": 4.99,
+      "category": "Bakery"
+    },
+    "31": {
+      "id": 31,
+      "name": "Soy Milk",
+      "price": 5.09,
+      "category": "Bakery"
+    },
+    "32": {
+      "id": 32,
+      "name": "Whole Wheat Bread",
+      "price": 5.19,
+      "category": "Bakery"
+    },
+    "33": {
+      "id": 33,
+      "name": "Multigrain Bread",
+      "price": 5.29,
+      "category": "Bakery"
+    },
+    "34": {
+      "id": 34,
+      "name": "White Bread",
+      "price": 5.39,
+      "category": "Bakery"
+    },
+    "35": {
+      "id": 35,
+      "name": "Orange Juice",
+      "price": 5.49,
+      "category": "Bakery"
+    },
+    "36": {
+      "id": 36,
+      "name": "Apple Juice",
+      "price": 5.59,
+      "category": "Bakery"
+    },
+    "37": {
+      "id": 37,
+      "name": "Grape Juice",
+      "price": 5.69,
+      "category": "Bakery"
+    },
+    "38": {
+      "id": 38,
+      "name": "Organic Eggs",
+      "price": 5.79,
+      "category": "Bakery"
+    },
+    "39": {
+      "id": 39,
+      "name": "Cage-Free Eggs",
+      "price": 5.89,
+      "category": "Bakery"
+    },
+    "40": {
+      "id": 40,
+      "name": "Regular Eggs",
+      "price": 5.99,
+      "category": "Bakery"
+    },
+    "41": {
+      "id": 41,
+      "name": "Salted Butter",
+      "price": 6.09,
+      "category": "Bakery"
+    },
+    "42": {
+      "id": 42,
+      "name": "Unsalted Butter",
+      "price": 6.19,
+      "category": "Bakery"
+    },
+    "43": {
+      "id": 43,
+      "name": "Chicken Breast",
+      "price": 6.29,
+      "category": "Bakery"
+    },
+    "44": {
+      "id": 44,
+      "name": "Chicken Thighs",
+      "price": 6.39,
+      "category": "Bakery"
+    },
+    "45": {
+      "id": 45,
+      "name": "Chicken Drumsticks",
+      "price": 6.49,
+      "category": "Bakery"
+    },
+    "46": {
+      "id": 46,
+      "name": "Espresso Coffee",
+      "price": 6.59,
+      "category": "Bakery"
+    },
+    "47": {
+      "id": 47,
+      "name": "Latte Coffee",
+      "price": 6.69,
+      "category": "Bakery"
+    },
+    "48": {
+      "id": 48,
+      "name": "Black Coffee",
+      "price": 6.79,
+      "category": "Bakery"
+    },
+    "49": {
+      "id": 49,
+      "name": "Potato Chips",
+      "price": 6.89,
+      "category": "Bakery"
+    },
+    "50": {
+      "id": 50,
+      "name": "Tortilla Chips",
+      "price": 6.99,
+      "category": "Bakery"
+    },
+    "51": {
+      "id": 51,
+      "name": "Vegetable Chips",
+      "price": 7.09,
+      "category": "Bakery"
+    },
+    "52": {
+      "id": 52,
+      "name": "Basmati Rice",
+      "price": 7.19,
+      "category": "Bakery"
+    },
+    "53": {
+      "id": 53,
+      "name": "Brown Rice",
+      "price": 7.29,
+      "category": "Bakery"
+    },
+    "54": {
+      "id": 54,
+      "name": "Sushi Rice",
+      "price": 7.39,
+      "category": "Bakery"
+    },
+    "55": {
+      "id": 55,
+      "name": "Skimmed Milk",
+      "price": 7.49,
+      "category": "Beverages"
+    },
+    "56": {
+      "id": 56,
+      "name": "Whole Milk",
+      "price": 7.59,
+      "category": "Beverages"
+    },
+    "57": {
+      "id": 57,
+      "name": "Almond Milk",
+      "price": 7.69,
+      "category": "Beverages"
+    },
+    "58": {
+      "id": 58,
+      "name": "Soy Milk",
+      "price": 7.79,
+      "category": "Beverages"
+    },
+    "59": {
+      "id": 59,
+      "name": "Whole Wheat Bread",
+      "price": 7.89,
+      "category": "Beverages"
+    },
+    "60": {
+      "id": 60,
+      "name": "Multigrain Bread",
+      "price": 7.99,
+      "category": "Beverages"
+    },
+    "61": {
+      "id": 61,
+      "name": "White Bread",
+      "price": 8.09,
+      "category": "Beverages"
+    },
+    "62": {
+      "id": 62,
+      "name": "Orange Juice",
+      "price": 8.19,
+      "category": "Beverages"
+    },
+    "63": {
+      "id": 63,
+      "name": "Apple Juice",
+      "price": 8.29,
+      "category": "Beverages"
+    },
+    "64": {
+      "id": 64,
+      "name": "Grape Juice",
+      "price": 8.39,
+      "category": "Beverages"
+    },
+    "65": {
+      "id": 65,
+      "name": "Organic Eggs",
+      "price": 8.49,
+      "category": "Beverages"
+    },
+    "66": {
+      "id": 66,
+      "name": "Cage-Free Eggs",
+      "price": 8.59,
+      "category": "Beverages"
+    },
+    "67": {
+      "id": 67,
+      "name": "Regular Eggs",
+      "price": 8.69,
+      "category": "Beverages"
+    },
+    "68": {
+      "id": 68,
+      "name": "Salted Butter",
+      "price": 8.79,
+      "category": "Beverages"
+    },
+    "69": {
+      "id": 69,
+      "name": "Unsalted Butter",
+      "price": 8.89,
+      "category": "Beverages"
+    },
+    "70": {
+      "id": 70,
+      "name": "Chicken Breast",
+      "price": 8.99,
+      "category": "Beverages"
+    },
+    "71": {
+      "id": 71,
+      "name": "Chicken Thighs",
+      "price": 9.09,
+      "category": "Beverages"
+    },
+    "72": {
+      "id": 72,
+      "name": "Chicken Drumsticks",
+      "price": 9.19,
+      "category": "Beverages"
+    },
+    "73": {
+      "id": 73,
+      "name": "Espresso Coffee",
+      "price": 9.29,
+      "category": "Beverages"
+    },
+    "74": {
+      "id": 74,
+      "name": "Latte Coffee",
+      "price": 9.39,
+      "category": "Beverages"
+    },
+    "75": {
+      "id": 75,
+      "name": "Black Coffee",
+      "price": 9.49,
+      "category": "Beverages"
+    },
+    "76": {
+      "id": 76,
+      "name": "Potato Chips",
+      "price": 9.59,
+      "category": "Beverages"
+    },
+    "77": {
+      "id": 77,
+      "name": "Tortilla Chips",
+      "price": 9.69,
+      "category": "Beverages"
+    },
+    "78": {
+      "id": 78,
+      "name": "Vegetable Chips",
+      "price": 9.79,
+      "category": "Beverages"
+    },
+    "79": {
+      "id": 79,
+      "name": "Basmati Rice",
+      "price": 9.89,
+      "category": "Beverages"
+    },
+    "80": {
+      "id": 80,
+      "name": "Brown Rice",
+      "price": 9.99,
+      "category": "Beverages"
+    },
+    "81": {
+      "id": 81,
+      "name": "Sushi Rice",
+      "price": 10.09,
+      "category": "Beverages"
+    },
+    "82": {
+      "id": 82,
+      "name": "Skimmed Milk",
+      "price": 10.19,
+      "category": "Snacks"
+    },
+    "83": {
+      "id": 83,
+      "name": "Whole Milk",
+      "price": 10.29,
+      "category": "Snacks"
+    },
+    "84": {
+      "id": 84,
+      "name": "Almond Milk",
+      "price": 10.39,
+      "category": "Snacks"
+    },
+    "85": {
+      "id": 85,
+      "name": "Soy Milk",
+      "price": 10.49,
+      "category": "Snacks"
+    },
+    "86": {
+      "id": 86,
+      "name": "Whole Wheat Bread",
+      "price": 10.59,
+      "category": "Snacks"
+    },
+    "87": {
+      "id": 87,
+      "name": "Multigrain Bread",
+      "price": 10.69,
+      "category": "Snacks"
+    },
+    "88": {
+      "id": 88,
+      "name": "White Bread",
+      "price": 10.79,
+      "category": "Snacks"
+    },
+    "89": {
+      "id": 89,
+      "name": "Orange Juice",
+      "price": 10.89,
+      "category": "Snacks"
+    },
+    "90": {
+      "id": 90,
+      "name": "Apple Juice",
+      "price": 10.99,
+      "category": "Snacks"
+    },
+    "91": {
+      "id": 91,
+      "name": "Grape Juice",
+      "price": 11.09,
+      "category": "Snacks"
+    },
+    "92": {
+      "id": 92,
+      "name": "Organic Eggs",
+      "price": 11.19,
+      "category": "Snacks"
+    },
+    "93": {
+      "id": 93,
+      "name": "Cage-Free Eggs",
+      "price": 11.29,
+      "category": "Snacks"
+    },
+    "94": {
+      "id": 94,
+      "name": "Regular Eggs",
+      "price": 11.39,
+      "category": "Snacks"
+    },
+    "95": {
+      "id": 95,
+      "name": "Salted Butter",
+      "price": 11.49,
+      "category": "Snacks"
+    },
+    "96": {
+      "id": 96,
+      "name": "Unsalted Butter",
+      "price": 11.59,
+      "category": "Snacks"
+    },
+    "97": {
+      "id": 97,
+      "name": "Chicken Breast",
+      "price": 11.69,
+      "category": "Snacks"
+    },
+    "98": {
+      "id": 98,
+      "name": "Chicken Thighs",
+      "price": 11.79,
+      "category": "Snacks"
+    },
+    "99": {
+      "id": 99,
+      "name": "Chicken Drumsticks",
+      "price": 11.89,
+      "category": "Snacks"
+    },
+    "100": {
+      "id": 100,
+      "name": "Espresso Coffee",
+      "price": 11.99,
+      "category": "Snacks"
+    },
+    "101": {
+      "id": 101,
+      "name": "Latte Coffee",
+      "price": 12.09,
+      "category": "Snacks"
+    },
+    "102": {
+      "id": 102,
+      "name": "Black Coffee",
+      "price": 12.19,
+      "category": "Snacks"
+    },
+    "103": {
+      "id": 103,
+      "name": "Potato Chips",
+      "price": 12.29,
+      "category": "Snacks"
+    },
+    "104": {
+      "id": 104,
+      "name": "Tortilla Chips",
+      "price": 12.39,
+      "category": "Snacks"
+    },
+    "105": {
+      "id": 105,
+      "name": "Vegetable Chips",
+      "price": 12.49,
+      "category": "Snacks"
+    },
+    "106": {
+      "id": 106,
+      "name": "Basmati Rice",
+      "price": 12.59,
+      "category": "Snacks"
+    },
+    "107": {
+      "id": 107,
+      "name": "Brown Rice",
+      "price": 12.69,
+      "category": "Snacks"
+    },
+    "108": {
+      "id": 108,
+      "name": "Sushi Rice",
+      "price": 12.79,
+      "category": "Snacks"
+    },
+    "109": {
+      "id": 109,
+      "name": "Skimmed Milk",
+      "price": 12.89,
+      "category": "Fruits"
+    },
+    "110": {
+      "id": 110,
+      "name": "Whole Milk",
+      "price": 12.99,
+      "category": "Fruits"
+    },
+    "111": {
+      "id": 111,
+      "name": "Almond Milk",
+      "price": 13.09,
+      "category": "Fruits"
+    },
+    "112": {
+      "id": 112,
+      "name": "Soy Milk",
+      "price": 13.19,
+      "category": "Fruits"
+    },
+    "113": {
+      "id": 113,
+      "name": "Whole Wheat Bread",
+      "price": 13.29,
+      "category": "Fruits"
+    },
+    "114": {
+      "id": 114,
+      "name": "Multigrain Bread",
+      "price": 13.39,
+      "category": "Fruits"
+    },
+    "115": {
+      "id": 115,
+      "name": "White Bread",
+      "price": 13.49,
+      "category": "Fruits"
+    },
+    "116": {
+      "id": 116,
+      "name": "Orange Juice",
+      "price": 13.59,
+      "category": "Fruits"
+    },
+    "117": {
+      "id": 117,
+      "name": "Apple Juice",
+      "price": 13.69,
+      "category": "Fruits"
+    },
+    "118": {
+      "id": 118,
+      "name": "Grape Juice",
+      "price": 13.79,
+      "category": "Fruits"
+    },
+    "119": {
+      "id": 119,
+      "name": "Organic Eggs",
+      "price": 13.89,
+      "category": "Fruits"
+    },
+    "120": {
+      "id": 120,
+      "name": "Cage-Free Eggs",
+      "price": 13.99,
+      "category": "Fruits"
+    },
+    "121": {
+      "id": 121,
+      "name": "Regular Eggs",
+      "price": 14.09,
+      "category": "Fruits"
+    },
+    "122": {
+      "id": 122,
+      "name": "Salted Butter",
+      "price": 14.19,
+      "category": "Fruits"
+    },
+    "123": {
+      "id": 123,
+      "name": "Unsalted Butter",
+      "price": 14.29,
+      "category": "Fruits"
+    },
+    "124": {
+      "id": 124,
+      "name": "Chicken Breast",
+      "price": 14.39,
+      "category": "Fruits"
+    },
+    "125": {
+      "id": 125,
+      "name": "Chicken Thighs",
+      "price": 14.49,
+      "category": "Fruits"
+    },
+    "126": {
+      "id": 126,
+      "name": "Chicken Drumsticks",
+      "price": 14.59,
+      "category": "Fruits"
+    },
+    "127": {
+      "id": 127,
+      "name": "Espresso Coffee",
+      "price": 14.69,
+      "category": "Fruits"
+    },
+    "128": {
+      "id": 128,
+      "name": "Latte Coffee",
+      "price": 14.79,
+      "category": "Fruits"
+    },
+    "129": {
+      "id": 129,
+      "name": "Black Coffee",
+      "price": 14.89,
+      "category": "Fruits"
+    },
+    "130": {
+      "id": 130,
+      "name": "Potato Chips",
+      "price": 14.99,
+      "category": "Fruits"
+    },
+    "131": {
+      "id": 131,
+      "name": "Tortilla Chips",
+      "price": 15.09,
+      "category": "Fruits"
+    },
+    "132": {
+      "id": 132,
+      "name": "Vegetable Chips",
+      "price": 15.19,
+      "category": "Fruits"
+    },
+    "133": {
+      "id": 133,
+      "name": "Basmati Rice",
+      "price": 15.29,
+      "category": "Fruits"
+    },
+    "134": {
+      "id": 134,
+      "name": "Brown Rice",
+      "price": 15.39,
+      "category": "Fruits"
+    },
+    "135": {
+      "id": 135,
+      "name": "Sushi Rice",
+      "price": 15.49,
+      "category": "Fruits"
+    },
+    "136": {
+      "id": 136,
+      "name": "Skimmed Milk",
+      "price": 15.59,
+      "category": "Vegetables"
+    },
+    "137": {
+      "id": 137,
+      "name": "Whole Milk",
+      "price": 15.69,
+      "category": "Vegetables"
+    },
+    "138": {
+      "id": 138,
+      "name": "Almond Milk",
+      "price": 15.79,
+      "category": "Vegetables"
+    },
+    "139": {
+      "id": 139,
+      "name": "Soy Milk",
+      "price": 15.89,
+      "category": "Vegetables"
+    },
+    "140": {
+      "id": 140,
+      "name": "Whole Wheat Bread",
+      "price": 15.99,
+      "category": "Vegetables"
+    },
+    "141": {
+      "id": 141,
+      "name": "Multigrain Bread",
+      "price": 16.09,
+      "category": "Vegetables"
+    },
+    "142": {
+      "id": 142,
+      "name": "White Bread",
+      "price": 16.19,
+      "category": "Vegetables"
+    },
+    "143": {
+      "id": 143,
+      "name": "Orange Juice",
+      "price": 16.29,
+      "category": "Vegetables"
+    },
+    "144": {
+      "id": 144,
+      "name": "Apple Juice",
+      "price": 16.39,
+      "category": "Vegetables"
+    },
+    "145": {
+      "id": 145,
+      "name": "Grape Juice",
+      "price": 16.49,
+      "category": "Vegetables"
+    },
+    "146": {
+      "id": 146,
+      "name": "Organic Eggs",
+      "price": 16.59,
+      "category": "Vegetables"
+    },
+    "147": {
+      "id": 147,
+      "name": "Cage-Free Eggs",
+      "price": 16.69,
+      "category": "Vegetables"
+    },
+    "148": {
+      "id": 148,
+      "name": "Regular Eggs",
+      "price": 16.79,
+      "category": "Vegetables"
+    },
+    "149": {
+      "id": 149,
+      "name": "Salted Butter",
+      "price": 16.89,
+      "category": "Vegetables"
+    },
+    "150": {
+      "id": 150,
+      "name": "Unsalted Butter",
+      "price": 16.99,
+      "category": "Vegetables"
+    },
+    "151": {
+      "id": 151,
+      "name": "Chicken Breast",
+      "price": 17.09,
+      "category": "Vegetables"
+    },
+    "152": {
+      "id": 152,
+      "name": "Chicken Thighs",
+      "price": 17.19,
+      "category": "Vegetables"
+    },
+    "153": {
+      "id": 153,
+      "name": "Chicken Drumsticks",
+      "price": 17.29,
+      "category": "Vegetables"
+    },
+    "154": {
+      "id": 154,
+      "name": "Espresso Coffee",
+      "price": 17.39,
+      "category": "Vegetables"
+    },
+    "155": {
+      "id": 155,
+      "name": "Latte Coffee",
+      "price": 17.49,
+      "category": "Vegetables"
+    },
+    "156": {
+      "id": 156,
+      "name": "Black Coffee",
+      "price": 17.59,
+      "category": "Vegetables"
+    },
+    "157": {
+      "id": 157,
+      "name": "Potato Chips",
+      "price": 17.69,
+      "category": "Vegetables"
+    },
+    "158": {
+      "id": 158,
+      "name": "Tortilla Chips",
+      "price": 17.79,
+      "category": "Vegetables"
+    },
+    "159": {
+      "id": 159,
+      "name": "Vegetable Chips",
+      "price": 17.89,
+      "category": "Vegetables"
+    },
+    "160": {
+      "id": 160,
+      "name": "Basmati Rice",
+      "price": 17.99,
+      "category": "Vegetables"
+    },
+    "161": {
+      "id": 161,
+      "name": "Brown Rice",
+      "price": 18.09,
+      "category": "Vegetables"
+    },
+    "162": {
+      "id": 162,
+      "name": "Sushi Rice",
+      "price": 18.19,
+      "category": "Vegetables"
+    },
+    "163": {
+      "id": 163,
+      "name": "Skimmed Milk",
+      "price": 18.29,
+      "category": "Meat"
+    },
+    "164": {
+      "id": 164,
+      "name": "Whole Milk",
+      "price": 18.39,
+      "category": "Meat"
+    },
+    "165": {
+      "id": 165,
+      "name": "Almond Milk",
+      "price": 18.49,
+      "category": "Meat"
+    },
+    "166": {
+      "id": 166,
+      "name": "Soy Milk",
+      "price": 18.59,
+      "category": "Meat"
+    },
+    "167": {
+      "id": 167,
+      "name": "Whole Wheat Bread",
+      "price": 18.69,
+      "category": "Meat"
+    },
+    "168": {
+      "id": 168,
+      "name": "Multigrain Bread",
+      "price": 18.79,
+      "category": "Meat"
+    },
+    "169": {
+      "id": 169,
+      "name": "White Bread",
+      "price": 18.89,
+      "category": "Meat"
+    },
+    "170": {
+      "id": 170,
+      "name": "Orange Juice",
+      "price": 18.99,
+      "category": "Meat"
+    },
+    "171": {
+      "id": 171,
+      "name": "Apple Juice",
+      "price": 19.09,
+      "category": "Meat"
+    },
+    "172": {
+      "id": 172,
+      "name": "Grape Juice",
+      "price": 19.19,
+      "category": "Meat"
+    },
+    "173": {
+      "id": 173,
+      "name": "Organic Eggs",
+      "price": 19.29,
+      "category": "Meat"
+    },
+    "174": {
+      "id": 174,
+      "name": "Cage-Free Eggs",
+      "price": 19.39,
+      "category": "Meat"
+    },
+    "175": {
+      "id": 175,
+      "name": "Regular Eggs",
+      "price": 19.49,
+      "category": "Meat"
+    },
+    "176": {
+      "id": 176,
+      "name": "Salted Butter",
+      "price": 19.59,
+      "category": "Meat"
+    },
+    "177": {
+      "id": 177,
+      "name": "Unsalted Butter",
+      "price": 19.69,
+      "category": "Meat"
+    },
+    "178": {
+      "id": 178,
+      "name": "Chicken Breast",
+      "price": 19.79,
+      "category": "Meat"
+    },
+    "179": {
+      "id": 179,
+      "name": "Chicken Thighs",
+      "price": 19.89,
+      "category": "Meat"
+    },
+    "180": {
+      "id": 180,
+      "name": "Chicken Drumsticks",
+      "price": 19.99,
+      "category": "Meat"
+    },
+    "181": {
+      "id": 181,
+      "name": "Espresso Coffee",
+      "price": 20.09,
+      "category": "Meat"
+    },
+    "182": {
+      "id": 182,
+      "name": "Latte Coffee",
+      "price": 20.19,
+      "category": "Meat"
+    },
+    "183": {
+      "id": 183,
+      "name": "Black Coffee",
+      "price": 20.29,
+      "category": "Meat"
+    },
+    "184": {
+      "id": 184,
+      "name": "Potato Chips",
+      "price": 20.39,
+      "category": "Meat"
+    },
+    "185": {
+      "id": 185,
+      "name": "Tortilla Chips",
+      "price": 20.49,
+      "category": "Meat"
+    },
+    "186": {
+      "id": 186,
+      "name": "Vegetable Chips",
+      "price": 20.59,
+      "category": "Meat"
+    },
+    "187": {
+      "id": 187,
+      "name": "Basmati Rice",
+      "price": 20.69,
+      "category": "Meat"
+    },
+    "188": {
+      "id": 188,
+      "name": "Brown Rice",
+      "price": 20.79,
+      "category": "Meat"
+    },
+    "189": {
+      "id": 189,
+      "name": "Sushi Rice",
+      "price": 20.89,
+      "category": "Meat"
+    },
+    "190": {
+      "id": 190,
+      "name": "Skimmed Milk",
+      "price": 20.99,
+      "category": "Seafood"
+    },
+    "191": {
+      "id": 191,
+      "name": "Whole Milk",
+      "price": 21.09,
+      "category": "Seafood"
+    },
+    "192": {
+      "id": 192,
+      "name": "Almond Milk",
+      "price": 21.19,
+      "category": "Seafood"
+    },
+    "193": {
+      "id": 193,
+      "name": "Soy Milk",
+      "price": 21.29,
+      "category": "Seafood"
+    },
+    "194": {
+      "id": 194,
+      "name": "Whole Wheat Bread",
+      "price": 21.39,
+      "category": "Seafood"
+    },
+    "195": {
+      "id": 195,
+      "name": "Multigrain Bread",
+      "price": 21.49,
+      "category": "Seafood"
+    },
+    "196": {
+      "id": 196,
+      "name": "White Bread",
+      "price": 21.59,
+      "category": "Seafood"
+    },
+    "197": {
+      "id": 197,
+      "name": "Orange Juice",
+      "price": 21.69,
+      "category": "Seafood"
+    },
+    "198": {
+      "id": 198,
+      "name": "Apple Juice",
+      "price": 21.79,
+      "category": "Seafood"
+    },
+    "199": {
+      "id": 199,
+      "name": "Grape Juice",
+      "price": 21.89,
+      "category": "Seafood"
+    },
+    "200": {
+      "id": 200,
+      "name": "Organic Eggs",
+      "price": 21.99,
+      "category": "Seafood"
+    }
+  }
