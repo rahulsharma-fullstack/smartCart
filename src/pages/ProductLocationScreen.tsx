@@ -37,7 +37,7 @@ export default function ProductLocationScreen() {
         <p className="text-xl">Aisle: {aisle}</p>
         <p className="text-xl">Shelf: {shelf}</p>
       </div>
-      <div className="bg-gray-200 w-full h-64 relative mb-4">
+      <div className="bg-gray-200 w-full h-64 relative mb-4" id='map'>
         <div
           className="absolute w-4 h-4 bg-blue-500 rounded-full"
           style={{ left: `${userLocation.x}%`, top: `${userLocation.y}%` }}

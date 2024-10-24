@@ -1,0 +1,6 @@
+#map {
+    background-image: url('../public/map.png');
+    background-size: cover; /* or contain */
+    background-position: center;
+    background-repeat: no-repeat;
+}
