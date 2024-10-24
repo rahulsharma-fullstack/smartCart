@@ -1,25 +1,19 @@
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { useCart } from '../context/CartContext'
-import { ShoppingCart } from 'lucide-react'
-import React from 'react'
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
+import { ShoppingCart } from 'lucide-react';
+import React from 'react';
+import productsData from '../data/dummyData.json'; // Adjust the path as necessary
 
 export default function CartIcon() {
-  const navigate = useNavigate()
-  const { cart } = useCart()
-  const [isHovered, setIsHovered] = useState(false)
+  const navigate = useNavigate();
+  const { cart } = useCart();
+  const [isHovered, setIsHovered] = useState(false);
 
-  // Mock product data (replace with actual data in a real application)
-  const products = {
-    1: { id: 1, name: 'Skimmed Milk', price: 2.99 },
-    2: { id: 2, name: 'Full-Cream Milk', price: 3.49 },
-    3: { id: 3, name: 'Organic Milk', price: 4.99 },
-    4: { id: 4, name: 'Lactose-Free Milk', price: 3.99 },
-  }
-
-  const cartItems = cart.map(id => products[id])
-  const totalItems = cart.length
-  const subtotal = cartItems.reduce((sum, item) => sum + item.price, 0)
+  // Get cart items based on product IDs in the cart
+  const cartItems = cart.map(id => productsData[id]);
+  const totalItems = cart.length;
+  const subtotal = cartItems.reduce((sum, item) => sum + item.price, 0);
 
   return (
     <div 
@@ -29,7 +23,6 @@ export default function CartIcon() {
     >
       <div 
         className="bg-orange-400 p-2 rounded-full shadow-lg cursor-pointer transition-all duration-300 hover:bg-orange-500"
-       
       >
         <ShoppingCart className="w-6 h-6 text-white" />
         {totalItems > 0 && (
@@ -45,10 +38,12 @@ export default function CartIcon() {
             <h3 className="font-bold text-lg mb-2">Cart ({totalItems} items)</h3>
             <div className="max-h-48 overflow-y-auto">
               {cartItems.map((item) => (
-                <div key={item.id} className="flex justify-between items-center mb-2">
-                  <span className="text-sm">{item.name}</span>
-                  <span className="text-sm font-semibold">${item.price.toFixed(2)}</span>
-                </div>
+                item ? ( // Ensure item exists before accessing properties
+                  <div key={item.id} className="flex justify-between items-center mb-2">
+                    <span className="text-sm">{item.name}</span>
+                    <span className="text-sm font-semibold">${item.price.toFixed(2)}</span>
+                  </div>
+                ) : null
               ))}
             </div>
             <div className="border-t pt-2 mt-2">
@@ -75,5 +70,5 @@ export default function CartIcon() {
         </div>
       )}
     </div>
-  )
+  );
 }

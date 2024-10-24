@@ -43,7 +43,7 @@ export default function SearchScreen() {
     const handleSearch = (e) => {
         e.preventDefault();
         if (query.trim()) {
-            navigate(`/products/${encodeURIComponent(query)}`);
+            navigate(`/products/${encodeURIComponent(query.trim())}`);
             setShowSuggestions(false);
         }
     };
@@ -85,7 +85,7 @@ export default function SearchScreen() {
 
     const handleSuggestionClick = (product) => {
         setQuery(product.name);
-        navigate(`/products/${encodeURIComponent(product.id)}`);
+        navigate(`/products/${encodeURIComponent(product.name)}`);
         setShowSuggestions(false);
     };
 

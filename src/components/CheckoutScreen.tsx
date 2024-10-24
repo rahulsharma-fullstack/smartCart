@@ -1,29 +1,36 @@
-import React from 'react'
-import { useCart } from '../context/CartContext'
+import React from 'react';
+import { useCart } from '../context/CartContext';
+import { useNavigate } from 'react-router-dom';
+import productsData from '../data/dummyData.json'; // Adjust the path as necessary
+import { Home } from 'lucide-react'; // Import the Home icon
 
 export default function CheckoutScreen() {
-  const { cart } = useCart()
+  const { cart } = useCart();
+  const navigate = useNavigate(); // Initialize navigate function
 
-  // Mock product data (replace with actual data in a real application)
-  const products = {
-    1: { id: 1, name: 'Skimmed Milk', price: 2.99 },
-    2: { id: 2, name: 'Full-Cream Milk', price: 3.49 },
-    3: { id: 3, name: 'Organic Milk', price: 4.99 },
-    4: { id: 4, name: 'Lactose-Free Milk', price: 3.99 },
-  }
-
-  const cartItems = cart.map(id => products[id])
-  const subtotal = cartItems.reduce((sum, item) => sum + item.price, 0)
+  // Get cart items based on product IDs in the cart
+  const cartItems = cart.map(id => productsData[id]);
+  const subtotal = cartItems.reduce((sum, item) => sum + item.price, 0);
 
   return (
     <div className="min-h-screen p-4 pt-16">
-      <h1 className="text-3xl font-bold mb-8">Checkout</h1>
+      <div className="flex items-center justify-between mb-8">
+        <h1 className="text-3xl font-bold">Checkout</h1>
+        <button
+          onClick={() => navigate('/')} // Navigate to the home page
+          className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors duration-300"
+        >
+          <Home className="w-6 h-6 text-gray-700" />
+        </button>
+      </div>
       <div className="bg-white p-4 rounded-lg shadow mb-4">
         {cartItems.map((item) => (
-          <div key={item.id} className="flex justify-between items-center mb-2">
-            <span>{item.name}</span>
-            <span>${item.price.toFixed(2)}</span>
-          </div>
+          item ? ( // Ensure item exists before accessing properties
+            <div key={item.id} className="flex justify-between items-center mb-2">
+              <span>{item.name}</span>
+              <span>${item.price.toFixed(2)}</span>
+            </div>
+          ) : null
         ))}
         <div className="border-t pt-2 mt-2">
           <div className="flex justify-between items-center font-bold">
@@ -39,5 +46,5 @@ export default function CheckoutScreen() {
         Place Order
       </button>
     </div>
-  )
+  );
 }
