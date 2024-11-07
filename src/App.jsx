@@ -7,6 +7,7 @@ import ProductLocationScreen from './pages/ProductLocationScreen'
 import BarcodeScannerScreen from './pages/BarcodeScannerScreen'
 // import CartScreen from './pages/CartScreen'
 import CheckoutScreen from './components/CheckoutScreen'
+import LoginScreen from './pages/LoginScreen';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <CartIcon />
           <Routes>
             <Route path="/" element={<SearchScreen />} />
+            <Route path="/login" element={<LoginScreen />} />
             <Route path="/products/:query" element={<ProductListScreen />} />
             <Route path="/location/:productId" element={<ProductLocationScreen />} />
             <Route path="/scan/:productId" element={<BarcodeScannerScreen />} />
