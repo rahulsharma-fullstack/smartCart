@@ -1,32 +1,83 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import { CartProvider } from './context/CartContext'
-import CartIcon from './components/CartIcon'
-import SearchScreen from './pages/SearchScreen'
-import ProductListScreen from './pages/ProductListScreen'
-import ProductLocationScreen from './pages/ProductLocationScreen'
-import BarcodeScannerScreen from './pages/BarcodeScannerScreen'
-// import CartScreen from './pages/CartScreen'
-import CheckoutScreen from './components/CheckoutScreen'
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { CartProvider } from './context/CartContext';
+import CartIcon from './components/CartIcon';
+import SearchScreen from './pages/SearchScreen';
+import ProductListScreen from './pages/ProductListScreen';
+import ProductLocationScreen from './pages/ProductLocationScreen';
+import BarcodeScannerScreen from './pages/BarcodeScannerScreen';
+import CheckoutScreen from './components/CheckoutScreen';
 import LoginScreen from './pages/LoginScreen';
+import { useAuth } from './context/AuthContext'; // Assuming you have an AuthContext to provide auth state
+
+// Protected Route Component
+function ProtectedRoute({ children }) {
+  const { user } = useAuth(); // useAuth returns the logged-in user or null if not logged in
+
+  return user ? children : <Navigate to="/login" replace />;
+}
 
 export default function App() {
   return (
     <CartProvider>
       <Router>
-      <div className="min-h-screen bg-gray-100 relative">
+        <div className="min-h-screen bg-gray-100 relative">
           <CartIcon />
           <Routes>
-            <Route path="/" element={<SearchScreen />} />
+            {/* Public Route */}
             <Route path="/login" element={<LoginScreen />} />
-            <Route path="/products/:query" element={<ProductListScreen />} />
-            <Route path="/location/:productId" element={<ProductLocationScreen />} />
-            <Route path="/scan/:productId" element={<BarcodeScannerScreen />} />
-            <Route path="/cart" element={<CheckoutScreen />} />
-            <Route path="/checkout" element={<CheckoutScreen />} />
-            
+
+            {/* Protected Routes */}
+            <Route
+              path="/"
+              element={
+                <ProtectedRoute>
+                  <SearchScreen />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/products/:query"
+              element={
+                <ProtectedRoute>
+                  <ProductListScreen />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/location/:productId"
+              element={
+                <ProtectedRoute>
+                  <ProductLocationScreen />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/scan/:productId"
+              element={
+                <ProtectedRoute>
+                  <BarcodeScannerScreen />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/cart"
+              element={
+                <ProtectedRoute>
+                  <CheckoutScreen />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/checkout"
+              element={
+                <ProtectedRoute>
+                  <CheckoutScreen />
+                </ProtectedRoute>
+              }
+            />
           </Routes>
         </div>
       </Router>
     </CartProvider>
-  )
+  );
 }

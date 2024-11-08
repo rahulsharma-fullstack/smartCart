@@ -51,30 +51,9 @@ export default function LoginScreen() {
               />
             </svg>
             <span>Continue with Google</span>
-          </button>
-
-          <div className="relative flex items-center justify-center text-xs text-gray-500 uppercase">
-            <span className="px-2 bg-white">Or continue with</span>
-            <div className="absolute w-full h-px bg-gray-200"></div>
-          </div>
-
-          <button 
-            className="w-full h-12 flex items-center justify-center bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700"
-            onClick={() => navigate('/signup')}
-          >
-            Create an account
-          </button>
+          </button>        
         </div>
-        <div className="text-center text-sm text-gray-500">
-          By continuing, you agree to our{" "}
-          <a href="/terms" className="underline hover:text-gray-800">
-            Terms of Service
-          </a>{" "}
-          and{" "}
-          <a href="/privacy" className="underline hover:text-gray-800">
-            Privacy Policy
-          </a>.
-        </div>
+        
       </div>
     </div>
   );
