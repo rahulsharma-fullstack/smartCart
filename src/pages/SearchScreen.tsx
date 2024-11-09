@@ -4,18 +4,18 @@ import { useCart } from '../context/CartContext';
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebaseConfig"; // Import Firebase db configuration
 
-// Assuming recommendations are static for now
-const recommendations = {
-    1: [2, 3],
-    2: [1, 4],
-    3: [1, 2],
-    4: [2, 3],
-};
+// // Assuming recommendations are static for now
+// const recommendations = {
+//     1: [2, 3],
+//     2: [1, 4],
+//     3: [1, 2],
+//     4: [2, 3],
+// };
 
-const previousPurchases = [
-    { id: 1, name: 'Skimmed Milk', price: 2.99, lastPurchased: '2024-03-15' },
-    { id: 3, name: 'Organic Milk', price: 4.99, lastPurchased: '2024-03-10' },
-];
+// const previousPurchases = [
+//     { id: 1, name: 'Skimmed Milk', price: 2.99, lastPurchased: '2024-03-15' },
+//     { id: 3, name: 'Organic Milk', price: 4.99, lastPurchased: '2024-03-10' },
+// ];
 
 export default function SearchScreen() {
     const [query, setQuery] = useState("");
@@ -27,8 +27,8 @@ export default function SearchScreen() {
     const navigate = useNavigate();
     const { cart } = useCart();
 
-    const lastAddedProduct = cart[cart.length - 1];
-    const recommendedProducts = recommendations[lastAddedProduct]?.map((id) => productsData[id]) || [];
+    // const lastAddedProduct = cart[cart.length - 1];
+    // const recommendedProducts = recommendations[lastAddedProduct]?.map((id) => productsData[id]) || [];
     const hasItemsInCart = cart.length > 0;
 
     // Fetch products from Firestore
@@ -150,7 +150,7 @@ export default function SearchScreen() {
 
             {/* Rest of your existing JSX for recommendations and previous purchases */}
             <div className="mt-12 w-full max-w-md">
-                <h2 className="text-2xl font-bold mb-4">
+                {/* <h2 className="text-2xl font-bold mb-4">
                     {hasItemsInCart ? 'Recommended Products' : 'Previous Purchases'}
                 </h2>
 
@@ -195,7 +195,7 @@ export default function SearchScreen() {
                             </p>
                         )}
                     </div>
-                )}
+                )} */}
 
                 {hasItemsInCart && (
                     <button

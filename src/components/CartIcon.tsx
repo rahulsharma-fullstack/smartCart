@@ -1,19 +1,54 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { ShoppingCart } from 'lucide-react';
 import React from 'react';
-import productsData from '../data/dummyData.json'; // Adjust the path as necessary
+import { db } from '../firebaseConfig'; // Import your Firebase db configuration
+import { doc, getDoc } from 'firebase/firestore';
 
 export default function CartIcon() {
   const navigate = useNavigate();
   const { cart } = useCart();
   const [isHovered, setIsHovered] = useState(false);
+  const [cartItems, setCartItems] = useState([]);
+  const [subtotal, setSubtotal] = useState(0);
 
-  // Get cart items based on product IDs in the cart
-  const cartItems = cart.map(id => productsData[id]);
-  const totalItems = cart.length;
-  const subtotal = cartItems.reduce((sum, item) => sum + item.price, 0);
+  // Fetch product data from Firestore
+  useEffect(() => {
+    const fetchCartItems = async () => {
+      const items = [];
+      let total = 0;
+
+      try {
+        // Fetch each product by ID (ensure you're using just the ID)
+        for (const productId of cart) {
+          if (typeof productId !== 'string' && typeof productId !== 'number') {
+            console.error('Invalid productId:', productId); // Log invalid product ID
+            continue; // Skip invalid IDs
+          }
+
+          const productDoc = await getDoc(doc(db, 'products', productId.toString())); // Ensure productId is a string
+
+          if (productDoc.exists()) {
+            const product = productDoc.data();
+            items.push({ id: productId, name: product.name, price: product.price });
+            total += product.price;
+          } else {
+            console.error('No product found for ID:', productId);
+          }
+        }
+
+        setCartItems(items);
+        setSubtotal(total);
+      } catch (error) {
+        console.error('Error fetching cart items from Firestore:', error);
+      }
+    };
+
+    fetchCartItems();
+  }, [cart]);
+
+  const totalItems = cartItems.length;
 
   return (
     <div 
@@ -38,12 +73,10 @@ export default function CartIcon() {
             <h3 className="font-bold text-lg mb-2">Cart ({totalItems} items)</h3>
             <div className="max-h-48 overflow-y-auto">
               {cartItems.map((item) => (
-                item ? ( // Ensure item exists before accessing properties
-                  <div key={item.id} className="flex justify-between items-center mb-2">
-                    <span className="text-sm">{item.name}</span>
-                    <span className="text-sm font-semibold">${item.price.toFixed(2)}</span>
-                  </div>
-                ) : null
+                <div key={item.id} className="flex justify-between items-center mb-2">
+                  <span className="text-sm">{item.name}</span>
+                  <span className="text-sm font-semibold">${item.price.toFixed(2)}</span>
+                </div>
               ))}
             </div>
             <div className="border-t pt-2 mt-2">

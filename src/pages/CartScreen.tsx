@@ -1,30 +1,52 @@
-import { useNavigate } from 'react-router-dom'
-import { useCart } from '../context/CartContext'
-import React from 'react'
+import { useNavigate } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
+import React, { useEffect, useState } from 'react';
+import { doc, getDoc, collection, getDocs } from 'firebase/firestore';
+import { db } from '../firebaseConfig'; // Import your Firebase db configuration
 
-// Mock data for demonstration
-const products = {
-  1: { id: 1, name: 'Skimmed Milk', price: 2.99 },
-  2: { id: 2, name: 'Full-Cream Milk', price: 3.49 },
-  3: { id: 3, name: 'Organic Milk', price: 4.99 },
-  4: { id: 4, name: 'Lactose-Free Milk', price: 3.99 },
-}
+export default function CartScreen() {
+  const navigate = useNavigate();
+  const { cart } = useCart();
+  const [products, setProducts] = useState({});
+  const [recommendations, setRecommendations] = useState({});
 
-const recommendations = {
-  1: [2, 3],
-  2: [1, 4],
-  3: [1, 2],
-  4: [2, 3],
-}
+  // Fetch products and recommendations from Firestore
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const productsData = {};
+      const recommendationsData = {};
 
- function CartScreen() {
-  const navigate = useNavigate()
-  const { cart } = useCart()
+      // Fetch products
+      const productsSnapshot = await getDocs(collection(db, 'products'));
+      productsSnapshot.forEach((doc) => {
+        const productData = doc.data();
+        productsData[doc.id] = {
+          id: doc.id,
+          name: productData.name,
+          price: productData.price,
+        };
+      });
 
-  const cartItems = cart.map((productId) => products[productId])
-  const total = cartItems.reduce((sum, item) => sum + item.price, 0)
-  const lastAddedProduct = cart[cart.length - 1]
-  const recommendedProducts = recommendations[lastAddedProduct]?.map((id) => products[id]) || []
+      // Fetch recommendations
+      const recommendationsSnapshot = await getDocs(collection(db, 'recommendations'));
+      recommendationsSnapshot.forEach((doc) => {
+        recommendationsData[doc.id] = doc.data().recommendedProductIds || [];
+      });
+
+      setProducts(productsData);
+      setRecommendations(recommendationsData);
+    };
+
+    fetchProducts();
+  }, []);
+
+  // Get cart items and total
+  const cartItems = cart.map((productId) => products[productId]);
+  const total = cartItems.reduce((sum, item) => sum + item.price, 0);
+
+  // Get the last added product and its recommendations
+  const lastAddedProduct = cart[cart.length - 1];
+  const recommendedProductIds = recommendations[lastAddedProduct]?.map((id) => products[id]) || [];
 
   return (
     <div className="min-h-screen p-4">
@@ -43,19 +65,26 @@ const recommendations = {
           </div>
         </div>
       </div>
-      <h2 className="text-2xl font-bold mb-4">Recommended Products</h2>
-      <div className="grid grid-cols-2 gap-4 mb-4">
-        {recommendedProducts.map((product) => (
-          <div
-            key={product.id}
-            className="bg-white p-4 rounded-lg shadow cursor-pointer hover:shadow-lg transition-shadow"
-            onClick={() => navigate(`/location/${product.id}`)}
-          >
-            <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
-            <p className="text-gray-600">${product.price.toFixed(2)}</p>
+
+      {/* Recommended Products Section */}
+      {recommendedProductIds.length > 0 && (
+        <>
+          <h2 className="text-2xl font-bold mb-4">Recommended Products</h2>
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            {recommendedProductIds.map((product) => (
+              <div
+                key={product.id}
+                className="bg-white p-4 rounded-lg shadow cursor-pointer hover:shadow-lg transition-shadow"
+                onClick={() => navigate(`/location/${product.id}`)}
+              >
+                <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
+                <p className="text-gray-600">${product.price.toFixed(2)}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </>
+      )}
+
       <button
         onClick={() => alert('Checkout process not implemented in this demo')}
         className="w-full px-4 py-2 text-lg text-white bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500"
@@ -63,5 +92,5 @@ const recommendations = {
         Proceed to Checkout
       </button>
     </div>
-  )
+  );
 }

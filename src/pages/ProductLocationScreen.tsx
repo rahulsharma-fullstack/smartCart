@@ -1,13 +1,35 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import React from 'react';
-import productsData from '../data/dummyData.json'; // Adjust the path as necessary
+import { doc, getDoc } from 'firebase/firestore';
+import { db } from '../firebaseConfig'; // Import the Firebase db configuration
 
 export default function ProductLocationScreen() {
   const { productId } = useParams();
   const navigate = useNavigate();
   const [userLocation, setUserLocation] = useState({ x: 0, y: 0 });
+  const [product, setProduct] = useState(null);
 
+  // Fetch product data from Firestore based on productId
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        const productRef = doc(db, 'products', productId);
+        const productDoc = await getDoc(productRef);
+        if (productDoc.exists()) {
+          setProduct({ id: productDoc.id, ...productDoc.data() });
+        } else {
+          console.error('Product not found');
+        }
+      } catch (error) {
+        console.error('Error fetching product:', error);
+      }
+    };
+
+    fetchProduct();
+  }, [productId]);
+
+  // Simulate user location updates
   useEffect(() => {
     const interval = setInterval(() => {
       setUserLocation((prev) => ({
@@ -19,16 +41,12 @@ export default function ProductLocationScreen() {
     return () => clearInterval(interval);
   }, []);
 
-  // Find the product by ID
-  const product = productsData[productId];
-
-  // Debugging output
-  console.log("Product ID from URL:", productId);
+  // Handle case when product is not found
   if (!product) {
-    return <p>Product not found.</p>; // Handle the case where the productId does not exist
+    return <p>Loading product data...</p>;
   }
 
-  const { aisle, shelf } = product; // Extract aisle and shelf from product
+  const { aisle, shelf } = product;
 
   return (
     <div className="min-h-screen p-4">
