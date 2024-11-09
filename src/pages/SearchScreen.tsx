@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from '../context/CartContext';
-import productsData from '../data/dummyData.json'; // Import the JSON file
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebaseConfig"; // Import Firebase db configuration
 
 // Assuming recommendations are static for now
 const recommendations = {
@@ -21,6 +22,7 @@ export default function SearchScreen() {
     const [suggestions, setSuggestions] = useState([]);
     const [showSuggestions, setShowSuggestions] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState(-1);
+    const [productsData, setProductsData] = useState([]); // State for Firestore products
     const searchRef = useRef(null);
     const navigate = useNavigate();
     const { cart } = useCart();
@@ -28,6 +30,21 @@ export default function SearchScreen() {
     const lastAddedProduct = cart[cart.length - 1];
     const recommendedProducts = recommendations[lastAddedProduct]?.map((id) => productsData[id]) || [];
     const hasItemsInCart = cart.length > 0;
+
+    // Fetch products from Firestore
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                const querySnapshot = await getDocs(collection(db, "products"));
+                const products = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+                setProductsData(products);
+            } catch (e) {
+                console.error("Error fetching products: ", e);
+            }
+        };
+
+        fetchProducts();
+    }, []);
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -53,7 +70,7 @@ export default function SearchScreen() {
         setQuery(value);
 
         if (value.trim()) {
-            const filteredProducts = Object.values(productsData).filter(product =>
+            const filteredProducts = productsData.filter(product =>
                 product.name.toLowerCase().includes(value.toLowerCase())
             );
             setSuggestions(filteredProducts);
