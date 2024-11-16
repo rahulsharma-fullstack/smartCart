@@ -1,7 +1,7 @@
 import React from 'react';
 import { useCart } from '../context/CartContext';
 import { useNavigate } from 'react-router-dom';
-import productsData from '../data/dummyData.json'; // Adjust the path as necessary
+//import productsData from '../data/dummyData'; // Adjust the path as necessary
 import { Home } from 'lucide-react'; // Import the Home icon
 
 export default function CheckoutScreen() {

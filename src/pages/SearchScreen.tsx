@@ -1,21 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useCart } from '../context/CartContext';
-import { collection, getDocs } from "firebase/firestore";
+import { useCart } from "../context/CartContext";
+import { collection, getDocs, doc, getDoc } from "firebase/firestore";
 import { db } from "../firebaseConfig"; // Import Firebase db configuration
-
-// // Assuming recommendations are static for now
-// const recommendations = {
-//     1: [2, 3],
-//     2: [1, 4],
-//     3: [1, 2],
-//     4: [2, 3],
-// };
-
-// const previousPurchases = [
-//     { id: 1, name: 'Skimmed Milk', price: 2.99, lastPurchased: '2024-03-15' },
-//     { id: 3, name: 'Organic Milk', price: 4.99, lastPurchased: '2024-03-10' },
-// ];
+import axios from "axios"; // Add axios for API requests
 
 export default function SearchScreen() {
     const [query, setQuery] = useState("");
@@ -23,13 +11,13 @@ export default function SearchScreen() {
     const [showSuggestions, setShowSuggestions] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState(-1);
     const [productsData, setProductsData] = useState([]); // State for Firestore products
+    const [recommendedProducts, setRecommendedProducts] = useState([]); // State for recommendations
     const searchRef = useRef(null);
     const navigate = useNavigate();
     const { cart } = useCart();
 
-    // const lastAddedProduct = cart[cart.length - 1];
-    // const recommendedProducts = recommendations[lastAddedProduct]?.map((id) => productsData[id]) || [];
     const hasItemsInCart = cart.length > 0;
+    const lastAddedProduct = hasItemsInCart ? cart[cart.length - 1] : null;
 
     // Fetch products from Firestore
     useEffect(() => {
@@ -46,6 +34,46 @@ export default function SearchScreen() {
         fetchProducts();
     }, []);
 
+    // Fetch recommendations based on the last added item in the cart
+    useEffect(() => {
+        const fetchRecommendations = async () => {
+            if (lastAddedProduct) {
+                try {
+                    const response = await axios.get(
+                        `http://localhost:3001/api/recommendations/${lastAddedProduct.id}`
+                    );
+    
+                    // Extract itemIds from the API response
+                    const recommendedIds = response.data.itemList.map(item => item.itemId);
+    
+                    // Fetch product details from Firestore for each recommended itemId
+                    const recommendedProductDetails = [];
+    
+                    for (const id of recommendedIds) {
+                        const productRef = doc(db, "products", id);
+                        const productDoc = await getDoc(productRef);
+    
+                        if (productDoc.exists()) {
+                            recommendedProductDetails.push({ id: productDoc.id, ...productDoc.data() });
+                        }
+                    }
+    
+                    // Set the recommended products in the state
+                    setRecommendedProducts(recommendedProductDetails);
+    
+                } catch (error) {
+                    console.error("Error fetching recommendations: ", error);
+                    setRecommendedProducts([]); // Reset to an empty list if error occurs
+                }
+            } else {
+                setRecommendedProducts([]); // Reset if no last added product
+            }
+        };
+    
+        fetchRecommendations();
+    }, [lastAddedProduct]);
+    
+
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (searchRef.current && !searchRef.current.contains(event.target)) {
@@ -53,8 +81,8 @@ export default function SearchScreen() {
             }
         };
 
-        document.addEventListener('mousedown', handleClickOutside);
-        return () => document.removeEventListener('mousedown', handleClickOutside);
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
 
     const handleSearch = (e) => {
@@ -70,7 +98,7 @@ export default function SearchScreen() {
         setQuery(value);
 
         if (value.trim()) {
-            const filteredProducts = productsData.filter(product =>
+            const filteredProducts = productsData.filter((product) =>
                 product.name.toLowerCase().includes(value.toLowerCase())
             );
             setSuggestions(filteredProducts);
@@ -84,17 +112,17 @@ export default function SearchScreen() {
 
     const handleKeyDown = (e) => {
         if (suggestions.length > 0) {
-            if (e.key === 'ArrowDown') {
+            if (e.key === "ArrowDown") {
                 e.preventDefault();
-                setSelectedIndex(prev => (prev < suggestions.length - 1 ? prev + 1 : 0));
-            } else if (e.key === 'ArrowUp') {
+                setSelectedIndex((prev) => (prev < suggestions.length - 1 ? prev + 1 : 0));
+            } else if (e.key === "ArrowUp") {
                 e.preventDefault();
-                setSelectedIndex(prev => (prev > 0 ? prev - 1 : suggestions.length - 1));
-            } else if (e.key === 'Enter' && selectedIndex >= 0) {
+                setSelectedIndex((prev) => (prev > 0 ? prev - 1 : suggestions.length - 1));
+            } else if (e.key === "Enter" && selectedIndex >= 0) {
                 e.preventDefault();
                 const selected = suggestions[selectedIndex];
                 handleSuggestionClick(selected);
-            } else if (e.key === 'Escape') {
+            } else if (e.key === "Escape") {
                 setShowSuggestions(false);
             }
         }
@@ -135,7 +163,7 @@ export default function SearchScreen() {
                                 key={product.id}
                                 onClick={() => handleSuggestionClick(product)}
                                 className={`px-4 py-2 cursor-pointer hover:bg-gray-100 ${
-                                    index === selectedIndex ? 'bg-gray-100' : ''
+                                    index === selectedIndex ? "bg-gray-100" : ""
                                 }`}
                             >
                                 <div className="flex justify-between items-center">
@@ -148,64 +176,30 @@ export default function SearchScreen() {
                 )}
             </div>
 
-            {/* Rest of your existing JSX for recommendations and previous purchases */}
-            <div className="mt-12 w-full max-w-md">
-                {/* <h2 className="text-2xl font-bold mb-4">
-                    {hasItemsInCart ? 'Recommended Products' : 'Previous Purchases'}
-                </h2>
-
-                {hasItemsInCart ? (
-                    <div className="grid grid-cols-2 gap-4 mb-4">
-                        {recommendedProducts.length > 0 ? (
-                            recommendedProducts.map((product) => (
+            {/* Recommendations Section */}
+            {hasItemsInCart && (
+                <div className="mt-12 w-full max-w-md">
+                    <h2 className="text-2xl font-bold mb-4">Recommended Products</h2>
+                    {recommendedProducts.length > 0 ? (
+                        <div className="grid grid-cols-2 gap-4 mb-4">
+                            {recommendedProducts.map((product) => (
                                 <div
                                     key={product.id}
                                     className="bg-white p-4 rounded-lg shadow cursor-pointer hover:shadow-lg transition-shadow"
                                     onClick={() => navigate(`/location/${product.id}`)}
                                 >
-                                    <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
-                                    <p className="text-gray-600">${product.price.toFixed(2)}</p>
+                                    <h3 className="text-lg font-semibold mb-2">
+                                        {product.name || `Product ID: ${product.id}`}
+                                    </h3>
+                                    {product.price && <p className="text-gray-600">${product.price.toFixed(2)}</p>}
                                 </div>
-                            ))
-                        ) : (
-                            <p className="col-span-2 text-center text-gray-500">
-                                No recommendations available for your current cart items.
-                            </p>
-                        )}
-                    </div>
-                ) : (
-                    <div className="grid grid-cols-2 gap-4 mb-4">
-                        {previousPurchases.length > 0 ? (
-                            previousPurchases.map((purchase) => (
-                                <div
-                                    key={purchase.id}
-                                    className="bg-white p-4 rounded-lg shadow cursor-pointer hover:shadow-lg transition-shadow"
-                                    onClick={() => navigate(`/location/${purchase.id}`)}
-                                >
-                                    <h3 className="text-lg font-semibold mb-2">{purchase.name}</h3>
-                                    <p className="text-gray-600">${purchase.price.toFixed(2)}</p>
-                                    <p className="text-sm text-gray-400 mt-2">
-                                        Last purchased: {new Date(purchase.lastPurchased).toLocaleDateString()}
-                                    </p>
-                                </div>
-                            ))
-                        ) : (
-                            <p className="col-span-2 text-center text-gray-500">
-                                No previous purchases found.
-                            </p>
-                        )}
-                    </div>
-                )} */}
-
-                {hasItemsInCart && (
-                    <button
-                        onClick={() => navigate('/checkout')}
-                        className="w-full px-4 py-2 text-lg text-white bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500"
-                    >
-                        Proceed to Checkout
-                    </button>
-                )}
-            </div>
+                            ))}
+                        </div>
+                    ) : (
+                        <p className="text-center text-gray-500">No recommendations available.</p>
+                    )}
+                </div>
+            )}
         </div>
     );
 }

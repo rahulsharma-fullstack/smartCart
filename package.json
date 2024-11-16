@@ -12,6 +12,7 @@
   "dependencies": {
     "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
     "autoprefixer": "^10.4.20",
+    "axios": "^1.7.7",
     "firebase": "^11.0.1",
     "firebase-admin": "^12.7.0",
     "lucide-react": "^0.453.0",

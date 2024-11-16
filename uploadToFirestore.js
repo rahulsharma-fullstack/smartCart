@@ -1,4 +1,3 @@
-
 import admin from 'firebase-admin';
 import { readFile } from 'fs/promises';
 
@@ -8,21 +7,22 @@ const serviceAccount = JSON.parse(
 );
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
+  credential: admin.credential.cert(serviceAccount),
 });
 
 const db = admin.firestore();
 
 // Read JSON file and parse it
 const jsonData = JSON.parse(
-  await readFile(new URL('./src/data/dummyData.json', import.meta.url))
+  await readFile(new URL('./src/data/products.json', import.meta.url))
 );
 
 // Upload data to Firestore
 const collectionRef = db.collection('products');
-for (const [key, item] of Object.entries(jsonData)) {
-  await collectionRef.doc(key).set(item);
-  console.log(`Uploaded item with ID: ${key}`);
+for (const item of jsonData) {
+  const { id, ...data } = item; // Extract the `id` field and the rest of the data
+  await collectionRef.doc(id).set(data); // Use `id` as the document ID
+  console.log(`Uploaded product with ID: ${id}`);
 }
 
 console.log('All data uploaded successfully!');
