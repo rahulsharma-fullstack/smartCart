@@ -1,16 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useCart } from '../context/CartContext';
 import { useNavigate } from 'react-router-dom';
-//import productsData from '../data/dummyData'; // Adjust the path as necessary
 import { Home } from 'lucide-react'; // Import the Home icon
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../firebaseConfig'; // Import Firestore configuration
 
 export default function CheckoutScreen() {
   const { cart } = useCart();
+  const [productsData, setProductsData] = useState([]); // State for products data
   const navigate = useNavigate(); // Initialize navigate function
 
+  // Fetch products from Firestore
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const querySnapshot = await getDocs(collection(db, 'products'));
+        const products = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        setProductsData(products);
+      } catch (e) {
+        console.error('Error fetching products: ', e);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
   // Get cart items based on product IDs in the cart
-  const cartItems = cart.map(id => productsData[id]);
-  const subtotal = cartItems.reduce((sum, item) => sum + item.price, 0);
+  const cartItems = cart.map(id => productsData.find(item => item.id === id)).filter(item => item); // Filter out undefined items
+
+  // Check if there are any valid cart items to prevent errors in subtotal calculation
+  const subtotal = cartItems.reduce((sum, item) => sum + (item.price || 0), 0); // Default to 0 if price is undefined
 
   return (
     <div className="min-h-screen p-4 pt-16">
@@ -24,14 +43,16 @@ export default function CheckoutScreen() {
         </button>
       </div>
       <div className="bg-white p-4 rounded-lg shadow mb-4">
-        {cartItems.map((item) => (
-          item ? ( // Ensure item exists before accessing properties
+        {cartItems.length > 0 ? (
+          cartItems.map((item) => (
             <div key={item.id} className="flex justify-between items-center mb-2">
               <span>{item.name}</span>
               <span>${item.price.toFixed(2)}</span>
             </div>
-          ) : null
-        ))}
+          ))
+        ) : (
+          <p className="text-center text-gray-500">Your cart is empty.</p>
+        )}
         <div className="border-t pt-2 mt-2">
           <div className="flex justify-between items-center font-bold">
             <span>Total:</span>
