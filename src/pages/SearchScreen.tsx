@@ -46,10 +46,15 @@ export default function SearchScreen() {
                     // Extract itemIds from the API response
                     const recommendedIds = response.data.itemList.map(item => item.itemId);
     
-                    // Fetch product details from Firestore for each recommended itemId
+                    // Shuffle and pick 4 random items
+                    const randomIds = recommendedIds
+                        .sort(() => 0.5 - Math.random()) // Shuffle array
+                        .slice(0, 4); // Take the first 4 items
+    
+                    // Fetch product details from Firestore for the selected IDs
                     const recommendedProductDetails = [];
     
-                    for (const id of recommendedIds) {
+                    for (const id of randomIds) {
                         const productRef = doc(db, "products", id);
                         const productDoc = await getDoc(productRef);
     
@@ -72,6 +77,7 @@ export default function SearchScreen() {
     
         fetchRecommendations();
     }, [lastAddedProduct]);
+    
     
 
     useEffect(() => {
