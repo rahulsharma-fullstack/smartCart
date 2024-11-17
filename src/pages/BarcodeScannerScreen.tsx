@@ -1,66 +1,75 @@
-import { useParams, useNavigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import { useCart } from '../context/CartContext';
-import React from 'react';
-import { doc, getDoc } from 'firebase/firestore';
-import { db } from '../firebaseConfig'; // Import the Firebase db configuration
+import React, { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import { useCart } from "../context/CartContext";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../firebaseConfig";
+import BarcodeScannerComponent from "react-qr-barcode-scanner";
 
 export default function BarcodeScannerScreen() {
-  const { productId } = useParams();
-  const navigate = useNavigate();
   const { addToCart } = useCart();
-  const [scanning, setScanning] = useState(false);
+  const navigate = useNavigate();
+  const [scannedData, setScannedData] = useState(null);
+  const [error, setError] = useState(null);
   const [product, setProduct] = useState(null);
+  const [scanning, setScanning] = useState(false);
 
-  // Fetch product details from Firestore based on productId
+  // Fetch product details based on the scanned barcode
   useEffect(() => {
-    const fetchProduct = async () => {
-      try {
-        const productRef = doc(db, 'products', productId);
-        const productDoc = await getDoc(productRef);
-        if (productDoc.exists()) {
-          setProduct({ id: productDoc.id, ...productDoc.data() });
-        } else {
-          console.error('Product not found');
+    if (scannedData) {
+      const fetchProduct = async () => {
+        try {
+          const productRef = doc(db, "products", scannedData);
+          const productDoc = await getDoc(productRef);
+          if (productDoc.exists()) {
+            setProduct({ id: productDoc.id, ...productDoc.data() });
+          } else {
+            setError("Product not found.");
+          }
+        } catch (err) {
+          console.error("Error fetching product:", err);
+          setError("Error fetching product.");
         }
-      } catch (error) {
-        console.error('Error fetching product:', error);
-      }
-    };
+      };
+      fetchProduct();
+    }
+  }, [scannedData]);
 
-    fetchProduct();
-  }, [productId]);
+  const handleScan = (result) => {
+    if (result) {
+      setScannedData(result.text);
+    }
+  };
 
-  const handleScan = () => {
-    setScanning(true);
-    setTimeout(() => {
-      setScanning(false);
-      if (product) {
-        addToCart(product.id); // Add only the productId to the cart
-        navigate('/'); // Redirect to home or another page after adding
-      }
-    }, 2000);
+  const handleAddToCart = () => {
+    if (product) {
+      addToCart(product.id);
+      navigate("/"); // Redirect after adding to cart
+    }
   };
 
   return (
-    <div className="min-h-screen p-4 flex flex-col items-center justify-center">
+    <div className="min-h-screen p-4 flex flex-col items-center justify-center bg-gray-100">
       <h1 className="text-3xl font-bold mb-8">Scan Product Barcode</h1>
       <div className="bg-gray-200 w-64 h-64 flex items-center justify-center mb-4">
-        {scanning ? (
-          <div className="animate-pulse text-2xl">Scanning...</div>
-        ) : (
-          <div className="text-2xl">Camera Viewfinder</div>
-        )}
+        <BarcodeScannerComponent
+          width={300}
+          height={300}
+          onUpdate={(err, result) => {
+            if (result) handleScan(result);
+            else setError("Not Found");
+          }}
+              
+          
+        />
       </div>
+      {error && <p className="text-red-500">{error}</p>}
       <button
-        onClick={handleScan}
-        disabled={scanning || !product}
-        className="w-full max-w-xs px-4 py-2 text-lg text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-400"
+        onClick={handleAddToCart}
+        disabled={!product}
+        className="w-full max-w-xs px-4 py-2 text-lg text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-400 mt-4"
       >
-        {scanning ? 'Scanning...' : 'Scan Barcode'}
+        {product ? "Add to Cart" : "Waiting for Barcode..."}
       </button>
-
-      {/* Optionally display product information */}
       {product && (
         <div className="mt-8">
           <h2 className="text-2xl font-semibold">Product Details</h2>
