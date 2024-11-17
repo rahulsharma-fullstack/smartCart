@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import React from 'react';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebaseConfig'; // Import the Firebase db configuration
+import StoreAisle from '../components/StoreAisle';
 
 export default function ProductLocationScreen() {
   const { productId } = useParams();
@@ -29,17 +30,7 @@ export default function ProductLocationScreen() {
     fetchProduct();
   }, [productId]);
 
-  // Simulate user location updates
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setUserLocation((prev) => ({
-        x: Math.min(100, Math.max(0, prev.x + (Math.random() * 2 - 1))),
-        y: Math.min(100, Math.max(0, prev.y + (Math.random() * 2 - 1))),
-      }));
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
+  
 
   // Handle case when product is not found
   if (!product) {
@@ -55,15 +46,8 @@ export default function ProductLocationScreen() {
         <p className="text-xl">Aisle: {aisle}</p>
         <p className="text-xl">Shelf: {shelf}</p>
       </div>
-      <div className="bg-gray-200 w-full h-64 relative mb-4" id='map'>
-        <div
-          className="absolute w-4 h-4 bg-blue-500 rounded-full"
-          style={{ left: `${userLocation.x}%`, top: `${userLocation.y}%` }}
-        ></div>
-        <div
-          className="absolute w-4 h-4 bg-red-500 rounded-full"
-          style={{ left: '50%', top: '50%' }}
-        ></div>
+      <div className="bg-gray-200 w-auto h-auto mb-4" id='map'>
+        <StoreAisle/>
       </div>
       <button
         onClick={() => navigate(`/scan/${productId}`)}
