@@ -10,11 +10,11 @@ import LoginScreen from './pages/LoginScreen';
 import { useAuth } from './context/AuthContext'; // Assuming you have an AuthContext to provide auth state
 
 // Protected Route Component
-function ProtectedRoute({ children }) {
-  const { user } = useAuth(); // useAuth returns the logged-in user or null if not logged in
+// function ProtectedRoute({ children }) {
+//   const { user } = useAuth(); // useAuth returns the logged-in user or null if not logged in
 
-  return user ? children : <Navigate to="/login" replace />;
-}
+//   return user ? children : <Navigate to="/login" replace />;
+// }
 
 export default function App() {
   return (
@@ -30,49 +30,49 @@ export default function App() {
             <Route
               path="/"
               element={
-                <ProtectedRoute>
+                // <ProtectedRoute>
                   <SearchScreen />
-                </ProtectedRoute>
+                // {/* </ProtectedRoute> */}
               }
             />
             <Route
               path="/products/:query"
               element={
-                <ProtectedRoute>
+                // <ProtectedRoute>
                   <ProductListScreen />
-                </ProtectedRoute>
+                // </ProtectedRoute>
               }
             />
             <Route
               path="/location/:productId"
               element={
-                <ProtectedRoute>
+                // <ProtectedRoute>
                   <ProductLocationScreen />
-                </ProtectedRoute>
+                // </ProtectedRoute>
               }
             />
             <Route
               path="/scan/:productId"
               element={
-                <ProtectedRoute>
+                // <ProtectedRoute>
                   <BarcodeScannerScreen />
-                </ProtectedRoute>
+                // </ProtectedRoute>
               }
             />
             <Route
               path="/cart"
               element={
-                <ProtectedRoute>
+                // <ProtectedRoute>
                   <CheckoutScreen />
-                </ProtectedRoute>
+                // </ProtectedRoute>
               }
             />
             <Route
               path="/checkout"
               element={
-                <ProtectedRoute>
+                // <ProtectedRoute>
                   <CheckoutScreen />
-                </ProtectedRoute>
+                // </ProtectedRoute>
               }
             />
           </Routes>

@@ -66,10 +66,12 @@ const StoreAisle = () => {
               stroke-width: 2px;
               opacity: 20%;
             }
+            .map {
+            heigth: 100px}
 
             /* Animation for marker */
 /* Animation for marker */
-.marker, .marker-image {
+.marker, .marker-image,.map {
   animation: fadeInFromTop 1s ease-in-out;
 }
 
@@ -110,7 +112,7 @@ const StoreAisle = () => {
           `}
         </style>
 
-        <image xlinkHref="../map.png" style={{ width: "100%" }} />
+        <image xlinkHref="../map.png" className="map" style={{ width: "100%" }} />
 
         {/* Render Aisles */}
         {aisleCoordinates.map(({ aisle, points }) => (

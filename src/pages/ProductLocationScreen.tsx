@@ -42,11 +42,11 @@ export default function ProductLocationScreen() {
   return (
     <div className="min-h-screen p-4">
       <h1 className="text-3xl font-bold mb-8">Product Location</h1>
-      <div className="bg-white p-4 rounded-lg shadow mb-4">
-        <p className="text-xl">Aisle: {aisle}</p>
-        <p className="text-xl">Shelf: {shelf}</p>
+      <div className="bg-white p-4 rounded-lg shadow m-8">
+        <p className="text-xl text-center">Aisle : {aisle}</p>
+        <p className="text-xl text-center mt-3">Shelf : {shelf}</p>
       </div>
-      <div className="bg-gray-200 w-auto h-auto mb-4" id='map'>
+      <div className="bg-gray-300 w-auto h-auto mb-8 mt-4" id='map'>
         <StoreAisle/>
       </div>
       <button
