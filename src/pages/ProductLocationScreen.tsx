@@ -50,11 +50,12 @@ export default function ProductLocationScreen() {
         <StoreAisle/>
       </div>
       <button
-        onClick={() => navigate(`/scan/${productId}`)}
-        className="w-full px-4 py-2 text-lg text-white bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500"
-      >
-        I've reached the product
-      </button>
+  onClick={() => navigate(`/product-details/${productId}`)}
+  className="w-full px-4 py-2 text-lg text-white bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500"
+>
+  I've reached the product
+</button>
+
     </div>
   );
 }

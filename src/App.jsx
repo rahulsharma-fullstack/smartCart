@@ -8,6 +8,7 @@ import BarcodeScannerScreen from './pages/BarcodeScannerScreen';
 import CheckoutScreen from './components/CheckoutScreen';
 import LoginScreen from './pages/LoginScreen';
 import { useAuth } from './context/AuthContext'; // Assuming you have an AuthContext to provide auth state
+import ProductDetailScreen from './pages/ProductDetailScreen';
 
 // Protected Route Component
 // function ProtectedRoute({ children }) {
@@ -51,6 +52,8 @@ export default function App() {
                 // </ProtectedRoute>
               }
             />
+            <Route path="/product-details/:productId" element={<ProductDetailScreen />} />
+
             <Route
               path="/scan/:productId"
               element={

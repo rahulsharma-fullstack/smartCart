@@ -24,7 +24,7 @@ const BarcodeScanner = () => {
       <div className="bg-white p-4 rounded shadow-lg">
       <BarcodeScannerComponent
         width={500}
-        height={500}
+        height={50}
         onUpdate={(err, result) => {
           if (result) setData(result.text);
           else setData("Not Found");
