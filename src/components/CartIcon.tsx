@@ -8,37 +8,39 @@ import { doc, getDoc } from 'firebase/firestore';
 
 export default function CartIcon() {
   const navigate = useNavigate();
-  const { cart } = useCart();
-  const [isHovered, setIsHovered] = useState(false);
+  const { cart } = useCart(); // Cart now contains full product objects
   const [cartItems, setCartItems] = useState([]);
   const [subtotal, setSubtotal] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
 
-  // Fetch product data from Firestore
+  // Calculate cart items and subtotal
   useEffect(() => {
     const fetchCartItems = async () => {
-      const items = [];
-      let total = 0;
-
       try {
-        // Fetch each product by ID (ensure you're using just the ID)
-        for (const productId of cart) {
-          if (typeof productId !== 'string' && typeof productId !== 'number') {
-            console.error('Invalid productId:', productId); // Log invalid product ID
-            continue; // Skip invalid IDs
-          }
+        let total = 0;
 
-          const productDoc = await getDoc(doc(db, 'products', productId.toString())); // Ensure productId is a string
+        // Check if the cart items already have full details
+        const items = await Promise.all(
+          cart.map(async (product) => {
+            if (product.name && product.price) {
+              total += product.price;
+              return product; // Use the existing product if it has details
+            } else {
+              // Fetch product from Firestore using ID if details are missing
+              const productDoc = await getDoc(doc(db, 'products', product.id));
+              if (productDoc.exists()) {
+                const fetchedProduct = productDoc.data();
+                total += fetchedProduct.price;
+                return { id: product.id, ...fetchedProduct };
+              } else {
+                console.error('No product found for ID:', product.id);
+                return null;
+              }
+            }
+          })
+        );
 
-          if (productDoc.exists()) {
-            const product = productDoc.data();
-            items.push({ id: productId, name: product.name, price: product.price });
-            total += product.price;
-          } else {
-            console.error('No product found for ID:', productId);
-          }
-        }
-
-        setCartItems(items);
+        setCartItems(items.filter(Boolean)); // Filter out null values
         setSubtotal(total);
       } catch (error) {
         console.error('Error fetching cart items from Firestore:', error);
@@ -51,12 +53,12 @@ export default function CartIcon() {
   const totalItems = cartItems.length;
 
   return (
-    <div 
+    <div
       className="fixed top-4 right-4 z-50"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div 
+      <div
         className="bg-orange-400 p-2 rounded-full shadow-lg cursor-pointer transition-all duration-300 hover:bg-orange-500"
       >
         <ShoppingCart className="w-6 h-6 text-white" />
@@ -66,7 +68,7 @@ export default function CartIcon() {
           </span>
         )}
       </div>
-      
+
       {isHovered && totalItems > 0 && (
         <div className="absolute top-full right-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 transition-all duration-300 ease-in-out">
           <div className="p-4">
@@ -86,13 +88,13 @@ export default function CartIcon() {
               </div>
             </div>
             <div className="mt-4 space-y-2">
-              <button 
+              <button
                 onClick={() => navigate('/cart')}
                 className="w-full px-4 py-2 text-sm text-white bg-yellow-500 rounded hover:bg-yellow-600 transition-colors duration-300"
               >
                 View Cart
               </button>
-              <button 
+              <button
                 onClick={() => navigate('/checkout')}
                 className="w-full px-4 py-2 text-sm text-white bg-orange-500 rounded hover:bg-orange-600 transition-colors duration-300"
               >

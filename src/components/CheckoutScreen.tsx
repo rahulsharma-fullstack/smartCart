@@ -6,30 +6,36 @@ import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebaseConfig'; // Import Firestore configuration
 
 export default function CheckoutScreen() {
-  const { cart } = useCart();
-  const [productsData, setProductsData] = useState([]); // State for products data
+  const { cart } = useCart(); // Use cart from context
   const navigate = useNavigate(); // Initialize navigate function
+  const [productsData, setProductsData] = useState([]); // State for all products in Firestore
 
-  // Fetch products from Firestore
+  // Fetch all products from Firestore (in case cart items need additional info)
   useEffect(() => {
     const fetchProducts = async () => {
       try {
         const querySnapshot = await getDocs(collection(db, 'products'));
-        const products = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        const products = querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
         setProductsData(products);
       } catch (e) {
-        console.error('Error fetching products: ', e);
+        console.error('Error fetching products:', e);
       }
     };
 
     fetchProducts();
   }, []);
 
-  // Get cart items based on product IDs in the cart
-  const cartItems = cart.map(id => productsData.find(item => item.id === id)).filter(item => item); // Filter out undefined items
+  // Prepare cart items: Use the cart directly if it contains full product objects
+  const cartItems = cart.map((item) => {
+    if (item.name && item.price) {
+      return item; // Already has full details
+    }
+    // Fallback: Fetch from productsData if the cart contains only IDs
+    return productsData.find((product) => product.id === item.id);
+  }).filter(Boolean); // Filter out undefined items (if some IDs are invalid)
 
-  // Check if there are any valid cart items to prevent errors in subtotal calculation
-  const subtotal = cartItems.reduce((sum, item) => sum + (item.price || 0), 0); // Default to 0 if price is undefined
+  // Calculate the subtotal
+  const subtotal = cartItems.reduce((sum, item) => sum + (item.price || 0), 0);
 
   return (
     <div className="min-h-screen p-4 pt-16">
@@ -42,6 +48,8 @@ export default function CheckoutScreen() {
           <Home className="w-6 h-6 text-gray-700" />
         </button>
       </div>
+
+      {/* Cart Items Section */}
       <div className="bg-white p-4 rounded-lg shadow mb-4">
         {cartItems.length > 0 ? (
           cartItems.map((item) => (
@@ -53,6 +61,8 @@ export default function CheckoutScreen() {
         ) : (
           <p className="text-center text-gray-500">Your cart is empty.</p>
         )}
+
+        {/* Subtotal Section */}
         <div className="border-t pt-2 mt-2">
           <div className="flex justify-between items-center font-bold">
             <span>Total:</span>
@@ -60,6 +70,8 @@ export default function CheckoutScreen() {
           </div>
         </div>
       </div>
+
+      {/* Checkout Button */}
       <button
         onClick={() => alert('Checkout process not implemented in this demo')}
         className="w-full px-4 py-2 text-lg text-white bg-orange-500 rounded-lg hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500"

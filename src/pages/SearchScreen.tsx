@@ -11,7 +11,7 @@ export default function SearchScreen() {
     const [showSuggestions, setShowSuggestions] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState(-1);
     const [productsData, setProductsData] = useState([]); // State for Firestore products
-    const [recommendedProducts, setRecommendedProducts] = useState([]); // State for recommendations
+    const [recommendedProducts, setRecommendedProducts] = useState([]); // State for AI-based recommendations
     const searchRef = useRef(null);
     const navigate = useNavigate();
     const { cart } = useCart();
@@ -33,45 +33,57 @@ export default function SearchScreen() {
 
         fetchProducts();
     }, []);
-
-    // Fetch recommendations based on the last added item in the cart
     useEffect(() => {
+        
         const fetchRecommendations = async () => {
+            // Toggle for development/testing mode
+            const useMockResponse = false; // Change to false to use actual API
+            console.log(import.meta.env);
+
             if (lastAddedProduct) {
                 try {
-                    const response = await axios.get(
-                        `http://localhost:3001/api/recommendations/${lastAddedProduct.id}`
-                    );
+                    if (useMockResponse) {
+                        // Dummy response for testing
+                        const recommendedItems = ["Milk", "Chocolate", "Cookies"];
+                        console.log("Using mock recommendations:", recommendedItems);
+                        setRecommendedProducts(recommendedItems);
+                    } else {
+                        // Actual API call
+                        const response = await axios.post(
+                            "https://api.openai.com/v1/chat/completions",
+                            {
+                                model: "gpt-3.5-turbo-0125",
+                                messages: [
+                                    {
+                                        role: "user",
+                                        content: `Suggest 3 products that can be bought with ${lastAddedProduct.name}, in one-word array.`
+                                    }
+                                ]
+                            },
+                            {
+                                headers: {
+                                    "Authorization": `Bearer ${import.meta.env.VITE_OPENAI_API_KEY}`,
+                                    "Content-Type": "application/json"
+                                }
+                            }
+                        );
     
-                    // Extract itemIds from the API response
-                    const recommendedIds = response.data.itemList.map(item => item.itemId);
+                        const recommendedItemsText = response.data.choices[0].message.content;
+                        console.log("AI Response:", recommendedItemsText);
     
-                    // Shuffle and pick 4 random items
-                    const randomIds = recommendedIds
-                        .sort(() => 0.5 - Math.random()) // Shuffle array
-                        .slice(0, 4); // Take the first 4 items
+                        // Parse the API response
+                        const recommendedItems = recommendedItemsText
+                            .split("\n")
+                            .map(item => item.replace(/^\d+\.\s*/, ""))
+                            .filter(item => item.trim() !== "");
     
-                    // Fetch product details from Firestore for the selected IDs
-                    const recommendedProductDetails = [];
-    
-                    for (const id of randomIds) {
-                        const productRef = doc(db, "products", id);
-                        const productDoc = await getDoc(productRef);
-    
-                        if (productDoc.exists()) {
-                            recommendedProductDetails.push({ id: productDoc.id, ...productDoc.data() });
-                        }
+                        console.log("Parsed Recommendations:", recommendedItems);
+                        setRecommendedProducts(recommendedItems);
                     }
-    
-                    // Set the recommended products in the state
-                    setRecommendedProducts(recommendedProductDetails);
-    
                 } catch (error) {
                     console.error("Error fetching recommendations: ", error);
-                    setRecommendedProducts([]); // Reset to an empty list if error occurs
+                    setRecommendedProducts([]);
                 }
-            } else {
-                setRecommendedProducts([]); // Reset if no last added product
             }
         };
     
@@ -79,7 +91,6 @@ export default function SearchScreen() {
     }, [lastAddedProduct]);
     
     
-
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (searchRef.current && !searchRef.current.contains(event.target)) {
@@ -140,6 +151,12 @@ export default function SearchScreen() {
         setShowSuggestions(false);
     };
 
+    // Handle Recommendation Click
+    const handleRecommendationClick = (productName) => {
+        setQuery(productName);
+        navigate(`/products/${encodeURIComponent(productName)}`);
+    };
+
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-4">
             <h1 className="text-3xl font-bold mb-8">Find Products in Store</h1>
@@ -183,27 +200,23 @@ export default function SearchScreen() {
             </div>
 
             {/* Recommendations Section */}
-            {hasItemsInCart && (
+            {hasItemsInCart && recommendedProducts.length > 0 && (
                 <div className="mt-12 w-full max-w-md">
-                    <h2 className="text-2xl font-bold mb-4">Recommended Products</h2>
-                    {recommendedProducts.length > 0 ? (
-                        <div className="grid grid-cols-2 gap-4 mb-4">
-                            {recommendedProducts.map((product) => (
-                                <div
-                                    key={product.id}
-                                    className="bg-white p-4 rounded-lg shadow cursor-pointer hover:shadow-lg transition-shadow"
-                                    onClick={() => navigate(`/location/${product.id}`)}
-                                >
-                                    <h3 className="text-lg font-semibold mb-2">
-                                        {product.name || `Product ID: ${product.id}`}
-                                    </h3>
-                                    {product.price && <p className="text-gray-600">${product.price.toFixed(2)}</p>}
-                                </div>
-                            ))}
-                        </div>
-                    ) : (
-                        <p className="text-center text-gray-500">No recommendations available.</p>
-                    )}
+                    <h2 className="text-2xl font-bold mb-4">Customers also buys these items with {lastAddedProduct.name}</h2>
+                    <div className="grid grid-cols-2 gap-4 mb-4">
+                        {recommendedProducts.map((product, idx) => (
+                            <div
+                                key={idx}
+                                className="bg-white p-4 rounded-lg shadow cursor-pointer hover:shadow-lg transition-shadow"
+                                onClick={() => handleRecommendationClick(product)}
+                            >
+                                <h3 className="text-lg font-semibold mb-2">
+                                    {product}
+                                </h3>
+                                {/* {product.price && <p className="text-gray-600">${product.price.toFixed(2)}</p>} */}
+                            </div>
+                        ))}
+                    </div>
                 </div>
             )}
         </div>

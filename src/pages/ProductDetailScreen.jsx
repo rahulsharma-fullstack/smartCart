@@ -38,7 +38,9 @@ export default function ProductDetailScreen() {
 
   const handleAddToCart = () => {
     if (product) {
-      addToCart(product.id);
+      // addToCart(product.id);
+      addToCart({ id: product.id, name: product.name });// Add the scanned product to cart
+
       navigate("/"); // Redirect to home or cart screen
     }
   };

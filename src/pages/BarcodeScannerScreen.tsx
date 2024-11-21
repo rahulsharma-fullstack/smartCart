@@ -65,7 +65,7 @@ export default function BarcodeScannerScreen() {
 
   const handleAddToCart = () => {
     if (scannedProduct) {
-      addToCart(scannedProduct.id); // Add the scanned product to cart
+      addToCart({ id: scannedProduct.id, name: scannedProduct.name });// Add the scanned product to cart
       navigate("/"); // Redirect after adding to cart
     }
   };
