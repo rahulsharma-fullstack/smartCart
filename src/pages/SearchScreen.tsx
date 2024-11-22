@@ -38,7 +38,7 @@ export default function SearchScreen() {
         const fetchRecommendations = async () => {
             // Toggle for development/testing mode
             const useMockResponse = false; // Change to false to use actual API
-            console.log(import.meta.env);
+            // console.log(import.meta.env);
 
             if (lastAddedProduct) {
                 try {
