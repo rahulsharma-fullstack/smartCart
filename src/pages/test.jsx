@@ -1,7 +1,8 @@
+// Import necessary libraries
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
-import { collection, getDocs, doc, getDoc } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebaseConfig"; // Import Firebase db configuration
 import axios from "axios"; // Add axios for API requests
 
@@ -34,24 +35,11 @@ export default function SearchScreen() {
         fetchProducts();
     }, []);
 
+    // Fetch Recommendations
     useEffect(() => {
         const fetchRecommendations = async () => {
-            // Toggle for development/testing mode
-            const useMockResponse = false;
-    
-            if (!lastAddedProduct || !lastAddedProduct.name) {
-                console.warn("No valid product to fetch recommendations for.");
-                return;
-            }
-    
-            try {
-                if (useMockResponse) {
-                    // Dummy response for testing
-                    const recommendedItems = ["Milk", "Chocolate", "Cookies"];
-                    console.log("Using mock recommendations:", recommendedItems);
-                    setRecommendedProducts(recommendedItems);
-                } else {
-                    // Actual API call
+            if (lastAddedProduct) {
+                try {
                     const response = await axios.post(
                         "https://api.openai.com/v1/chat/completions",
                         {
@@ -59,58 +47,42 @@ export default function SearchScreen() {
                             messages: [
                                 {
                                     role: "user",
-                                    content: `Suggest 6 products to buy with ${lastAddedProduct.name},  Return as 1 word JSON array of strings. e.g., ["Milk", "Butter", "Jam"]`,
+                                    content: `Suggest 3 products that can be bought with ${lastAddedProduct.name}, in one-word array format.`,
                                 },
                             ],
                         },
                         {
                             headers: {
-                                Authorization: `Bearer ${import.meta.env.VITE_OPENAI_API_KEY}`,
+                                "Authorization": `Bearer ${import.meta.env.sn}`, // Replace with your API key
                                 "Content-Type": "application/json",
                             },
                         }
                     );
-    console.log(response)
-                    // Validate response structure
-                    if (!response.data || !response.data.choices || !response.data.choices[0].message) {
-                        console.error("Unexpected API response structure:", response.data);
-                        setRecommendedProducts([]);
-                        return;
-                    }
-    
+
                     const recommendedItemsText = response.data.choices[0].message.content;
                     console.log("AI Response:", recommendedItemsText);
-    
-                    try {
-                        // Handle stringified array responses
-                        const recommendedItems = JSON.parse(recommendedItemsText);
-    
-                        if (Array.isArray(recommendedItems)) {
-                            setRecommendedProducts(recommendedItems);
-                        } else {
-                            console.error("Unexpected response format, expected an array:", recommendedItems);
-                            setRecommendedProducts([]);
-                        }
-                    } catch (err) {
-                        console.error("Error parsing response as JSON:", err);
+
+                    // Parse the API response to extract items as an array
+                    const recommendedItems = JSON.parse(recommendedItemsText);
+
+                    // Ensure the parsed items are valid
+                    if (Array.isArray(recommendedItems)) {
+                        setRecommendedProducts(recommendedItems);
+                    } else {
+                        console.error("Unexpected response format, expected an array:", recommendedItems);
                         setRecommendedProducts([]);
                     }
+                } catch (error) {
+                    console.error("Error fetching recommendations: ", error);
+                    setRecommendedProducts([]);
                 }
-            } catch (error) {
-                console.error("Error fetching recommendations: ", error);
-                setRecommendedProducts([]);
             }
         };
-    
-        // Debounced fetch
-        const timeout = setTimeout(() => {
-            fetchRecommendations();
-        }, 500);
-    
-        return () => clearTimeout(timeout); // Cleanup
+
+        fetchRecommendations();
     }, [lastAddedProduct]);
-     
-    
+
+    // Handle Click Outside
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (searchRef.current && !searchRef.current.contains(event.target)) {
@@ -222,7 +194,7 @@ export default function SearchScreen() {
             {/* Recommendations Section */}
             {hasItemsInCart && recommendedProducts.length > 0 && (
                 <div className="mt-12 w-full max-w-md">
-                    <h2 className="text-2xl font-bold mb-4">Customers also buys these items with {lastAddedProduct.name}</h2>
+                    <h2 className="text-2xl font-bold mb-4">Customers also buy these items with {lastAddedProduct.name}</h2>
                     <div className="grid grid-cols-2 gap-4 mb-4">
                         {recommendedProducts.map((product, idx) => (
                             <div
