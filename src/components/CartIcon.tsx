@@ -1,32 +1,28 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
-import { ShoppingCart } from 'lucide-react';
+import { ShoppingCart, ChevronRight, ShoppingBag } from 'lucide-react';
 import React from 'react';
-import { db } from '../firebaseConfig'; // Import your Firebase db configuration
+import { db } from '../firebaseConfig';
 import { doc, getDoc } from 'firebase/firestore';
 
 export default function CartIcon() {
   const navigate = useNavigate();
-  const { cart } = useCart(); // Cart now contains full product objects
+  const { cart } = useCart();
   const [cartItems, setCartItems] = useState([]);
   const [subtotal, setSubtotal] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
-  // Calculate cart items and subtotal
   useEffect(() => {
     const fetchCartItems = async () => {
       try {
         let total = 0;
-
-        // Check if the cart items already have full details
         const items = await Promise.all(
           cart.map(async (product) => {
             if (product.name && product.price) {
               total += product.price;
-              return product; // Use the existing product if it has details
+              return product;
             } else {
-              // Fetch product from Firestore using ID if details are missing
               const productDoc = await getDoc(doc(db, 'products', product.id));
               if (productDoc.exists()) {
                 const fetchedProduct = productDoc.data();
@@ -40,7 +36,7 @@ export default function CartIcon() {
           })
         );
 
-        setCartItems(items.filter(Boolean)); // Filter out null values
+        setCartItems(items.filter(Boolean));
         setSubtotal(total);
       } catch (error) {
         console.error('Error fetching cart items from Firestore:', error);
@@ -58,47 +54,67 @@ export default function CartIcon() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div
-        className="bg-orange-400 p-2 rounded-full shadow-lg cursor-pointer transition-all duration-300 hover:bg-orange-500"
-      >
+      {/* Cart Icon Button */}
+      <div className="bg-blue-600 p-3 rounded-full shadow-lg cursor-pointer transition-all duration-300 hover:bg-blue-700 relative group">
         <ShoppingCart className="w-6 h-6 text-white" />
         {totalItems > 0 && (
-          <span className="absolute -top-2 -right-2 bg-yellow-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+          <span className="absolute -top-2 -right-2 bg-blue-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center border-2 border-white">
             {totalItems}
           </span>
         )}
       </div>
 
+      {/* Cart Popup */}
       {isHovered && totalItems > 0 && (
-        <div className="absolute top-full right-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 transition-all duration-300 ease-in-out">
+        <div className="absolute top-full right-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-100 transition-all duration-300 ease-in-out overflow-hidden">
+          {/* Header */}
+          <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center">
+                <ShoppingBag className="w-5 h-5 text-blue-100 mr-2" />
+                <h3 className="font-bold text-lg text-white">Your Cart</h3>
+              </div>
+              <span className="text-blue-100 text-sm">{totalItems} items</span>
+            </div>
+          </div>
+
+          {/* Cart Items */}
           <div className="p-4">
-            <h3 className="font-bold text-lg mb-2">Cart ({totalItems} items)</h3>
-            <div className="max-h-48 overflow-y-auto">
+            <div className="max-h-48 overflow-y-auto space-y-2">
               {cartItems.map((item) => (
-                <div key={item.id} className="flex justify-between items-center mb-2">
-                  <span className="text-sm">{item.name}</span>
-                  <span className="text-sm font-semibold">${item.price.toFixed(2)}</span>
+                <div 
+                  key={item.id} 
+                  className="flex justify-between items-center p-2 hover:bg-gray-50 rounded-lg transition-colors"
+                >
+                  <span className="text-gray-700">{item.name}</span>
+                  <span className="text-blue-600 font-semibold">${item.price.toFixed(2)}</span>
                 </div>
               ))}
             </div>
-            <div className="border-t pt-2 mt-2">
-              <div className="flex justify-between items-center font-bold">
-                <span>Subtotal:</span>
-                <span>${subtotal.toFixed(2)}</span>
+
+            {/* Subtotal */}
+            <div className="border-t border-gray-100 mt-4 pt-4">
+              <div className="flex justify-between items-center">
+                <span className="text-gray-600">Subtotal</span>
+                <span className="text-lg font-bold text-blue-600">${subtotal.toFixed(2)}</span>
               </div>
             </div>
+
+            {/* Action Buttons */}
             <div className="mt-4 space-y-2">
               <button
                 onClick={() => navigate('/cart')}
-                className="w-full px-4 py-2 text-sm text-white bg-yellow-500 rounded hover:bg-yellow-600 transition-colors duration-300"
+                className="w-full px-4 py-2 text-sm font-medium text-blue-600 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors duration-300 flex items-center justify-center"
               >
                 View Cart
+                <ChevronRight className="w-4 h-4 ml-1" />
               </button>
               <button
                 onClick={() => navigate('/checkout')}
-                className="w-full px-4 py-2 text-sm text-white bg-orange-500 rounded hover:bg-orange-600 transition-colors duration-300"
+                className="w-full px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center"
               >
                 Proceed to Checkout
+                <ChevronRight className="w-4 h-4 ml-1" />
               </button>
             </div>
           </div>

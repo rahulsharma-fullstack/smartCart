@@ -1,17 +1,17 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
-import { collection, getDocs, doc, getDoc } from "firebase/firestore";
-import { db } from "../firebaseConfig"; // Import Firebase db configuration
-import axios from "axios"; // Add axios for API requests
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebaseConfig";
+import { Search } from "lucide-react";
 
 export default function SearchScreen() {
     const [query, setQuery] = useState("");
     const [suggestions, setSuggestions] = useState([]);
     const [showSuggestions, setShowSuggestions] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState(-1);
-    const [productsData, setProductsData] = useState([]); // State for Firestore products
-    const [recommendedProducts, setRecommendedProducts] = useState([]); // State for AI-based recommendations
+    const [productsData, setProductsData] = useState([]);
+    const [recommendedProducts, setRecommendedProducts] = useState([]);
     const searchRef = useRef(null);
     const navigate = useNavigate();
     const { cart } = useCart();
@@ -37,7 +37,7 @@ export default function SearchScreen() {
     useEffect(() => {
         const fetchRecommendations = async () => {
             // Toggle for development/testing mode
-            const useMockResponse = false;
+            const useMockResponse = true;
     
             if (!lastAddedProduct || !lastAddedProduct.name) {
                 console.warn("No valid product to fetch recommendations for.");
@@ -178,64 +178,101 @@ export default function SearchScreen() {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen p-4">
-            <h1 className="text-3xl font-bold mb-8">Find Products in Store</h1>
-            <div className="w-full max-w-md relative" ref={searchRef}>
-                <form onSubmit={handleSearch} className="relative">
-                    <input
-                        type="text"
-                        value={query}
-                        onChange={handleInputChange}
-                        onKeyDown={handleKeyDown}
-                        onFocus={() => setShowSuggestions(true)}
-                        placeholder="Search for a product..."
-                        className="w-full px-4 py-2 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                    <button
-                        type="submit"
-                        className="absolute right-2 top-1/2 transform -translate-y-1/2 px-4 py-1 text-sm text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    >
-                        Search
-                    </button>
-                </form>
-
-                {showSuggestions && suggestions.length > 0 && (
-                    <div className="absolute z-10 w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg max-h-60 overflow-y-auto">
-                        {suggestions.map((product, index) => (
-                            <div
-                                key={product.id}
-                                onClick={() => handleSuggestionClick(product)}
-                                className={`px-4 py-2 cursor-pointer hover:bg-gray-100 ${
-                                    index === selectedIndex ? "bg-gray-100" : ""
-                                }`}
-                            >
-                                <div className="flex justify-between items-center">
-                                    <span className="font-medium">{product.name}</span>
-                                    <span className="text-gray-600">${product.price.toFixed(2)}</span>
-                                </div>
+        <div className="min-h-screen bg-gray-50">
+            {/* Hero Section */}
+            <div className="bg-gradient-to-r from-blue-600 to-blue-800 py-16">
+                <div className="container mx-auto px-4">
+                    <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-6">
+                        Find Products in Store
+                    </h1>
+                    <p className="text-blue-100 text-center mb-8 text-lg">
+                        Search from our wide selection of products
+                    </p>
+                    
+                    {/* Search Box */}
+                    <div className="max-w-2xl mx-auto relative" ref={searchRef}>
+                        <form onSubmit={handleSearch} className="relative">
+                            <div className="relative">
+                                <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
+                                <input
+                                    type="text"
+                                    value={query}
+                                    onChange={handleInputChange}
+                                    onKeyDown={handleKeyDown}
+                                    onFocus={() => setShowSuggestions(true)}
+                                    placeholder="Search for a product..."
+                                    className="w-full pl-12 pr-24 py-4 text-lg border-0 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                />
+                                <button
+                                    type="submit"
+                                    className="absolute right-2 top-1/2 transform -translate-y-1/2 px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                                >
+                                    Search
+                                </button>
                             </div>
-                        ))}
+                        </form>
+
+                        {/* Suggestions Dropdown */}
+                        {showSuggestions && suggestions.length > 0 && (
+                            <div className="absolute z-10 w-full mt-2 bg-white rounded-lg shadow-xl border border-gray-100 max-h-96 overflow-y-auto">
+                                {suggestions.map((product, index) => (
+                                    <div
+                                        key={product.id}
+                                        onClick={() => handleSuggestionClick(product)}
+                                        className={`px-6 py-4 cursor-pointer hover:bg-gray-50 transition-colors ${
+                                            index === selectedIndex ? "bg-gray-50" : ""
+                                        }`}
+                                    >
+                                        <div className="flex justify-between items-center">
+                                            <span className="font-medium text-gray-800">{product.name}</span>
+                                            <span className="text-blue-600 font-semibold">${product.price.toFixed(2)}</span>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
                     </div>
-                )}
+                </div>
             </div>
 
             {/* Recommendations Section */}
             {hasItemsInCart && recommendedProducts.length > 0 && (
-                <div className="mt-12 w-full max-w-md">
-                    <h2 className="text-2xl font-bold mb-4">Customers also buys these items with {lastAddedProduct.name}</h2>
-                    <div className="grid grid-cols-2 gap-4 mb-4">
-                        {recommendedProducts.map((product, idx) => (
-                            <div
-                                key={idx}
-                                className="bg-white p-4 rounded-lg shadow cursor-pointer hover:shadow-lg transition-shadow"
-                                onClick={() => handleRecommendationClick(product)}
-                            >
-                                <h3 className="text-lg font-semibold mb-2">{product}</h3>
-                            </div>
-                        ))}
+                <div className="container mx-auto px-4 py-12">
+                    <div className="max-w-6xl mx-auto">
+                        <div className="flex items-center justify-between mb-8">
+                            <h2 className="text-2xl font-bold text-gray-800">
+                                Frequently Bought Together with {lastAddedProduct.name}
+                            </h2>
+                        </div>
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                            {recommendedProducts.map((product, idx) => (
+                                <div
+                                    key={idx}
+                                    onClick={() => handleRecommendationClick(product)}
+                                    className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden cursor-pointer group"
+                                >
+                                    <div className="aspect-w-1 aspect-h-1 w-full">
+                                        <img
+                                            src={`../img.webp`}
+                                            alt={product}
+                                            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                                        />
+                                    </div>
+                                    <div className="p-4">
+                                        <h3 className="text-lg font-semibold text-gray-800 mb-2">{product}</h3>
+                                        <div className="flex items-center justify-between">
+                                            <span className="text-sm text-gray-500">Click to view details</span>
+                                            <div className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
+                                                Recommended
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             )}
         </div>
     );
-}
+};
