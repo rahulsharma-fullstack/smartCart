@@ -37,7 +37,7 @@ export default function SearchScreen() {
     useEffect(() => {
         const fetchRecommendations = async () => {
             // Toggle for development/testing mode
-            const useMockResponse = true;
+            const useMockResponse = false;
     
             if (!lastAddedProduct || !lastAddedProduct.name) {
                 console.warn("No valid product to fetch recommendations for.");
@@ -70,7 +70,7 @@ export default function SearchScreen() {
                             },
                         }
                     );
-    console.log(response)
+    // console.log(response)
                     // Validate response structure
                     if (!response.data || !response.data.choices || !response.data.choices[0].message) {
                         console.error("Unexpected API response structure:", response.data);
