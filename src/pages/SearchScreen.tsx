@@ -38,7 +38,7 @@ export default function SearchScreen() {
     // Fetch recommendations based on the last added product
     useEffect(() => {
         const fetchRecommendations = async () => {
-            const useMockResponse = true;
+            const useMockResponse = false;
 
             if (!lastAddedProduct || !lastAddedProduct.name) {
                 console.warn("No valid product to fetch recommendations for.");
