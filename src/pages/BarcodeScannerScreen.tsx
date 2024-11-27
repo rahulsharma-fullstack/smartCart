@@ -86,9 +86,9 @@ export default function BarcodeScannerScreen() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
               <Barcode className="w-8 h-8 text-blue-200 mr-3" />
-              <h1 className="text-4xl font-bold text-white">Barcode Scanner</h1>
+              <h1 className="text-2xl font-bold text-white">Barcode Scanner</h1>
             </div>
-            <p className="text-xl text-blue-100">
+            <p className="text-lg text-blue-100">
               {product ? `Verifying: ${product.name}` : "Scan a product barcode"}
             </p>
           </div>
@@ -157,7 +157,7 @@ export default function BarcodeScannerScreen() {
 
           {/* Action Buttons */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {!showScanner && (
+            {/* { (
               <button
                 onClick={handleScanAgain}
                 className="flex items-center justify-center px-6 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors"
@@ -165,8 +165,8 @@ export default function BarcodeScannerScreen() {
                 <RefreshCcw className="w-5 h-5 mr-2" />
                 <span className="font-medium">Scan Again</span>
               </button>
-            )}
-            {scannedProduct && (
+            )} */}
+            {!showScanner && scannedProduct && (
               <button
                 onClick={handleAddToCart}
                 className="flex items-center justify-center px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
@@ -180,7 +180,7 @@ export default function BarcodeScannerScreen() {
           {/* Back Button */}
           <button
             onClick={() => navigate(-1)}
-            className="w-full mt-4 bg-gray-100 text-gray-600 rounded-lg py-3 px-6 flex items-center justify-center hover:bg-gray-200 transition-colors"
+            className="w-full mt-4 bg-gray-500 text-white rounded-lg py-3 px-6 flex items-center justify-center hover:bg-gray-200 transition-colors"
           >
             ← Go Back
           </button>

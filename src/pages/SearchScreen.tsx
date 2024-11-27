@@ -38,7 +38,7 @@ export default function SearchScreen() {
     useEffect(() => {
         const fetchRecommendations = async () => {
             // Toggle for development/testing mode
-            const useMockResponse = false;
+            const useMockResponse = true;
     
             if (!lastAddedProduct || !lastAddedProduct.name) {
                 console.warn("No valid product to fetch recommendations for.");
@@ -183,7 +183,7 @@ export default function SearchScreen() {
             {/* Hero Section */}
             <div className="bg-gradient-to-r from-blue-600 to-blue-800 py-16">
                 <div className="container mx-auto px-4">
-                    <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-6">
+                    <h1 className="text-2xl md:text-5xl font-bold text-white text-center mb-6">
                         Find Products in Store
                     </h1>
                     <p className="text-blue-100 text-center mb-8 text-lg">
@@ -202,7 +202,7 @@ export default function SearchScreen() {
                                     onKeyDown={handleKeyDown}
                                     onFocus={() => setShowSuggestions(true)}
                                     placeholder="Search for a product..."
-                                    className="w-full pl-12 pr-24 py-4 text-lg border-0 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    className="w-full pl-12 pr-24 py-4 text-sm border-0 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 />
                                 <button
                                     type="submit"
@@ -238,11 +238,11 @@ export default function SearchScreen() {
 
             {/* Recommendations Section */}
             {hasItemsInCart && recommendedProducts.length > 0 && (
-                <div className="container mx-auto px-4 py-12">
+                <div className="container mx-auto px-4 py-8">
                     <div className="max-w-6xl mx-auto">
                         <div className="flex items-center justify-between mb-8">
-                            <h2 className="text-2xl font-bold text-gray-800">
-                                Frequently Bought Together with {lastAddedProduct.name}
+                            <h2 className="text-lg font-bold text-gray-800">
+                                Frequently Bought Together with:- {lastAddedProduct.name}
                             </h2>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -254,17 +254,17 @@ export default function SearchScreen() {
                                 >
                                     <div className="aspect-w-1 aspect-h-1 w-full">
                                         <img
-                                            src={`../img.webp`}
+                                            src={`../no_img.png`}
                                             alt={product}
-                                            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                                            className="w-full h-38 object-cover group-hover:scale-105 transition-transform duration-300"
                                         />
                                     </div>
                                     <div className="p-4">
                                         <h3 className="text-lg font-semibold text-gray-800 mb-2">{product}</h3>
-                                        <div className="flex items-center justify-between">
-                                            <span className="text-sm text-gray-500">Click to view details</span>
+                                        <div className="flex items-center justify-between flex-col">
+                                            <span className="text-sm text-gray-500 mb-2">Click to view details</span>
                                             <div className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
-                                                Recommended
+                                                Recommended AI
                                             </div>
                                         </div>
                                     </div>

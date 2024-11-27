@@ -73,9 +73,9 @@ export default function ProductLocationScreen() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
               <MapPin className="w-8 h-8 text-blue-200 mr-3" />
-              <h1 className="text-4xl font-bold text-white">Product Location</h1>
+              <h1 className="text-2xl font-bold text-white">Product Location</h1>
             </div>
-            <p className="text-xl text-blue-100">
+            <p className="text-lg md:text-xl text-blue-100">
               Finding: {name}
             </p>
           </div>
@@ -91,12 +91,12 @@ export default function ProductLocationScreen() {
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center">
                   <img
-                    src="/api/placeholder/100/100"
+                    src="../no_img.png"
                     alt={name}
                     className="w-16 h-16 object-cover rounded-lg mr-4"
                   />
                   <div>
-                    <h2 className="text-2xl font-semibold text-gray-800">{name}</h2>
+                    <h2 className="text-xl font-semibold text-gray-800">{name}</h2>
                     <p className="text-blue-600 font-medium">${price?.toFixed(2)}</p>
                   </div>
                 </div>
