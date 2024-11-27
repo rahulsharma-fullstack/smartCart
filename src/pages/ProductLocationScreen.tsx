@@ -68,10 +68,10 @@ export default function ProductLocationScreen() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-800 py-12">
+      <div className="bg-gradient-to-r from-blue-600 to-blue-800 py-8">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="flex items-center justify-center mb-6">
+            <div className="flex items-center justify-center mb-4">
               <MapPin className="w-8 h-8 text-blue-200 mr-3" />
               <h1 className="text-2xl font-bold text-white">Product Location</h1>
             </div>
@@ -83,12 +83,12 @@ export default function ProductLocationScreen() {
       </div>
 
       {/* Content Section */}
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-4">
         <div className="max-w-4xl mx-auto">
           {/* Product Info Card */}
           <div className="bg-white rounded-lg shadow-md mb-8">
             <div className="p-6">
-              <div className="flex items-center justify-between mb-6">
+              {/* <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center">
                   <img
                     src="../no_img.png"
@@ -96,26 +96,26 @@ export default function ProductLocationScreen() {
                     className="w-16 h-16 object-cover rounded-lg mr-4"
                   />
                   <div>
-                    <h2 className="text-xl font-semibold text-gray-800">{name}</h2>
+                    <h2 className="text-lg font-semibold text-gray-800">{name}</h2>
                     <p className="text-blue-600 font-medium">${price?.toFixed(2)}</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="grid grid-cols-2 gap-4 mb-6">
+              <div className="grid grid-cols-2 gap-4 mb-2">
                 <div className="bg-blue-50 rounded-lg p-4">
                   <div className="flex items-center mb-2">
                     <Layers className="w-5 h-5 text-blue-600 mr-2" />
                     <span className="text-gray-600 font-medium">Aisle</span>
                   </div>
-                  <p className="text-2xl font-bold text-blue-600">{aisle}</p>
+                  <p className="text-xl font-bold text-blue-600">{aisle}</p>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-4">
                   <div className="flex items-center mb-2">
                     <Package className="w-5 h-5 text-blue-600 mr-2" />
                     <span className="text-gray-600 font-medium">Shelf</span>
                   </div>
-                  <p className="text-2xl font-bold text-blue-600">{shelf}</p>
+                  <p className="text-xl font-bold text-blue-600">{shelf}</p>
                 </div>
               </div>
             </div>

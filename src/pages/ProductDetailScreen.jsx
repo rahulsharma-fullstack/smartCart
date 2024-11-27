@@ -103,7 +103,7 @@ export default function ProductDetailScreen() {
                     className="w-24 h-24 object-cover rounded-lg mr-4"
                   />
                   <div>
-                    <h2 className="text-xl font-semibold text-gray-800">{product.name}</h2>
+                    <h2 className="text-lg font-semibold text-gray-800">{product.name}</h2>
                     <p className="text-blue-600 text-lg font-medium">${product.price?.toFixed(2)}</p>
                   </div>
                 </div>
@@ -115,21 +115,21 @@ export default function ProductDetailScreen() {
                     <MapPin className="w-5 h-5 text-blue-600 mr-2" />
                     <span className="text-gray-600 font-medium">Aisle</span>
                   </div>
-                  <p className="text-2xl font-bold text-blue-600">{product.aisle}</p>
+                  <p className="text-lg font-bold text-blue-600">{product.aisle}</p>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-4">
                   <div className="flex items-center mb-2">
                     <LayersIcon className="w-5 h-5 text-blue-600 mr-2" />
                     <span className="text-gray-600 font-medium">Shelf</span>
                   </div>
-                  <p className="text-2xl font-bold text-blue-600">{product.shelf}</p>
+                  <p className="text-lg font-bold text-blue-600">{product.shelf}</p>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-4">
                   <div className="flex items-center mb-2">
                     <Box className="w-5 h-5 text-blue-600 mr-2" />
                     <span className="text-gray-600 font-medium">Category</span>
                   </div>
-                  <p className="text-xl font-bold text-blue-600">{product.category}</p>
+                  <p className="text-lg font-bold text-blue-600">{product.category}</p>
                 </div>
               </div>
 

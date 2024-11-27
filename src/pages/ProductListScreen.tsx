@@ -51,16 +51,16 @@ export default function ProductListScreen() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section - More compact for mobile */}
-      <div className="bg-gradient-to-r from-indigo-600 to-purple-600 py-8 sm:py-16">
+      <div className="bg-gradient-to-r from-blue-600 to-blue-800 py-8 sm:py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-4 sm:mb-6">
-              <Search className="w-8 h-8 sm:w-10 sm:h-10 text-indigo-200 mr-3 sm:mr-4" />
+              <Search className="w-8 h-8 sm:w-10 sm:h-10 text-blue-200 mr-3 sm:mr-4" />
               <h1 className="text-2xl sm:text-4xl font-bold text-white">
                 Search Results
               </h1>
             </div>
-            <p className="text-lg sm:text-xl text-indigo-100 mb-4 sm:mb-8">
+            <p className="text-lg sm:text-xl text-blue-100 mb-4 sm:mb-8">
               Found {filteredProducts.length} products matching "{query}"
             </p>
           </div>
@@ -82,7 +82,7 @@ export default function ProductListScreen() {
                   id="sort-select"
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
-                  className="appearance-none w-full bg-gray-50 border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-indigo-500 transition duration-150 ease-in-out"
+                  className="appearance-none w-full bg-gray-50 border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-blue-500 transition duration-150 ease-in-out"
                 >
                   <option value="name">Name</option>
                   <option value="price-low">Price: Low to High</option>
@@ -99,7 +99,7 @@ export default function ProductListScreen() {
         {/* Products Grid - Single column on mobile */}
         {loading ? (
           <div className="flex justify-center items-center py-12 sm:py-20">
-            <div className="animate-spin rounded-full h-12 w-12 sm:h-16 sm:w-16 border-t-4 border-b-4 border-indigo-600"></div>
+            <div className="animate-spin rounded-full h-12 w-12 sm:h-16 sm:w-16 border-t-4 border-b-4 border-blue-600"></div>
           </div>
         ) : (
           <div className="max-w-7xl mx-auto">
@@ -122,28 +122,28 @@ export default function ProductListScreen() {
                         </div>
                       </div>
                       <div className="w-2/3 sm:w-full p-4 sm:p-6">
-                        <h2 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2 sm:mb-4 group-hover:text-indigo-600 transition-colors">
+                        <h2 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2 sm:mb-4 group-hover:text-blue-600 transition-colors">
                           {product.name}
                         </h2>
                         
                         <div className="space-y-2 sm:space-y-3 mb-3 sm:mb-6">
                           <div className="flex items-center text-gray-600">
-                            <DollarSign className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-indigo-500" />
+                            <DollarSign className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-blue-500" />
                             <span className="font-medium">${product.price.toFixed(2)}</span>
                           </div>
                           
                           <div className="flex items-center text-gray-600">
-                            <Ruler className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-indigo-500" />
+                            <Ruler className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-blue-500" />
                             <span className="text-sm sm:text-base">{product.size || 'Standard size'}</span>
                           </div>
                           
                           <div className="flex items-center text-gray-600">
-                            <Package className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-indigo-500" />
+                            <Package className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-blue-500" />
                             <span className="text-sm sm:text-base">In stock</span>
                           </div>
                         </div>
                         
-                        <button className="w-full px-4 py-2 sm:px-6 sm:py-3 bg-indigo-50 text-indigo-600 rounded-lg text-sm font-medium hover:bg-indigo-100 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                        <button className="w-full px-4 py-2 sm:px-6 sm:py-3 bg-blue-50 text-blue-600 rounded-lg text-sm font-medium hover:bg-blue-100 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                           View Location
                         </button>
                       </div>
