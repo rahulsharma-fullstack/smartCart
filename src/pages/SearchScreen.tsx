@@ -4,6 +4,7 @@ import { useCart } from "../context/CartContext";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebaseConfig";
 import { Search } from "lucide-react";
+import axios from "axios";
 
 export default function SearchScreen() {
     const [query, setQuery] = useState("");
