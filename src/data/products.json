@@ -6,10 +6,12 @@
         "category": "backpack",
         "size": "3",
         "aisle": 16,
+        "img": "https://i5.walmartimages.com/asr/11ada36a-9eb7-4128-86aa-a51f54d6aa22.96e5a63a09603552a4191c2264b3593e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
         "shelf": 41
     },
     {
         "id": "2e852905-c6f4-47db-802c-654013571922",
+        "img": "https://i5.walmartimages.com/asr/11ada36a-9eb7-4128-86aa-a51f54d6aa22.96e5a63a09603552a4191c2264b3593e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
         "name": "Mauve Leather Daypack",
         "price": 149.99,
         "category": "backpack",
@@ -19,6 +21,7 @@
     },
     {
         "id": "4ec7ff5c-f70f-4984-b6c4-c7ef37cc0c09",
+        "img": "https://i5.walmartimages.com/asr/11ada36a-9eb7-4128-86aa-a51f54d6aa22.96e5a63a09603552a4191c2264b3593e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
         "name": "Lacy Crochet Summer Backpack",
         "price": 49.99,
         "category": "backpack",
@@ -28,6 +31,7 @@
     },
     {
         "id": "7977f680-2cf7-457d-8f4d-afa0aa168cb9",
+        "img": "https://i5.walmartimages.com/asr/11ada36a-9eb7-4128-86aa-a51f54d6aa22.96e5a63a09603552a4191c2264b3593e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
         "name": "Adventure-Ready Rugged Backpack",
         "price": 89.99,
         "category": "backpack",
@@ -37,6 +41,7 @@
     },
     {
         "id": "b5649d7c-4651-458d-a07f-912f253784ce",
+        "img": "https://i5.walmartimages.com/asr/11ada36a-9eb7-4128-86aa-a51f54d6aa22.96e5a63a09603552a4191c2264b3593e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
         "name": "Chic Caramel Leather Backpack",
         "price": 189.99,
         "category": "backpack",
@@ -46,6 +51,7 @@
     },
     {
         "id": "296d144e-7f86-464b-9c5a-f545257f1700",
+        "img": "https://i5.walmartimages.com/asr/11ada36a-9eb7-4128-86aa-a51f54d6aa22.96e5a63a09603552a4191c2264b3593e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
         "name": "Urban Explorer Leather Backpack",
         "price": 129.99,
         "category": "backpack",
@@ -55,6 +61,7 @@
     },
     {
         "id": "7d3e7f5b-8ac8-49a9-a960-8a24773a8280",
+        "img": "https://i5.walmartimages.com/asr/11ada36a-9eb7-4128-86aa-a51f54d6aa22.96e5a63a09603552a4191c2264b3593e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
         "name": "Vintage Leather Adventure Backpack",
         "price": 129.99,
         "category": "backpack",
@@ -64,6 +71,7 @@
     },
     {
         "id": "1d3ae532-f790-44ca-a8e8-f55aa9b66526",
+        "img": "https://i5.walmartimages.com/asr/11ada36a-9eb7-4128-86aa-a51f54d6aa22.96e5a63a09603552a4191c2264b3593e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
         "name": "Plush Velvet Urban Backpack",
         "price": 79.99,
         "category": "backpack",
@@ -73,6 +81,7 @@
     },
     {
         "id": "f6cd5dd2-d3ea-4858-844a-04879153e459",
+        "img": "https://i5.walmartimages.com/asr/11ada36a-9eb7-4128-86aa-a51f54d6aa22.96e5a63a09603552a4191c2264b3593e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
         "name": "Urban Chic Leather Backpack",
         "price": 149.99,
         "category": "backpack",
@@ -82,6 +91,7 @@
     },
     {
         "id": "3491deff-c0fe-4065-abbc-72b507da84b2",
+        "img": "https://i5.walmartimages.com/asr/11ada36a-9eb7-4128-86aa-a51f54d6aa22.96e5a63a09603552a4191c2264b3593e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
         "name": "Magical Unicorn Kids Backpack",
         "price": 29.99,
         "category": "backpack",
@@ -91,6 +101,7 @@
     },
     {
         "id": "1a3fa9d4-e320-4873-be58-f3f6af5f99f4",
+        "img": "https://i5.walmartimages.com/asr/11ada36a-9eb7-4128-86aa-a51f54d6aa22.96e5a63a09603552a4191c2264b3593e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
         "name": "Rustic Charm Leather Backpack",
         "price": 129.99,
         "category": "backpack",
@@ -100,6 +111,7 @@
     },
     {
         "id": "da1f2a8f-5372-4102-b357-9e40900ebb08",
+        "img": "https://i5.walmartimages.com/asr/11ada36a-9eb7-4128-86aa-a51f54d6aa22.96e5a63a09603552a4191c2264b3593e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
         "name": "Vibrant Explorer's Daypack",
         "price": 79.99,
         "category": "backpack",
@@ -109,6 +121,7 @@
     },
     {
         "id": "0c47dade-1ec0-483a-9ab4-1b87604bdaf8",
+        "img": "https://i5.walmartimages.com/asr/11ada36a-9eb7-4128-86aa-a51f54d6aa22.96e5a63a09603552a4191c2264b3593e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
         "name": "Blush Elegance Crossbody Bag",
         "price": 129.99,
         "category": "backpack",
@@ -118,6 +131,7 @@
     },
     {
         "id": "f995ec8d-237c-4513-8bfa-9aee210f097c",
+        "img": "https://i5.walmartimages.com/asr/11ada36a-9eb7-4128-86aa-a51f54d6aa22.96e5a63a09603552a4191c2264b3593e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
         "name": "Rugged Wilderness Explorer Backpack",
         "price": 89.99,
         "category": "backpack",
@@ -127,6 +141,7 @@
     },
     {
         "id": "41ab23ce-b417-46b2-a52a-bf7030f93161",
+        "img": "https://i5.walmartimages.com/asr/11ada36a-9eb7-4128-86aa-a51f54d6aa22.96e5a63a09603552a4191c2264b3593e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
         "name": "Blush Harmony Backpack",
         "price": 49.99,
         "category": "backpack",
@@ -136,6 +151,7 @@
     },
     {
         "id": "b438ff91-d7cc-461b-b7fb-951d195e32bb",
+        "img": "https://i5.walmartimages.com/asr/11ada36a-9eb7-4128-86aa-a51f54d6aa22.96e5a63a09603552a4191c2264b3593e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
         "name": "Owl Eyes Designer Handbag",
         "price": 189.99,
         "category": "backpack",
@@ -145,6 +161,7 @@
     },
     {
         "id": "d2d5b3ba-8e15-4161-b50a-e56869e20eb2",
+        "img": "https://i5.walmartimages.com/asr/11ada36a-9eb7-4128-86aa-a51f54d6aa22.96e5a63a09603552a4191c2264b3593e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
         "name": "TrekMaster Pro Hiking Backpack",
         "price": 189.99,
         "category": "backpack",
@@ -154,6 +171,7 @@
     },
     {
         "id": "bb7d8938-2183-4556-a6af-c3761c094711",
+        "img": "https://www.targus.com/content/images/thumbs/0025943_urban-explorer-156-laptop-backpack-blue.jpeg",
         "name": "Sunshine Voyager Canvas Backpack",
         "price": 79.99,
         "category": "backpack",
@@ -163,6 +181,7 @@
     },
     {
         "id": "ccf64e5d-bee5-438a-99b7-14d8cf33596a",
+        "img": "https://www.targus.com/content/images/thumbs/0025943_urban-explorer-156-laptop-backpack-blue.jpeg",
         "name": "Urban Explorer Waterproof Backpack",
         "price": 89.99,
         "category": "backpack",
@@ -172,6 +191,7 @@
     },
     {
         "id": "77165ec4-e965-47b2-adbc-5d0e519c00ed",
+        "img": "https://www.targus.com/content/images/thumbs/0025943_urban-explorer-156-laptop-backpack-blue.jpeg",
         "name": "Sunset Camo Adventure Backpack",
         "price": 89.99,
         "category": "backpack",
@@ -181,6 +201,7 @@
     },
     {
         "id": "a6d169a8-4d21-4cb3-b04a-ba3c978b6009",
+        "img": "https://www.targus.com/content/images/thumbs/0025943_urban-explorer-156-laptop-backpack-blue.jpeg",
         "name": "Adventure Seeker Hiking Backpack",
         "price": 129.99,
         "category": "backpack",
@@ -190,6 +211,7 @@
     },
     {
         "id": "2c27752b-8194-489f-96fa-be356fd811e0",
+        "img": "https://www.targus.com/content/images/thumbs/0025943_urban-explorer-156-laptop-backpack-blue.jpeg",
         "name": "Adventurer's Waterproof Backpack",
         "price": 89.99,
         "category": "backpack",
@@ -199,6 +221,7 @@
     },
     {
         "id": "84d6c26d-9760-49d8-854b-0a22becd8241",
+        "img": "https://www.targus.com/content/images/thumbs/0025943_urban-explorer-156-laptop-backpack-blue.jpeg",
         "name": "Voyager's Compass Backpack",
         "price": 59.99,
         "category": "backpack",
@@ -208,6 +231,7 @@
     },
     {
         "id": "f95a0ee3-8ab6-4061-bef2-3578c6b5b7f0",
+        "img": "https://www.targus.com/content/images/thumbs/0025943_urban-explorer-156-laptop-backpack-blue.jpeg",
         "name": "Sleek Urban Explorer Backpack",
         "price": 79.99,
         "category": "backpack",
@@ -217,6 +241,7 @@
     },
     {
         "id": "01b24cde-af53-4629-b7f0-0965f795b870",
+        "img": "https://www.targus.com/content/images/thumbs/0025943_urban-explorer-156-laptop-backpack-blue.jpeg",
         "name": "Sunburst Adventure Backpack",
         "price": 59.99,
         "category": "backpack",
@@ -226,6 +251,7 @@
     },
     {
         "id": "d062cb1b-09de-4b7f-bfd3-b0136c87266b",
+        "img": "https://www.targus.com/content/images/thumbs/0025943_urban-explorer-156-laptop-backpack-blue.jpeg",
         "name": "Tactical Explorer Backpack",
         "price": 89.99,
         "category": "backpack",
@@ -235,6 +261,7 @@
     },
     {
         "id": "f9a481fc-b635-416b-83da-ea944f206a6d",
+        "img": "https://www.targus.com/content/images/thumbs/0025943_urban-explorer-156-laptop-backpack-blue.jpeg",
         "name": "Urban Explorer Backpack",
         "price": 89.99,
         "category": "backpack",
@@ -244,6 +271,7 @@
     },
     {
         "id": "b78718ce-5f0a-4f39-8eb0-56de026b4870",
+        "img": "https://www.targus.com/content/images/thumbs/0025943_urban-explorer-156-laptop-backpack-blue.jpeg",
         "name": "Adventure Pro Photography Backpack",
         "price": 129.99,
         "category": "backpack",
@@ -253,6 +281,7 @@
     },
     {
         "id": "95a38ced-a972-4e9f-b54d-fbd109ad956e",
+        "img": "https://www.targus.com/content/images/thumbs/0025943_urban-explorer-156-laptop-backpack-blue.jpeg",
         "name": "Vintage Explorer's Canvas Backpack",
         "price": 79.99,
         "category": "backpack",
@@ -262,6 +291,7 @@
     },
     {
         "id": "437f3c6b-5fe6-4af0-9db6-ff3a0f44f585",
+        "img": "https://www.targus.com/content/images/thumbs/0025943_urban-explorer-156-laptop-backpack-blue.jpeg",
         "name": "Vintage Explorer Canvas Leather Backpack",
         "price": 189.99,
         "category": "backpack",
@@ -271,6 +301,7 @@
     },
     {
         "id": "fdf9d37f-2115-4004-99f2-0d56f8e5d016",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Rustic Leather Messenger Satchel",
         "price": 189.99,
         "category": "backpack",
@@ -280,6 +311,7 @@
     },
     {
         "id": "b535e4ad-3f3c-4b05-9715-9dc7077239de",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Whimsical Wonder Kids Backpack",
         "price": 34.99,
         "category": "backpack",
@@ -289,6 +321,7 @@
     },
     {
         "id": "2cc89e77-685d-423c-80a9-82e07ea13b7c",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Adventure-Ready Rugged Backpack",
         "price": 79.99,
         "category": "backpack",
@@ -298,6 +331,7 @@
     },
     {
         "id": "5c010bac-31a6-4ff3-9557-2f5e20b509cc",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Rustic Leather Daypack",
         "price": 129.99,
         "category": "backpack",
@@ -307,6 +341,7 @@
     },
     {
         "id": "81bde330-051f-4db6-96c7-886dda3171b3",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Vintage Explorer Canvas Messenger Bag",
         "price": 79.99,
         "category": "backpack",
@@ -316,6 +351,7 @@
     },
     {
         "id": "6819350e-987d-4b87-9132-6aa5ca256e9d",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Caramel Dream Leather Backpack",
         "price": 129.99,
         "category": "backpack",
@@ -325,6 +361,7 @@
     },
     {
         "id": "3cd33786-a655-407f-b22f-c4150b1e529e",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Alpine Explorer Backpack",
         "price": 129.99,
         "category": "backpack",
@@ -334,6 +371,7 @@
     },
     {
         "id": "a3ad25e8-c9c3-459a-a853-c26a0ad837eb",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Graffiti Urban Messenger Bag",
         "price": 89.99,
         "category": "backpack",
@@ -343,6 +381,7 @@
     },
     {
         "id": "90946422-31ea-4dd1-8651-a9e3a122bcf6",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Urban Stealth Backpack",
         "price": 59.99,
         "category": "backpack",
@@ -352,6 +391,7 @@
     },
     {
         "id": "d9d3351f-1fdb-4ba7-b757-55f18a1a2dc0",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Urban Graffiti Question Backpack",
         "price": 59.99,
         "category": "backpack",
@@ -361,6 +401,7 @@
     },
     {
         "id": "0d748c4b-8fae-47e7-80f5-bfbae8c4c2f1",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Sleek Urban Explorer Backpack",
         "price": 79.99,
         "category": "backpack",
@@ -370,6 +411,7 @@
     },
     {
         "id": "d0062fa5-02b3-4c94-be9f-2fdafa7cde2d",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Urban Explorer Roll-Top Backpack",
         "price": 79.99,
         "category": "backpack",
@@ -379,6 +421,7 @@
     },
     {
         "id": "8b93bc57-62ca-4c6f-a83a-c527da84f224",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Caramel Delight Leather Tote",
         "price": 189.99,
         "category": "backpack",
@@ -388,6 +431,7 @@
     },
     {
         "id": "9f6d63f4-6fd0-4c31-89b6-fffd6aedcce2",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Urban Explorer Roll-Top Backpack",
         "price": 89.99,
         "category": "backpack",
@@ -397,6 +441,7 @@
     },
     {
         "id": "c6f84710-d744-462e-970a-9fdf9352f64b",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Vintage Explorer Canvas Backpack",
         "price": 89.99,
         "category": "backpack",
@@ -406,6 +451,7 @@
     },
     {
         "id": "73d9a14d-0fa0-44ca-b367-e4f9af3986ed",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Sleek Urban Explorer Backpack",
         "price": 129.99,
         "category": "backpack",
@@ -415,6 +461,7 @@
     },
     {
         "id": "d5999799-b6c1-45cf-8d5a-eaa8406a5409",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Alpine Explorer Adventure Backpack",
         "price": 89.99,
         "category": "backpack",
@@ -424,6 +471,7 @@
     },
     {
         "id": "8325cf2c-2158-4b9b-ab7a-d55e072e9ce6",
+        "img": "https://gorillasurplus.b-cdn.net/images/products/large/RVX4050BLK.jpg",
         "name": "Urban Explorer Backpack",
         "price": 79.99,
         "category": "backpack",
@@ -436,6 +484,7 @@
         "name": "Sleek Urban Leather Backpack",
         "price": 149.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "2",
         "aisle": 19,
         "shelf": 36
@@ -445,6 +494,7 @@
         "name": "Luxe Noir Leather Satchel",
         "price": 189.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "2",
         "aisle": 18,
         "shelf": 39
@@ -454,6 +504,7 @@
         "name": "Nautical Striped Beach Tote",
         "price": 49.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "3",
         "aisle": 7,
         "shelf": 48
@@ -463,6 +514,7 @@
         "name": "Chic Noir Studded Tote Bag",
         "price": 89.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "5",
         "aisle": 6,
         "shelf": 34
@@ -472,6 +524,7 @@
         "name": "Serpentine Chic Crossbody Bag",
         "price": 189.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "2",
         "aisle": 12,
         "shelf": 39
@@ -481,6 +534,7 @@
         "name": "Rustic Charm Backpack",
         "price": 59.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "5",
         "aisle": 18,
         "shelf": 15
@@ -490,6 +544,7 @@
         "name": "Seaside Chic Neoprene Tote",
         "price": 79.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "4",
         "aisle": 8,
         "shelf": 21
@@ -499,6 +554,7 @@
         "name": "Eco-Chic Canvas Tote Bag",
         "price": 24.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "3",
         "aisle": 11,
         "shelf": 23
@@ -508,6 +564,7 @@
         "name": "Vintage Canvas Messenger Bag",
         "price": 79.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "3",
         "aisle": 18,
         "shelf": 7
@@ -517,6 +574,7 @@
         "name": "Tropical Escape Straw Tote Set",
         "price": 89.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "3",
         "aisle": 17,
         "shelf": 17
@@ -526,6 +584,7 @@
         "name": "Executive Leather Tote Bag",
         "price": 279.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "1",
         "aisle": 11,
         "shelf": 41
@@ -535,6 +594,7 @@
         "name": "Vintage Voyager Duffel Bag",
         "price": 189.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "1",
         "aisle": 18,
         "shelf": 30
@@ -544,6 +604,7 @@
         "name": "Urban Stealth Messenger Bag",
         "price": 89.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "3",
         "aisle": 20,
         "shelf": 2
@@ -553,6 +614,7 @@
         "name": "Vintage Leather Messenger Bag",
         "price": 189.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "2",
         "aisle": 12,
         "shelf": 21
@@ -562,6 +624,7 @@
         "name": "Sunset Voyager Leather Weekender Bag",
         "price": 299.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "3",
         "aisle": 9,
         "shelf": 9
@@ -571,6 +634,7 @@
         "name": "Executive Leather Messenger Briefcase",
         "price": 249.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "1",
         "aisle": 9,
         "shelf": 14
@@ -580,6 +644,7 @@
         "name": "Vintage Leather Weekender Bag",
         "price": 289.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "3",
         "aisle": 9,
         "shelf": 18
@@ -589,6 +654,7 @@
         "name": "Vintage Explorer Messenger Bag",
         "price": 79.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "5",
         "aisle": 12,
         "shelf": 10
@@ -598,6 +664,7 @@
         "name": "Sleek Voyager Leather Weekender Bag",
         "price": 249.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "1",
         "aisle": 18,
         "shelf": 37
@@ -607,6 +674,7 @@
         "name": "Eco-Chic Kraft Paper Tote",
         "price": 14.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "3",
         "aisle": 12,
         "shelf": 50
@@ -616,6 +684,7 @@
         "name": "Eco-Friendly Canvas Tote Bag",
         "price": 14.99,
         "category": "bag",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSAWcqycpmU_-_v_EYWxTHZhpMDWtdu8tuQ&s",
         "size": "3",
         "aisle": 6,
         "shelf": 49
@@ -625,6 +694,7 @@
         "name": "Chic Contrast Denim Belted Jumpsuit",
         "price": 89.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 13,
         "shelf": 45
@@ -634,6 +704,7 @@
         "name": "Vintage Embossed Western Belt Buckle",
         "price": 49.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 5,
         "shelf": 48
@@ -643,6 +714,7 @@
         "name": "Dual Buckle Western Chic Belt",
         "price": 49.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "1",
         "aisle": 10,
         "shelf": 41
@@ -652,6 +724,7 @@
         "name": "Sleek Minimalist Leather Belt",
         "price": 34.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 15,
         "shelf": 46
@@ -661,6 +734,7 @@
         "name": "Retro Chic Waist Belt",
         "price": 39.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "3",
         "aisle": 16,
         "shelf": 2
@@ -670,6 +744,7 @@
         "name": "Edgy Elegance Leather Peplum Belt",
         "price": 89.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "5",
         "aisle": 13,
         "shelf": 41
@@ -679,6 +754,7 @@
         "name": "Vintage Leather Belt",
         "price": 39.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "5",
         "aisle": 14,
         "shelf": 24
@@ -688,6 +764,7 @@
         "name": "Sleek Casual Belt",
         "price": 29.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 6,
         "shelf": 4
@@ -697,6 +774,7 @@
         "name": "Classic Teal Leather Belt",
         "price": 49.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "5",
         "aisle": 8,
         "shelf": 32
@@ -706,6 +784,7 @@
         "name": "Vibrant Leather Wristbands Trio",
         "price": 49.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "3",
         "aisle": 11,
         "shelf": 46
@@ -715,6 +794,7 @@
         "name": "Stylish Cow Print Belt",
         "price": 39.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "1",
         "aisle": 2,
         "shelf": 9
@@ -724,6 +804,7 @@
         "name": "Rustic Charm Leather Belt",
         "price": 49.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 9,
         "shelf": 9
@@ -733,6 +814,7 @@
         "name": "Nautical Chic D-Ring Belt",
         "price": 24.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "5",
         "aisle": 3,
         "shelf": 20
@@ -742,6 +824,7 @@
         "name": "Floral Bliss Cinch Belt",
         "price": 24.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "3",
         "aisle": 10,
         "shelf": 32
@@ -751,6 +834,7 @@
         "name": "Heart Buckle Statement Belt",
         "price": 39.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "3",
         "aisle": 20,
         "shelf": 12
@@ -760,6 +844,7 @@
         "name": "Chic Snap Belt Pouch",
         "price": 34.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "5",
         "aisle": 18,
         "shelf": 41
@@ -769,6 +854,7 @@
         "name": "Chic Denim Accessory Set",
         "price": 79.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 8,
         "shelf": 15
@@ -778,6 +864,7 @@
         "name": "Urban Elegance Trouser Set",
         "price": 189.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 9,
         "shelf": 7
@@ -787,6 +874,7 @@
         "name": "Classic Leather Belt",
         "price": 39.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 15,
         "shelf": 9
@@ -796,6 +884,7 @@
         "name": "Urban Explorer Belt Pouch",
         "price": 49.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 17,
         "shelf": 37
@@ -805,6 +894,7 @@
         "name": "Blush Lace Belted Dress",
         "price": 129.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "3",
         "aisle": 9,
         "shelf": 27
@@ -814,6 +904,7 @@
         "name": "Retro Chic Denim Ensemble",
         "price": 89.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "3",
         "aisle": 20,
         "shelf": 6
@@ -823,6 +914,7 @@
         "name": "Festive Flair Pleated Dress",
         "price": 89.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "5",
         "aisle": 14,
         "shelf": 37
@@ -832,6 +924,7 @@
         "name": "Vintage Western Leather Belt",
         "price": 79.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "1",
         "aisle": 13,
         "shelf": 3
@@ -841,6 +934,7 @@
         "name": "Vintage Vibe Polka Dot Belt",
         "price": 29.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 19,
         "shelf": 26
@@ -850,6 +944,7 @@
         "name": "Classic Reversible Dress Belt",
         "price": 49.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "3",
         "aisle": 18,
         "shelf": 19
@@ -859,6 +954,7 @@
         "name": "Sleek Minimalist Belt Buckle",
         "price": 34.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "1",
         "aisle": 10,
         "shelf": 42
@@ -868,6 +964,7 @@
         "name": "Classic Caramel Leather Belt",
         "price": 59.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "3",
         "aisle": 8,
         "shelf": 10
@@ -877,6 +974,7 @@
         "name": "PowerLift Pro Weightlifting Belt",
         "price": 79.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 7,
         "shelf": 11
@@ -886,6 +984,7 @@
         "name": "Measuring Tape Fashion Belt",
         "price": 39.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 9,
         "shelf": 19
@@ -895,6 +994,7 @@
         "name": "Vintage Western Charm Belt",
         "price": 89.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "1",
         "aisle": 1,
         "shelf": 16
@@ -904,6 +1004,7 @@
         "name": "Urban Edge Leather Belt",
         "price": 49.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "5",
         "aisle": 14,
         "shelf": 6
@@ -913,6 +1014,7 @@
         "name": "Artisan Woven Leather Belt",
         "price": 89.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 6,
         "shelf": 49
@@ -922,6 +1024,7 @@
         "name": "Classic Leather Belt for Bookworms",
         "price": 49.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 6,
         "shelf": 13
@@ -931,6 +1034,7 @@
         "name": "Vintage Military Ammo Belt",
         "price": 79.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "5",
         "aisle": 19,
         "shelf": 43
@@ -940,6 +1044,7 @@
         "name": "Red Accent Adventure Belt",
         "price": 29.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 2,
         "shelf": 32
@@ -949,6 +1054,7 @@
         "name": "Classic Woven Belt",
         "price": 49.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 16,
         "shelf": 45
@@ -958,6 +1064,7 @@
         "name": "Classic Woven Leather Belt",
         "price": 79.99,
         "category": "belt",
+        "img": "https://m.media-amazon.com/images/I/71fcO0EI2FL._AC_UY1000_.jpg",
         "size": "3",
         "aisle": 12,
         "shelf": 4
@@ -967,6 +1074,7 @@
         "name": "Vintage Scholar's Spectacles",
         "price": 49.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "1",
         "aisle": 3,
         "shelf": 36
@@ -976,6 +1084,7 @@
         "name": "Retro Chic Metal Frame Glasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "5",
         "aisle": 4,
         "shelf": 2
@@ -985,6 +1094,7 @@
         "name": "ClearVision Precision Eyewear",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "1",
         "aisle": 20,
         "shelf": 17
@@ -994,6 +1104,7 @@
         "name": "Retro Chic Ombre Eyeglasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "4",
         "aisle": 10,
         "shelf": 1
@@ -1003,6 +1114,7 @@
         "name": "Artisanal Wooden Eyewear Frames",
         "price": 199.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "5",
         "aisle": 8,
         "shelf": 18
@@ -1012,6 +1124,7 @@
         "name": "Classic Tortoiseshell Reading Glasses",
         "price": 79.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "3",
         "aisle": 9,
         "shelf": 7
@@ -1021,6 +1134,7 @@
         "name": "Chic Tortoise Elegance Frames",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "2",
         "aisle": 12,
         "shelf": 22
@@ -1030,6 +1144,7 @@
         "name": "Clarity Classic Reading Glasses",
         "price": 49.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "1",
         "aisle": 6,
         "shelf": 12
@@ -1039,6 +1154,7 @@
         "name": "Retro Chic Round Sunglasses",
         "price": 89.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "1",
         "aisle": 3,
         "shelf": 25
@@ -1048,6 +1164,7 @@
         "name": "Elegant Retro-Modern Eyeglasses",
         "price": 149.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "3",
         "aisle": 5,
         "shelf": 23
@@ -1057,6 +1174,7 @@
         "name": "Retro Chic Sunglasses",
         "price": 79.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "5",
         "aisle": 15,
         "shelf": 15
@@ -1066,6 +1184,7 @@
         "name": "Sleek Gold Retro Sunglasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "4",
         "aisle": 8,
         "shelf": 30
@@ -1075,6 +1194,7 @@
         "name": "Retro Round Rose Gold Glasses",
         "price": 89.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "4",
         "aisle": 3,
         "shelf": 13
@@ -1084,6 +1204,7 @@
         "name": "Vintage Elegance Round Eyewear",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "5",
         "aisle": 11,
         "shelf": 34
@@ -1093,6 +1214,7 @@
         "name": "Vintage Charm Reading Glasses",
         "price": 79.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "3",
         "aisle": 9,
         "shelf": 36
@@ -1102,6 +1224,7 @@
         "name": "Sleek Foldable Reading Glasses",
         "price": 39.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "2",
         "aisle": 19,
         "shelf": 29
@@ -1111,6 +1234,7 @@
         "name": "Retro Chic Tortoiseshell Sunglasses",
         "price": 89.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "2",
         "aisle": 1,
         "shelf": 12
@@ -1120,6 +1244,7 @@
         "name": "SkyView Clarity Glasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "1",
         "aisle": 5,
         "shelf": 23
@@ -1129,6 +1254,7 @@
         "name": "Ocean Breeze Mirrored Sunglasses",
         "price": 79.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "2",
         "aisle": 19,
         "shelf": 11
@@ -1138,6 +1264,7 @@
         "name": "Rose Gold Aviator Glasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "2",
         "aisle": 17,
         "shelf": 48
@@ -1147,6 +1274,7 @@
         "name": "Retro Rose Gold Aviator Sunglasses",
         "price": 89.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "1",
         "aisle": 20,
         "shelf": 49
@@ -1156,6 +1284,7 @@
         "name": "Classic Black Reading Glasses",
         "price": 49.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "1",
         "aisle": 9,
         "shelf": 8
@@ -1165,6 +1294,7 @@
         "name": "Chic Retro Reading Glasses",
         "price": 34.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "5",
         "aisle": 1,
         "shelf": 7
@@ -1174,6 +1304,7 @@
         "name": "Sunset Silhouette Spectacles",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "2",
         "aisle": 12,
         "shelf": 24
@@ -1183,6 +1314,7 @@
         "name": "Retro Chic Aviator Glasses",
         "price": 89.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "2",
         "aisle": 19,
         "shelf": 42
@@ -1192,6 +1324,7 @@
         "name": "Retro Futuristic Shield Sunglasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "1",
         "aisle": 10,
         "shelf": 9
@@ -1201,6 +1334,7 @@
         "name": "Retro Roundhouse Optical Frames",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "1",
         "aisle": 17,
         "shelf": 27
@@ -1210,6 +1344,7 @@
         "name": "Vintage-Inspired Reading Glasses",
         "price": 79.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "5",
         "aisle": 1,
         "shelf": 21
@@ -1219,6 +1354,7 @@
         "name": "Sleek Scholar Eyewear",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "1",
         "aisle": 8,
         "shelf": 44
@@ -1228,6 +1364,7 @@
         "name": "Sleek Focus Reading Glasses",
         "price": 49.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "1",
         "aisle": 13,
         "shelf": 29
@@ -1237,6 +1374,7 @@
         "name": "Sleek Vision Pro Eyeglasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "3",
         "aisle": 17,
         "shelf": 21
@@ -1246,6 +1384,7 @@
         "name": "Twilight Vision Glasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "5",
         "aisle": 8,
         "shelf": 15
@@ -1255,6 +1394,7 @@
         "name": "Retro-Modern Ombre Eyeglasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "2",
         "aisle": 1,
         "shelf": 11
@@ -1264,6 +1404,7 @@
         "name": "Sunset Voyager Aviator Glasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "5",
         "aisle": 7,
         "shelf": 7
@@ -1273,6 +1414,7 @@
         "name": "Vintage Roundelay Gold Sunglasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "1",
         "aisle": 19,
         "shelf": 46
@@ -1282,6 +1424,7 @@
         "name": "Classic Tortoiseshell Reading Glasses",
         "price": 49.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "4",
         "aisle": 14,
         "shelf": 29
@@ -1291,6 +1434,7 @@
         "name": "Citrus Vision Eyewear",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "2",
         "aisle": 4,
         "shelf": 23
@@ -1300,6 +1444,7 @@
         "name": "Retro Chic Clubmaster Glasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "4",
         "aisle": 15,
         "shelf": 7
@@ -1309,6 +1454,7 @@
         "name": "RainView Classic Browline Glasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "1",
         "aisle": 15,
         "shelf": 18
@@ -1318,6 +1464,7 @@
         "name": "Classic Noir Wayfarer Sunglasses",
         "price": 79.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "1",
         "aisle": 5,
         "shelf": 40
@@ -1327,6 +1474,7 @@
         "name": "Vintage Charm Reading Glasses",
         "price": 79.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "4",
         "aisle": 12,
         "shelf": 19
@@ -1336,6 +1484,7 @@
         "name": "Elegance Fusion Cat-Eye Glasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "1",
         "aisle": 13,
         "shelf": 47
@@ -1345,6 +1494,7 @@
         "name": "Retro Round Reading Glasses",
         "price": 49.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "4",
         "aisle": 6,
         "shelf": 4
@@ -1354,6 +1504,7 @@
         "name": "Sunset Vantage Eyewear",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "5",
         "aisle": 19,
         "shelf": 41
@@ -1363,6 +1514,7 @@
         "name": "Skyline Visionary Eyewear",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "3",
         "aisle": 6,
         "shelf": 47
@@ -1372,6 +1524,7 @@
         "name": "Retro Round Reading Glasses",
         "price": 39.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "2",
         "aisle": 15,
         "shelf": 49
@@ -1381,6 +1534,7 @@
         "name": "Vintage Edge Clubmaster Glasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "3",
         "aisle": 2,
         "shelf": 4
@@ -1390,6 +1544,7 @@
         "name": "Vintage Charm Browline Glasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "4",
         "aisle": 8,
         "shelf": 23
@@ -1399,6 +1554,7 @@
         "name": "Vintage Chic Clubmaster Glasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "4",
         "aisle": 10,
         "shelf": 16
@@ -1408,6 +1564,7 @@
         "name": "SkylineX Aviator Sunglasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "2",
         "aisle": 6,
         "shelf": 37
@@ -1417,6 +1574,7 @@
         "name": "Classic Black Round Eyeglasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "1",
         "aisle": 9,
         "shelf": 24
@@ -1426,6 +1584,7 @@
         "name": "Sleek Sport Optical Frames",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "2",
         "aisle": 17,
         "shelf": 18
@@ -1435,6 +1594,7 @@
         "name": "Vintage-Inspired Clubmaster Glasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "4",
         "aisle": 18,
         "shelf": 26
@@ -1444,6 +1604,7 @@
         "name": "Sleek Shield Sunglasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "3",
         "aisle": 12,
         "shelf": 24
@@ -1453,6 +1614,7 @@
         "name": "Sleek Shield Sunglasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "4",
         "aisle": 17,
         "shelf": 4
@@ -1462,6 +1624,7 @@
         "name": "NightDrive Pro Glasses",
         "price": 79.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "3",
         "aisle": 6,
         "shelf": 34
@@ -1471,6 +1634,7 @@
         "name": "Vintage Scholar Reading Glasses",
         "price": 89.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "1",
         "aisle": 9,
         "shelf": 11
@@ -1480,6 +1644,7 @@
         "name": "Sunset Mirage Beach Shades",
         "price": 79.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "3",
         "aisle": 1,
         "shelf": 48
@@ -1489,6 +1654,7 @@
         "name": "SandTimer Aviator Sunglasses",
         "price": 129.99,
         "category": "glasses",
+        "img": "https://ae01.alicdn.com/kf/S6f287803792a43879e664c5903023c63k.jpg_960x960.jpg",
         "size": "4",
         "aisle": 17,
         "shelf": 1
@@ -1498,6 +1664,7 @@
         "name": "Chic Caramel Leather Crossbody",
         "price": 89.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "3",
         "aisle": 3,
         "shelf": 40
@@ -1507,6 +1674,7 @@
         "name": "Caramel Elegance Envelope Clutch",
         "price": 89.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "1",
         "aisle": 13,
         "shelf": 48
@@ -1516,6 +1684,7 @@
         "name": "Sunburst Rattan Crossbody Bag",
         "price": 49.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "1",
         "aisle": 2,
         "shelf": 44
@@ -1525,6 +1694,7 @@
         "name": "Bali Rattan Crossbody Bag",
         "price": 59.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "5",
         "aisle": 18,
         "shelf": 19
@@ -1534,6 +1704,7 @@
         "name": "Bali Breeze Rattan Crossbody Bag",
         "price": 59.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "1",
         "aisle": 19,
         "shelf": 24
@@ -1543,6 +1714,7 @@
         "name": "Inspirational Chinese Calligraphy Tote Bag",
         "price": 24.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "1",
         "aisle": 17,
         "shelf": 10
@@ -1552,6 +1724,7 @@
         "name": "Vibrant Voyager Backpack",
         "price": 59.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "2",
         "aisle": 18,
         "shelf": 5
@@ -1561,6 +1734,7 @@
         "name": "Chic Sophistication Tote Bag",
         "price": 149.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "5",
         "aisle": 16,
         "shelf": 10
@@ -1570,6 +1744,7 @@
         "name": "Boho Chic Rattan Crossbody Bag",
         "price": 49.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "2",
         "aisle": 20,
         "shelf": 10
@@ -1579,6 +1754,7 @@
         "name": "Vintage Chic Leather Crossbody",
         "price": 79.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "3",
         "aisle": 12,
         "shelf": 47
@@ -1588,6 +1764,7 @@
         "name": "Chic Coral Leather Crossbody Bag",
         "price": 189.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "3",
         "aisle": 9,
         "shelf": 26
@@ -1597,6 +1774,7 @@
         "name": "Blush Breeze Crossbody Bag",
         "price": 79.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "1",
         "aisle": 5,
         "shelf": 4
@@ -1606,6 +1784,7 @@
         "name": "Green Apple Crossbody Purse",
         "price": 39.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "2",
         "aisle": 7,
         "shelf": 50
@@ -1615,6 +1794,7 @@
         "name": "Urban Chic Dual-Tone Tote Bag",
         "price": 189.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "2",
         "aisle": 17,
         "shelf": 14
@@ -1624,6 +1804,7 @@
         "name": "Urban Explorer Sling Bag",
         "price": 49.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "4",
         "aisle": 4,
         "shelf": 17
@@ -1633,6 +1814,7 @@
         "name": "Rustic Charm Leather Tote",
         "price": 129.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "5",
         "aisle": 15,
         "shelf": 28
@@ -1642,6 +1824,7 @@
         "name": "Sun-Kissed Woven Tote Bag",
         "price": 89.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "5",
         "aisle": 8,
         "shelf": 14
@@ -1651,6 +1834,7 @@
         "name": "Whale Tale Tote Bag",
         "price": 39.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "3",
         "aisle": 1,
         "shelf": 23
@@ -1660,6 +1844,7 @@
         "name": "Blush Suede Tassel Crossbody",
         "price": 89.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "3",
         "aisle": 4,
         "shelf": 35
@@ -1669,6 +1854,7 @@
         "name": "Sleek Urban Leather Handbag",
         "price": 129.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "5",
         "aisle": 17,
         "shelf": 34
@@ -1678,6 +1864,7 @@
         "name": "Chic Croc Envelope Clutch",
         "price": 89.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "3",
         "aisle": 16,
         "shelf": 4
@@ -1687,6 +1874,7 @@
         "name": "Blush Elegance Mini Crossbody Box Bag",
         "price": 79.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "1",
         "aisle": 2,
         "shelf": 36
@@ -1696,6 +1884,7 @@
         "name": "Chic Riveted Crossbody Purse",
         "price": 179.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "3",
         "aisle": 20,
         "shelf": 12
@@ -1705,6 +1894,7 @@
         "name": "Coral Sunset Trapezoid Handbag",
         "price": 289.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "5",
         "aisle": 4,
         "shelf": 43
@@ -1714,6 +1904,7 @@
         "name": "Blush Chevron Chic Clutch",
         "price": 89.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "3",
         "aisle": 14,
         "shelf": 7
@@ -1723,6 +1914,7 @@
         "name": "Royal Blue Leather Backpack",
         "price": 129.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "4",
         "aisle": 18,
         "shelf": 13
@@ -1732,6 +1924,7 @@
         "name": "Transparent Chic Croc-Embossed Tote",
         "price": 289.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "3",
         "aisle": 9,
         "shelf": 15
@@ -1741,6 +1934,7 @@
         "name": "Vibrant Coral Leather Tote Bag",
         "price": 299.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "5",
         "aisle": 3,
         "shelf": 1
@@ -1750,6 +1944,7 @@
         "name": "Vintage Charm Blush Purse",
         "price": 89.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "1",
         "aisle": 18,
         "shelf": 48
@@ -1759,6 +1954,7 @@
         "name": "Blush Scalloped Leather Mini Handbag",
         "price": 129.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "3",
         "aisle": 2,
         "shelf": 12
@@ -1768,6 +1964,7 @@
         "name": "Elegance Duo Handbag Set",
         "price": 299.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "2",
         "aisle": 19,
         "shelf": 8
@@ -1777,6 +1974,7 @@
         "name": "Chic Elegance Crossbody Set",
         "price": 129.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "1",
         "aisle": 17,
         "shelf": 22
@@ -1786,6 +1984,7 @@
         "name": "Mauve Maven Chevron Clutch",
         "price": 189.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "2",
         "aisle": 12,
         "shelf": 37
@@ -1795,6 +1994,7 @@
         "name": "Emerald Elegance Croc-Embossed Clutch",
         "price": 189.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "3",
         "aisle": 12,
         "shelf": 12
@@ -1804,6 +2004,7 @@
         "name": "Sunshine Chevron Crossbody Bag",
         "price": 89.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "3",
         "aisle": 8,
         "shelf": 44
@@ -1813,6 +2014,7 @@
         "name": "Luxe Suede Flap Crossbody Bag",
         "price": 129.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "5",
         "aisle": 20,
         "shelf": 1
@@ -1822,6 +2024,7 @@
         "name": "Luxe Croc-Embossed Leather Briefcase",
         "price": 399.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "1",
         "aisle": 20,
         "shelf": 28
@@ -1831,6 +2034,7 @@
         "name": "Vintage Cognac Leather Tote",
         "price": 299.99,
         "category": "handbag",
+        "img": "https://m.media-amazon.com/images/I/712b8UipR7L._AC_SL1500_.jpg",
         "size": "1",
         "aisle": 9,
         "shelf": 27
@@ -1840,6 +2044,7 @@
         "name": "Rustic Bamboo Timepiece",
         "price": 89.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "3",
         "aisle": 8,
         "shelf": 26
@@ -1849,6 +2054,7 @@
         "name": "Luxe Diamond Barrel Watch",
         "price": 4999.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "4",
         "aisle": 20,
         "shelf": 31
@@ -1858,6 +2064,7 @@
         "name": "Elegance Rose Gold Watch",
         "price": 129.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "1",
         "aisle": 6,
         "shelf": 25
@@ -1867,6 +2074,7 @@
         "name": "Blush Elegance Timepiece",
         "price": 129.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "4",
         "aisle": 15,
         "shelf": 46
@@ -1876,6 +2084,7 @@
         "name": "Mint Breeze Elegance Watch",
         "price": 89.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "1",
         "aisle": 10,
         "shelf": 14
@@ -1885,6 +2094,7 @@
         "name": "Timeless Elegance Minimalist Wristwatch",
         "price": 129.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "1",
         "aisle": 13,
         "shelf": 15
@@ -1894,6 +2104,7 @@
         "name": "Classic Elegance Timepiece",
         "price": 129.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "4",
         "aisle": 14,
         "shelf": 43
@@ -1903,6 +2114,7 @@
         "name": "Elegant Noir Timepiece",
         "price": 129.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "1",
         "aisle": 3,
         "shelf": 46
@@ -1912,6 +2124,7 @@
         "name": "Blush Horizon Minimalist Watch",
         "price": 89.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "2",
         "aisle": 8,
         "shelf": 43
@@ -1921,6 +2134,7 @@
         "name": "Rose Gold Elegance Timepiece",
         "price": 129.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "3",
         "aisle": 10,
         "shelf": 24
@@ -1930,6 +2144,7 @@
         "name": "Timeless Elegance Gold Watch",
         "price": 129.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "3",
         "aisle": 13,
         "shelf": 47
@@ -1939,6 +2154,7 @@
         "name": "Minimalist Starburst Watch",
         "price": 129.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "3",
         "aisle": 10,
         "shelf": 4
@@ -1948,6 +2164,7 @@
         "name": "Sleek Monochrome Minimalist Timepiece",
         "price": 129.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "4",
         "aisle": 3,
         "shelf": 38
@@ -1957,6 +2174,7 @@
         "name": "Classic Traveler's Timepiece",
         "price": 129.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "5",
         "aisle": 7,
         "shelf": 9
@@ -1966,6 +2184,7 @@
         "name": "Midnight Minimalist Wristwatch",
         "price": 199.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "4",
         "aisle": 1,
         "shelf": 43
@@ -1975,6 +2194,7 @@
         "name": "Minimalist Elegance Chronograph Watch",
         "price": 199.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "4",
         "aisle": 7,
         "shelf": 50
@@ -1984,6 +2204,7 @@
         "name": "Sleek Minimalist Timepiece",
         "price": 129.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "5",
         "aisle": 16,
         "shelf": 4
@@ -1993,6 +2214,7 @@
         "name": "Timeless Elegance Minimalist Watch",
         "price": 129.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "2",
         "aisle": 14,
         "shelf": 6
@@ -2002,6 +2224,7 @@
         "name": "FitPro SmartWatch Fitness Tracker",
         "price": 129.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "3",
         "aisle": 14,
         "shelf": 36
@@ -2011,6 +2234,7 @@
         "name": "Timeless Elegance Diver's Watch",
         "price": 599.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "1",
         "aisle": 6,
         "shelf": 5
@@ -2020,6 +2244,7 @@
         "name": "Ocean Explorer Smartwatch",
         "price": 199.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "4",
         "aisle": 14,
         "shelf": 10
@@ -2029,6 +2254,7 @@
         "name": "Midnight Elegance Wooden Wristwatch",
         "price": 129.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "3",
         "aisle": 17,
         "shelf": 39
@@ -2038,6 +2264,7 @@
         "name": "Desert Mirage Timepiece",
         "price": 129.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "2",
         "aisle": 2,
         "shelf": 10
@@ -2047,6 +2274,7 @@
         "name": "Timeless Elegance Wristwatch",
         "price": 129.99,
         "category": "watch",
+        "img": "https://m.media-amazon.com/images/I/61swlHtq0qL._AC_UY900_.jpg",
         "size": "4",
         "aisle": 16,
         "shelf": 36
@@ -2056,6 +2284,7 @@
         "name": "Ocean Breeze Waterproof Jacket",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "1",
         "aisle": 3,
         "shelf": 39
@@ -2065,6 +2294,7 @@
         "name": "Urban Chic Denim Hoodie Jacket",
         "price": 89.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "3",
         "aisle": 3,
         "shelf": 33
@@ -2074,6 +2304,7 @@
         "name": "Edgy Elegance Leather Moto Jacket",
         "price": 249.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "3",
         "aisle": 17,
         "shelf": 6
@@ -2083,6 +2314,7 @@
         "name": "Rustic Autumn Adventure Jacket",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "3",
         "aisle": 11,
         "shelf": 27
@@ -2092,6 +2324,7 @@
         "name": "Urban Chic Trench Coat",
         "price": 189.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 2,
         "shelf": 11
@@ -2101,6 +2334,7 @@
         "name": "Vintage Distressed Denim Jacket",
         "price": 89.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "2",
         "aisle": 2,
         "shelf": 19
@@ -2110,6 +2344,7 @@
         "name": "Breezy Coastal Comfort Coat",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 6,
         "shelf": 6
@@ -2119,6 +2354,7 @@
         "name": "Urban Edge Denim Biker Jacket",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "4",
         "aisle": 14,
         "shelf": 44
@@ -2128,6 +2364,7 @@
         "name": "Classic Blue Denim Jacket",
         "price": 59.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "3",
         "aisle": 6,
         "shelf": 43
@@ -2137,6 +2374,7 @@
         "name": "Vintage Faded Denim Jacket",
         "price": 79.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "2",
         "aisle": 7,
         "shelf": 46
@@ -2146,6 +2384,7 @@
         "name": "Mountain Explorer Denim Jacket",
         "price": 89.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "4",
         "aisle": 17,
         "shelf": 11
@@ -2155,6 +2394,7 @@
         "name": "Nautical Dreams Trench Coat",
         "price": 189.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 3,
         "shelf": 13
@@ -2164,6 +2404,7 @@
         "name": "Alpine Frost Trekker Jacket",
         "price": 149.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "2",
         "aisle": 15,
         "shelf": 2
@@ -2173,6 +2414,7 @@
         "name": "Alpine Breeze Waterproof Jacket",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "2",
         "aisle": 15,
         "shelf": 34
@@ -2182,6 +2424,7 @@
         "name": "Arctic Bliss Winter Jacket",
         "price": 249.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 1,
         "shelf": 39
@@ -2191,6 +2434,7 @@
         "name": "Alpine Explorer Puffer Jacket",
         "price": 149.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "3",
         "aisle": 7,
         "shelf": 4
@@ -2200,6 +2444,7 @@
         "name": "Fiery Locks Leather Jacket",
         "price": 189.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "1",
         "aisle": 13,
         "shelf": 2
@@ -2209,6 +2454,7 @@
         "name": "Misty Mountain Puffer Coat",
         "price": 149.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 5,
         "shelf": 49
@@ -2218,6 +2464,7 @@
         "name": "Frostline Hooded Puffer Jacket",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "4",
         "aisle": 3,
         "shelf": 45
@@ -2227,6 +2474,7 @@
         "name": "Rustic Leather Adventure Jacket",
         "price": 249.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "1",
         "aisle": 5,
         "shelf": 41
@@ -2236,6 +2484,7 @@
         "name": "Winter Warrior Thermal Jacket",
         "price": 179.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "1",
         "aisle": 12,
         "shelf": 36
@@ -2245,6 +2494,7 @@
         "name": "Vibrant Horizon Adventure Jacket",
         "price": 149.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 16,
         "shelf": 27
@@ -2254,6 +2504,7 @@
         "name": "Winter Blaze Puffer Jacket",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "3",
         "aisle": 9,
         "shelf": 2
@@ -2263,6 +2514,7 @@
         "name": "Arctic Flame Puffer Jacket",
         "price": 179.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 5,
         "shelf": 7
@@ -2272,6 +2524,7 @@
         "name": "Arctic Explorer Down Parka",
         "price": 349.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "1",
         "aisle": 7,
         "shelf": 21
@@ -2281,6 +2534,7 @@
         "name": "Cozy Winter Parka",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "4",
         "aisle": 17,
         "shelf": 25
@@ -2290,6 +2544,7 @@
         "name": "Cozy Sherpa-Lined Winter Coat",
         "price": 189.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 13,
         "shelf": 24
@@ -2299,6 +2554,7 @@
         "name": "Chic Silver Belted Blazer",
         "price": 189.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "3",
         "aisle": 17,
         "shelf": 4
@@ -2308,6 +2564,7 @@
         "name": "Classic Red Military Jacket",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 1,
         "shelf": 36
@@ -2317,6 +2574,7 @@
         "name": "Elegant Flow Trench Coat",
         "price": 189.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "3",
         "aisle": 5,
         "shelf": 35
@@ -2326,6 +2584,7 @@
         "name": "Urban Chic Oversized Blazer",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "4",
         "aisle": 20,
         "shelf": 11
@@ -2335,6 +2594,7 @@
         "name": "Bohemian Chic Belted Cardigan",
         "price": 79.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 10,
         "shelf": 45
@@ -2344,6 +2604,7 @@
         "name": "Mountain Bliss Snow Jacket",
         "price": 249.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "1",
         "aisle": 12,
         "shelf": 27
@@ -2353,6 +2614,7 @@
         "name": "All-Weather Adventure Jacket",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "3",
         "aisle": 1,
         "shelf": 20
@@ -2362,6 +2624,7 @@
         "name": "Autumn Breeze Outdoor Jacket",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "2",
         "aisle": 4,
         "shelf": 7
@@ -2371,6 +2634,7 @@
         "name": "Classic Leather Bomber Jacket",
         "price": 199.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "4",
         "aisle": 5,
         "shelf": 16
@@ -2380,6 +2644,7 @@
         "name": "Sleek Navy Windbreaker Jacket",
         "price": 89.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "1",
         "aisle": 19,
         "shelf": 21
@@ -2389,6 +2654,7 @@
         "name": "Dual-Tone Windbreaker Jacket",
         "price": 59.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "4",
         "aisle": 11,
         "shelf": 3
@@ -2398,6 +2664,7 @@
         "name": "Classic Buffalo Plaid Flannel Shirt",
         "price": 49.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "1",
         "aisle": 5,
         "shelf": 4
@@ -2407,6 +2674,7 @@
         "name": "Sleek Urban Bomber Jacket",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "3",
         "aisle": 6,
         "shelf": 45
@@ -2416,6 +2684,7 @@
         "name": "Urban Edge Leather Jacket",
         "price": 199.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 10,
         "shelf": 37
@@ -2425,6 +2694,7 @@
         "name": "Urban Fusion Denim Jacket",
         "price": 79.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "3",
         "aisle": 1,
         "shelf": 41
@@ -2434,6 +2704,7 @@
         "name": "Vintage Suede Explorer Jacket",
         "price": 249.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "4",
         "aisle": 14,
         "shelf": 4
@@ -2443,6 +2714,7 @@
         "name": "Coastal Explorer Utility Jacket",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "4",
         "aisle": 15,
         "shelf": 5
@@ -2452,6 +2724,7 @@
         "name": "Urban Explorer Crossbody Backpack",
         "price": 79.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "2",
         "aisle": 19,
         "shelf": 17
@@ -2461,6 +2734,7 @@
         "name": "Vintage Rebel Leather Jacket",
         "price": 249.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "3",
         "aisle": 8,
         "shelf": 7
@@ -2470,6 +2744,7 @@
         "name": "Vintage Burgundy Leather Jacket",
         "price": 299.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "4",
         "aisle": 2,
         "shelf": 33
@@ -2479,6 +2754,7 @@
         "name": "Vintage-Inspired Leather Bomber Jacket",
         "price": 249.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "1",
         "aisle": 20,
         "shelf": 30
@@ -2488,6 +2764,7 @@
         "name": "Cozy Cloud Zip-Up Hoodie",
         "price": 49.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "2",
         "aisle": 5,
         "shelf": 3
@@ -2497,6 +2774,7 @@
         "name": "Classic Rebel Leather Jacket",
         "price": 199.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 4,
         "shelf": 10
@@ -2506,6 +2784,7 @@
         "name": "Blush Corduroy Utility Jacket",
         "price": 89.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "3",
         "aisle": 12,
         "shelf": 45
@@ -2515,6 +2794,7 @@
         "name": "Rebel Rider Leather Moto Jacket",
         "price": 299.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "4",
         "aisle": 16,
         "shelf": 17
@@ -2524,6 +2804,7 @@
         "name": "Timeless Denim Watch Combo",
         "price": 179.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "2",
         "aisle": 20,
         "shelf": 33
@@ -2533,6 +2814,7 @@
         "name": "Vintage-Inspired Denim Jacket",
         "price": 89.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "3",
         "aisle": 2,
         "shelf": 39
@@ -2542,6 +2824,7 @@
         "name": "Vintage Sailor Denim Jacket",
         "price": 79.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 4,
         "shelf": 17
@@ -2551,6 +2834,7 @@
         "name": "Vintage Washed Denim Jacket",
         "price": 79.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 18,
         "shelf": 9
@@ -2560,6 +2844,7 @@
         "name": "Retro Denim Jacket with Donut Pin",
         "price": 79.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 4,
         "shelf": 33
@@ -2569,6 +2854,7 @@
         "name": "Stealth Urban Puffer Jacket",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "3",
         "aisle": 10,
         "shelf": 6
@@ -2578,6 +2864,7 @@
         "name": "Adventurer's Horizon Puffer Jacket",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "2",
         "aisle": 3,
         "shelf": 18
@@ -2587,6 +2874,7 @@
         "name": "Urban Night Warrior Parka",
         "price": 189.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "3",
         "aisle": 4,
         "shelf": 1
@@ -2596,6 +2884,7 @@
         "name": "Urban Explorer Waterproof Jacket",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 13,
         "shelf": 13
@@ -2605,6 +2894,7 @@
         "name": "Urban Chic Winter Ensemble",
         "price": 189.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "1",
         "aisle": 6,
         "shelf": 9
@@ -2614,6 +2904,7 @@
         "name": "Arctic Explorer Winter Parka",
         "price": 249.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "2",
         "aisle": 14,
         "shelf": 46
@@ -2623,6 +2914,7 @@
         "name": "Urban Explorer Down Jacket",
         "price": 179.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "4",
         "aisle": 5,
         "shelf": 45
@@ -2632,6 +2924,7 @@
         "name": "Arctic Comfort Puffer Jacket",
         "price": 89.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "2",
         "aisle": 15,
         "shelf": 31
@@ -2641,6 +2934,7 @@
         "name": "Urban Explorer Camo Puffer Jacket",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "1",
         "aisle": 16,
         "shelf": 10
@@ -2650,6 +2944,7 @@
         "name": "Urban Explorer Stealth Backpack",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "2",
         "aisle": 18,
         "shelf": 10
@@ -2659,6 +2954,7 @@
         "name": "Rugged Wilderness Parka",
         "price": 199.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "4",
         "aisle": 3,
         "shelf": 12
@@ -2668,6 +2964,7 @@
         "name": "Arctic Explorer Winter Parka",
         "price": 299.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "2",
         "aisle": 16,
         "shelf": 1
@@ -2677,6 +2974,7 @@
         "name": "All-Weather Adventure Jacket",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "1",
         "aisle": 1,
         "shelf": 27
@@ -2686,6 +2984,7 @@
         "name": "Shutterbug's Winter Warmth Puffer",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "1",
         "aisle": 15,
         "shelf": 17
@@ -2695,6 +2994,7 @@
         "name": "Cozy Quilted Winter Parka",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "1",
         "aisle": 19,
         "shelf": 16
@@ -2704,6 +3004,7 @@
         "name": "Heartfelt Capture Puffy Jacket",
         "price": 129.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "4",
         "aisle": 17,
         "shelf": 35
@@ -2713,6 +3014,7 @@
         "name": "Sunshine Chic Wool Coat",
         "price": 249.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "3",
         "aisle": 12,
         "shelf": 41
@@ -2722,6 +3024,7 @@
         "name": "Dapper Gentleman's Ensemble",
         "price": 299.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "4",
         "aisle": 3,
         "shelf": 3
@@ -2731,6 +3034,7 @@
         "name": "Executive Elegance Suit Ensemble",
         "price": 799.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "4",
         "aisle": 17,
         "shelf": 2
@@ -2740,6 +3044,7 @@
         "name": "Sleek Midnight Blue Business Suit",
         "price": 499.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "2",
         "aisle": 16,
         "shelf": 24
@@ -2749,6 +3054,7 @@
         "name": "Gentleman's Elegance Suit Collection",
         "price": 1299.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "4",
         "aisle": 13,
         "shelf": 24
@@ -2758,6 +3064,7 @@
         "name": "Elegance Pocket Square Pin",
         "price": 29.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "1",
         "aisle": 12,
         "shelf": 46
@@ -2767,6 +3074,7 @@
         "name": "Vibrant Clash Red Blazer Set",
         "price": 249.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 17,
         "shelf": 44
@@ -2776,6 +3084,7 @@
         "name": "Arctic Breeze Ski Jacket",
         "price": 249.99,
         "category": "jacket",
+        "img": "https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500",
         "size": "5",
         "aisle": 1,
         "shelf": 46
@@ -2785,6 +3094,7 @@
         "name": "Sunset Freedom Silk Scarf",
         "price": 49.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "1",
         "aisle": 12,
         "shelf": 38
@@ -2794,6 +3104,7 @@
         "name": "Tropical Breeze Fabric Collection",
         "price": 49.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "5",
         "aisle": 11,
         "shelf": 29
@@ -2803,6 +3114,7 @@
         "name": "Sunshine Grid Wool Scarf",
         "price": 39.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "4",
         "aisle": 2,
         "shelf": 45
@@ -2812,6 +3124,7 @@
         "name": "Cozy Comfort Mug Set",
         "price": 34.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "1",
         "aisle": 13,
         "shelf": 17
@@ -2821,6 +3134,7 @@
         "name": "Dapper Gent's Pocket Square Collection",
         "price": 49.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "4",
         "aisle": 6,
         "shelf": 7
@@ -2830,6 +3144,7 @@
         "name": "Sunshine Dots Silk Neckerchief",
         "price": 34.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "4",
         "aisle": 18,
         "shelf": 44
@@ -2839,6 +3154,7 @@
         "name": "Cozy Comfort Knit Bundle",
         "price": 79.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "1",
         "aisle": 7,
         "shelf": 27
@@ -2848,6 +3164,7 @@
         "name": "Elegant Ethnic Ensemble Set",
         "price": 249.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "4",
         "aisle": 14,
         "shelf": 33
@@ -2857,6 +3174,7 @@
         "name": "Chunky Knit Winter Comfort Scarf",
         "price": 39.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "5",
         "aisle": 12,
         "shelf": 19
@@ -2866,6 +3184,7 @@
         "name": "Spectrum Comfort T-Shirt Collection",
         "price": 99.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "4",
         "aisle": 18,
         "shelf": 13
@@ -2875,6 +3194,7 @@
         "name": "Cozy Autumn Plaid Throw",
         "price": 49.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "4",
         "aisle": 6,
         "shelf": 38
@@ -2884,6 +3204,7 @@
         "name": "Cozy Chunky Knit Infinity Scarf",
         "price": 34.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "1",
         "aisle": 14,
         "shelf": 2
@@ -2893,6 +3214,7 @@
         "name": "Autumn Breeze Plaid Scarf",
         "price": 34.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "1",
         "aisle": 10,
         "shelf": 10
@@ -2902,6 +3224,7 @@
         "name": "Mystic Teal Floral Beret",
         "price": 49.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "2",
         "aisle": 20,
         "shelf": 1
@@ -2911,6 +3234,7 @@
         "name": "Vintage Moroccan Tassel Throw Blanket",
         "price": 79.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "3",
         "aisle": 1,
         "shelf": 29
@@ -2920,6 +3244,7 @@
         "name": "Cozy Cloud Infinity Scarf",
         "price": 34.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "3",
         "aisle": 17,
         "shelf": 24
@@ -2929,6 +3254,7 @@
         "name": "Bohemian Bliss MacramxE9 Wall Hanging",
         "price": 89.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "5",
         "aisle": 20,
         "shelf": 30
@@ -2938,6 +3264,7 @@
         "name": "Chic Houndstooth Overcoat",
         "price": 229.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "1",
         "aisle": 9,
         "shelf": 30
@@ -2947,6 +3274,7 @@
         "name": "Tropical Breeze Chevron Scarf",
         "price": 24.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "2",
         "aisle": 8,
         "shelf": 48
@@ -2956,6 +3284,7 @@
         "name": "Tropical Paradise Beach Wrap",
         "price": 29.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "3",
         "aisle": 17,
         "shelf": 40
@@ -2965,6 +3294,7 @@
         "name": "Crimson Comfort Chunky Knit Throw",
         "price": 79.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "2",
         "aisle": 2,
         "shelf": 13
@@ -2974,6 +3304,7 @@
         "name": "Frosty Adventure Winter Boots",
         "price": 89.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "4",
         "aisle": 1,
         "shelf": 18
@@ -2983,6 +3314,7 @@
         "name": "Rustic Burlap Throw Blanket",
         "price": 49.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "3",
         "aisle": 6,
         "shelf": 9
@@ -2992,6 +3324,7 @@
         "name": "Cozy Autumn Comfort Set",
         "price": 89.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "1",
         "aisle": 9,
         "shelf": 22
@@ -3001,6 +3334,7 @@
         "name": "Luxe Crimson Linen Throw",
         "price": 79.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "5",
         "aisle": 14,
         "shelf": 40
@@ -3010,6 +3344,7 @@
         "name": "Frostguard Arctic Wool Scarf",
         "price": 49.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "3",
         "aisle": 17,
         "shelf": 11
@@ -3019,6 +3354,7 @@
         "name": "Cozy Winter Plaid Scarf",
         "price": 39.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "2",
         "aisle": 18,
         "shelf": 20
@@ -3028,6 +3364,7 @@
         "name": "Crimson Bloom Silk Scarf",
         "price": 39.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "2",
         "aisle": 15,
         "shelf": 9
@@ -3037,6 +3374,7 @@
         "name": "Midnight Frost Cashmere Scarf",
         "price": 129.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "4",
         "aisle": 14,
         "shelf": 16
@@ -3046,6 +3384,7 @@
         "name": "Classic Houndstooth Winter Scarf",
         "price": 49.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "5",
         "aisle": 4,
         "shelf": 22
@@ -3055,6 +3394,7 @@
         "name": "Mystic Veil Transformation Wrap",
         "price": 49.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "4",
         "aisle": 3,
         "shelf": 17
@@ -3064,6 +3404,7 @@
         "name": "Cozy Winterscape Sweater",
         "price": 79.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "3",
         "aisle": 20,
         "shelf": 16
@@ -3073,6 +3414,7 @@
         "name": "Frostbite Plaid Blanket Scarf",
         "price": 39.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "1",
         "aisle": 19,
         "shelf": 3
@@ -3082,6 +3424,7 @@
         "name": "Nordic Frost Patterned Scarf",
         "price": 49.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "4",
         "aisle": 15,
         "shelf": 46
@@ -3091,6 +3434,7 @@
         "name": "Cozy Highland Plaid Throw Blanket",
         "price": 49.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "4",
         "aisle": 11,
         "shelf": 4
@@ -3100,6 +3444,7 @@
         "name": "Pristine White Quilted Puffer Jacket",
         "price": 129.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "5",
         "aisle": 20,
         "shelf": 4
@@ -3109,6 +3454,7 @@
         "name": "Vintage Indigo Bandana Scarf",
         "price": 24.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "3",
         "aisle": 18,
         "shelf": 29
@@ -3118,6 +3464,7 @@
         "name": "Bohemian Bliss Silk Scarf",
         "price": 49.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "5",
         "aisle": 1,
         "shelf": 44
@@ -3127,6 +3474,7 @@
         "name": "Cozy Autumn Adventure Scarf",
         "price": 39.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "2",
         "aisle": 18,
         "shelf": 39
@@ -3136,6 +3484,7 @@
         "name": "Geometric Bliss Silk Scarf",
         "price": 79.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "3",
         "aisle": 5,
         "shelf": 24
@@ -3145,6 +3494,7 @@
         "name": "Autumn Bliss Plaid Scarf",
         "price": 39.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "2",
         "aisle": 13,
         "shelf": 16
@@ -3154,6 +3504,7 @@
         "name": "Textured Shadows Wall Art",
         "price": 129.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "1",
         "aisle": 9,
         "shelf": 28
@@ -3163,6 +3514,7 @@
         "name": "Luxe Ribbed Charcoal Infinity Scarf",
         "price": 34.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "2",
         "aisle": 15,
         "shelf": 44
@@ -3172,6 +3524,7 @@
         "name": "Highland Plaid Wool Overcoat",
         "price": 389.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "3",
         "aisle": 10,
         "shelf": 36
@@ -3181,6 +3534,7 @@
         "name": "Cozy Teal Ribbed Throw Blanket",
         "price": 49.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "2",
         "aisle": 15,
         "shelf": 17
@@ -3190,6 +3544,7 @@
         "name": "Caramel Cashmere Dream Scarf",
         "price": 89.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "3",
         "aisle": 4,
         "shelf": 2
@@ -3199,6 +3554,7 @@
         "name": "Cozy Cabin Buffalo Check Scarf",
         "price": 34.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "2",
         "aisle": 17,
         "shelf": 5
@@ -3208,6 +3564,7 @@
         "name": "Cozy Chic Knit-Collar Coat",
         "price": 189.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "1",
         "aisle": 7,
         "shelf": 4
@@ -3217,6 +3574,7 @@
         "name": "Rustic Elegance Woven Throw Blanket",
         "price": 79.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "3",
         "aisle": 1,
         "shelf": 38
@@ -3226,6 +3584,7 @@
         "name": "Emerald Velvet Cushion Covers",
         "price": 24.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "4",
         "aisle": 20,
         "shelf": 5
@@ -3235,6 +3594,7 @@
         "name": "Frosty Nights Plaid Scarf",
         "price": 24.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "5",
         "aisle": 19,
         "shelf": 30
@@ -3244,6 +3604,7 @@
         "name": "Blossom Breeze Floral Scarf",
         "price": 29.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "1",
         "aisle": 9,
         "shelf": 26
@@ -3253,6 +3614,7 @@
         "name": "Frostbite Defender Winter Scarf",
         "price": 49.99,
         "category": "scarf",
+        "img": "https://m.media-amazon.com/images/I/81vxt8+dh2L._AC_UY350_.jpg",
         "size": "2",
         "aisle": 13,
         "shelf": 11
@@ -3262,6 +3624,7 @@
         "name": "Classic Striped Crew Neck Tee",
         "price": 24.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "5",
         "aisle": 7,
         "shelf": 29
@@ -3271,6 +3634,7 @@
         "name": "Retro Ringer Pocket Tee",
         "price": 24.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "5",
         "aisle": 15,
         "shelf": 8
@@ -3280,6 +3644,7 @@
         "name": "Whimsical Mouse Dress for Girls",
         "price": 34.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "5",
         "aisle": 13,
         "shelf": 23
@@ -3289,6 +3654,7 @@
         "name": "Playful Whale Adventure T-Shirt",
         "price": 24.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "3",
         "aisle": 15,
         "shelf": 25
@@ -3298,6 +3664,7 @@
         "name": "Classic Denim Button-Down Shirt",
         "price": 49.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "3",
         "aisle": 12,
         "shelf": 31
@@ -3307,6 +3674,7 @@
         "name": "Rustic Nights Plaid Flannel Shirt",
         "price": 49.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "1",
         "aisle": 1,
         "shelf": 32
@@ -3316,6 +3684,7 @@
         "name": "Blossom Breeze Crop Top",
         "price": 49.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "2",
         "aisle": 17,
         "shelf": 10
@@ -3325,6 +3694,7 @@
         "name": "Classic White Flutter Sleeve Tee",
         "price": 29.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "4",
         "aisle": 8,
         "shelf": 10
@@ -3334,6 +3704,7 @@
         "name": "Classic Blue Plaid Flannel Shirt",
         "price": 49.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "2",
         "aisle": 4,
         "shelf": 25
@@ -3343,6 +3714,7 @@
         "name": "Breezy Blooms Boho Tunic",
         "price": 49.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "4",
         "aisle": 16,
         "shelf": 28
@@ -3352,6 +3724,7 @@
         "name": "Heathered Sky Comfort Tee",
         "price": 24.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "2",
         "aisle": 14,
         "shelf": 40
@@ -3361,6 +3734,7 @@
         "name": "Ocean Breeze Linen Tee",
         "price": 39.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "5",
         "aisle": 15,
         "shelf": 14
@@ -3370,6 +3744,7 @@
         "name": "Autumn Meadow Flannel Shirt",
         "price": 49.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "4",
         "aisle": 8,
         "shelf": 43
@@ -3379,6 +3754,7 @@
         "name": "Ethereal Forest Blouse",
         "price": 89.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "3",
         "aisle": 8,
         "shelf": 46
@@ -3388,6 +3764,7 @@
         "name": "Serene Shoreline Shirt Dress",
         "price": 79.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "1",
         "aisle": 14,
         "shelf": 24
@@ -3397,6 +3774,7 @@
         "name": "Elegant Contrast Blouson Sleeve Top",
         "price": 89.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "1",
         "aisle": 11,
         "shelf": 2
@@ -3406,6 +3784,7 @@
         "name": "Rustic Charm Striped Sweater",
         "price": 59.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "2",
         "aisle": 19,
         "shelf": 23
@@ -3415,6 +3794,7 @@
         "name": "Floral Elegance Noir Blouse",
         "price": 59.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "3",
         "aisle": 18,
         "shelf": 47
@@ -3424,6 +3804,7 @@
         "name": "Rustic Charm Plaid Flannel",
         "price": 49.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "5",
         "aisle": 15,
         "shelf": 19
@@ -3433,6 +3814,7 @@
         "name": "Classic Comfort Crewneck Sweatshirt",
         "price": 39.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "2",
         "aisle": 19,
         "shelf": 26
@@ -3442,6 +3824,7 @@
         "name": "Wild Safari Leopard Print Blouse",
         "price": 79.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "4",
         "aisle": 19,
         "shelf": 29
@@ -3451,6 +3834,7 @@
         "name": "Sunlit Serenity Linen Shirt",
         "price": 89.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "4",
         "aisle": 3,
         "shelf": 26
@@ -3460,6 +3844,7 @@
         "name": "Elegant Work-Ready Shirt",
         "price": 59.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "5",
         "aisle": 9,
         "shelf": 49
@@ -3469,6 +3854,7 @@
         "name": "Classic White Knotted Shirt",
         "price": 49.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "1",
         "aisle": 19,
         "shelf": 46
@@ -3478,6 +3864,7 @@
         "name": "Professional Medical Lab Coat",
         "price": 79.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "5",
         "aisle": 2,
         "shelf": 16
@@ -3487,6 +3874,7 @@
         "name": "Classic White Button-Down Shirt",
         "price": 79.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "3",
         "aisle": 4,
         "shelf": 11
@@ -3496,6 +3884,7 @@
         "name": "Luxe Comfort Cocoon Robe",
         "price": 89.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "3",
         "aisle": 8,
         "shelf": 3
@@ -3505,6 +3894,7 @@
         "name": "Elegant White Collar Blouse",
         "price": 89.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "3",
         "aisle": 4,
         "shelf": 40
@@ -3514,6 +3904,7 @@
         "name": "Butterfly Bliss Button-Up Shirt",
         "price": 59.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "1",
         "aisle": 15,
         "shelf": 31
@@ -3523,6 +3914,7 @@
         "name": "Breezy Blue Striped Shirt Set",
         "price": 89.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "5",
         "aisle": 5,
         "shelf": 42
@@ -3532,6 +3924,7 @@
         "name": "Evergreen Comfort Tee",
         "price": 24.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "1",
         "aisle": 6,
         "shelf": 48
@@ -3541,6 +3934,7 @@
         "name": "Sleek Noir Longline Tee",
         "price": 34.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "4",
         "aisle": 6,
         "shelf": 10
@@ -3550,6 +3944,7 @@
         "name": "Classic Red Crew Neck Tee",
         "price": 24.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "4",
         "aisle": 16,
         "shelf": 48
@@ -3559,6 +3954,7 @@
         "name": "Classic Heather Navy Crew Tee",
         "price": 24.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "1",
         "aisle": 3,
         "shelf": 3
@@ -3568,6 +3964,7 @@
         "name": "Mountain Breeze Flannel Shirt",
         "price": 49.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "2",
         "aisle": 4,
         "shelf": 2
@@ -3577,6 +3974,7 @@
         "name": "Classic V-Neck Performance Tee",
         "price": 29.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "2",
         "aisle": 6,
         "shelf": 50
@@ -3586,6 +3984,7 @@
         "name": "Classic White Crew Neck Tee",
         "price": 24.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "1",
         "aisle": 13,
         "shelf": 32
@@ -3595,6 +3994,7 @@
         "name": "Classic White Comfort Tee",
         "price": 24.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "3",
         "aisle": 14,
         "shelf": 22
@@ -3604,6 +4004,7 @@
         "name": "Classic Polka Dot Denim Shirt",
         "price": 49.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "5",
         "aisle": 18,
         "shelf": 34
@@ -3613,6 +4014,7 @@
         "name": "Vintage Denim Painter's Shirt",
         "price": 79.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "4",
         "aisle": 15,
         "shelf": 40
@@ -3622,6 +4024,7 @@
         "name": "Classic Checkered Flannel Shirt",
         "price": 39.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "2",
         "aisle": 12,
         "shelf": 6
@@ -3631,6 +4034,7 @@
         "name": "Heathered Sky Comfort Tee",
         "price": 24.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "2",
         "aisle": 12,
         "shelf": 42
@@ -3640,6 +4044,7 @@
         "name": "Classic Festive Plaid Flannel Shirt",
         "price": 49.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "5",
         "aisle": 4,
         "shelf": 28
@@ -3649,6 +4054,7 @@
         "name": "Rustic Sunset Plaid Shirt",
         "price": 49.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "1",
         "aisle": 13,
         "shelf": 48
@@ -3658,6 +4064,7 @@
         "name": "Midnight Comfort Classic Tee",
         "price": 29.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "4",
         "aisle": 3,
         "shelf": 3
@@ -3667,6 +4074,7 @@
         "name": "Rustic Charm Plaid Flannel",
         "price": 49.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "4",
         "aisle": 9,
         "shelf": 49
@@ -3676,6 +4084,7 @@
         "name": "Patriotic Plaid Short-Sleeve Shirt",
         "price": 29.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "5",
         "aisle": 16,
         "shelf": 38
@@ -3685,6 +4094,7 @@
         "name": "Urban Camo Chic T-Shirt",
         "price": 34.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "4",
         "aisle": 10,
         "shelf": 25
@@ -3694,6 +4104,7 @@
         "name": "Tropical Paradise Hawaiian Shirt",
         "price": 49.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "5",
         "aisle": 5,
         "shelf": 12
@@ -3703,6 +4114,7 @@
         "name": "Classic White Comfort Tee",
         "price": 24.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "3",
         "aisle": 13,
         "shelf": 16
@@ -3712,6 +4124,7 @@
         "name": "Sleek Fitness Tracker Band",
         "price": 89.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "2",
         "aisle": 17,
         "shelf": 49
@@ -3721,6 +4134,7 @@
         "name": "Executive Elegance Tie Set",
         "price": 129.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "1",
         "aisle": 16,
         "shelf": 13
@@ -3730,6 +4144,7 @@
         "name": "Pastel Dream Button-Down Collection",
         "price": 129.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "4",
         "aisle": 14,
         "shelf": 2
@@ -3739,6 +4154,7 @@
         "name": "Classic Burgundy Striped Dress Shirt",
         "price": 79.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "5",
         "aisle": 20,
         "shelf": 45
@@ -3748,6 +4164,7 @@
         "name": "Classic Striped Shirt and Watch Set",
         "price": 129.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "3",
         "aisle": 17,
         "shelf": 48
@@ -3757,6 +4174,7 @@
         "name": "Dapper Dot Dress Shirt",
         "price": 79.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "4",
         "aisle": 13,
         "shelf": 46
@@ -3766,6 +4184,7 @@
         "name": "Whimsical Micro-Print Button-Down Shirt",
         "price": 59.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "2",
         "aisle": 4,
         "shelf": 23
@@ -3775,6 +4194,7 @@
         "name": "Elegant Timepiece Chronograph",
         "price": 299.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "2",
         "aisle": 17,
         "shelf": 36
@@ -3784,6 +4204,7 @@
         "name": "Executive Elegance White Dress Shirt",
         "price": 79.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "5",
         "aisle": 15,
         "shelf": 3
@@ -3793,6 +4214,7 @@
         "name": "Executive Polka Dot Tie Set",
         "price": 129.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "5",
         "aisle": 7,
         "shelf": 10
@@ -3802,6 +4224,7 @@
         "name": "Classic White Dress Shirt",
         "price": 79.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "2",
         "aisle": 14,
         "shelf": 20
@@ -3811,6 +4234,7 @@
         "name": "Elegant Silver Cufflinks",
         "price": 59.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "2",
         "aisle": 13,
         "shelf": 19
@@ -3820,6 +4244,7 @@
         "name": "Classic Contrast Dress Shirt Set",
         "price": 89.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "2",
         "aisle": 5,
         "shelf": 14
@@ -3829,6 +4254,7 @@
         "name": "Executive Elegance Shirt Collection",
         "price": 129.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "4",
         "aisle": 17,
         "shelf": 18
@@ -3838,6 +4264,7 @@
         "name": "Referee's Precision Stripe Jersey",
         "price": 49.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "1",
         "aisle": 1,
         "shelf": 22
@@ -3847,6 +4274,7 @@
         "name": "Pro-Fit Smart Posture Corrector",
         "price": 79.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "5",
         "aisle": 2,
         "shelf": 2
@@ -3856,6 +4284,7 @@
         "name": "Geometric Bliss Comfort Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 19,
         "shelf": 20
@@ -3865,6 +4294,7 @@
         "name": "Delightful Hot Dog Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "1",
         "aisle": 11,
         "shelf": 40
@@ -3874,6 +4304,7 @@
         "name": "Geometric Bliss Can Coolers",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 15,
         "shelf": 3
@@ -3883,6 +4314,7 @@
         "name": "Whiskered Wonders Baby Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "3",
         "aisle": 8,
         "shelf": 39
@@ -3892,6 +4324,7 @@
         "name": "Banana Bonanza Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 7,
         "shelf": 12
@@ -3901,6 +4334,7 @@
         "name": "Rainbow Stripe Knee-High Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 3,
         "shelf": 22
@@ -3910,6 +4344,7 @@
         "name": "Sunshine Stride Athletic Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 4,
         "shelf": 40
@@ -3919,6 +4354,7 @@
         "name": "Sunset Stripe Cozy Socks",
         "price": 14.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 7,
         "shelf": 8
@@ -3928,6 +4364,7 @@
         "name": "Cozy Stripe Delight Sock Set",
         "price": 24.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 3,
         "shelf": 37
@@ -3937,6 +4374,7 @@
         "name": "Classic Comfort White Crew Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 2,
         "shelf": 44
@@ -3946,6 +4384,7 @@
         "name": "Cozy Comfort Ankle Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 6,
         "shelf": 2
@@ -3955,6 +4394,7 @@
         "name": "Sleek Comfort Ankle Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "3",
         "aisle": 6,
         "shelf": 9
@@ -3964,6 +4404,7 @@
         "name": "Rustic Comfort Wool Socks",
         "price": 24.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 18,
         "shelf": 13
@@ -3973,6 +4414,7 @@
         "name": "Striped Sensation Athletic Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 6,
         "shelf": 39
@@ -3982,6 +4424,7 @@
         "name": "Vibrant Varsity Stripe Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 19,
         "shelf": 5
@@ -3991,6 +4434,7 @@
         "name": "Urban Stride Skate Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "1",
         "aisle": 14,
         "shelf": 16
@@ -4000,6 +4444,7 @@
         "name": "Rasta Leaf Comfort Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 8,
         "shelf": 1
@@ -4009,6 +4454,7 @@
         "name": "Fiesta Cactus Crew Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "1",
         "aisle": 2,
         "shelf": 45
@@ -4018,6 +4464,7 @@
         "name": "Vibrant Striped Comfort Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 7,
         "shelf": 48
@@ -4027,6 +4474,7 @@
         "name": "Cool Breeze Popsicle Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 9,
         "shelf": 49
@@ -4036,6 +4484,7 @@
         "name": "Spotty Chic Sandal Sock Set",
         "price": 49.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "4",
         "aisle": 19,
         "shelf": 9
@@ -4045,6 +4494,7 @@
         "name": "Geometric Illusion Crew Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 9,
         "shelf": 34
@@ -4054,6 +4504,7 @@
         "name": "Cozy Winter Wonderland Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "1",
         "aisle": 13,
         "shelf": 46
@@ -4063,6 +4514,7 @@
         "name": "Cozy Cabin Wool Socks",
         "price": 19.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 10,
         "shelf": 5
@@ -4072,6 +4524,7 @@
         "name": "Stealth Comfort Ankle Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 19,
         "shelf": 19
@@ -4081,6 +4534,7 @@
         "name": "Cozy Winter Warmth Set",
         "price": 34.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "5",
         "aisle": 17,
         "shelf": 27
@@ -4090,6 +4544,7 @@
         "name": "Cozy Fox Winter Knit Socks",
         "price": 18.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 18,
         "shelf": 25
@@ -4099,6 +4554,7 @@
         "name": "Mountain Peak Adventure Socks",
         "price": 14.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 1,
         "shelf": 5
@@ -4108,6 +4564,7 @@
         "name": "Cozy Chaos Comfort Socks",
         "price": 12.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 12,
         "shelf": 15
@@ -4117,6 +4574,7 @@
         "name": "Retro Skater's Dream Combo",
         "price": 79.99,
         "category": "socks",
+        "img": "https://m.media-amazon.com/images/I/61j3SfimJIL._AC_UY1000_.jpg",
         "size": "2",
         "aisle": 9,
         "shelf": 26
@@ -4126,6 +4584,7 @@
         "name": "Artisan Beard Oil Elixir",
         "price": 24.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "2",
         "aisle": 4,
         "shelf": 43
@@ -4135,6 +4594,7 @@
         "name": "Tranquil Trio Bath Bombs",
         "price": 14.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "5",
         "aisle": 13,
         "shelf": 4
@@ -4144,6 +4604,7 @@
         "name": "Artisanal Beeswax Balm Tin",
         "price": 12.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "1",
         "aisle": 5,
         "shelf": 24
@@ -4153,6 +4614,7 @@
         "name": "Eco-Friendly Solid Lotion Bars",
         "price": 14.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "3",
         "aisle": 3,
         "shelf": 7
@@ -4162,6 +4624,7 @@
         "name": "Lumberjack's Cozy Comfort Set",
         "price": 49.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "4",
         "aisle": 6,
         "shelf": 19
@@ -4171,6 +4634,7 @@
         "name": "Zen Essence Dropper Bottle",
         "price": 12.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "5",
         "aisle": 13,
         "shelf": 2
@@ -4180,6 +4644,7 @@
         "name": "Charcoal Detox Face Scrub",
         "price": 24.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "2",
         "aisle": 19,
         "shelf": 8
@@ -4189,6 +4654,7 @@
         "name": "Blush Balm Delight",
         "price": 18.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "1",
         "aisle": 14,
         "shelf": 12
@@ -4198,6 +4664,7 @@
         "name": "Luxe Gentle Cleansing Bar",
         "price": 12.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "5",
         "aisle": 19,
         "shelf": 34
@@ -4207,6 +4674,7 @@
         "name": "SkyBlue Comfort Soap Bar",
         "price": 8.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "1",
         "aisle": 13,
         "shelf": 31
@@ -4216,6 +4684,7 @@
         "name": "Lavender Bliss Artisan Soap Set",
         "price": 24.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "2",
         "aisle": 20,
         "shelf": 36
@@ -4225,6 +4694,7 @@
         "name": "Cloud Soft Moisturizing Lotion",
         "price": 24.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "4",
         "aisle": 15,
         "shelf": 50
@@ -4234,6 +4704,7 @@
         "name": "Zen Pebble Soap Dish",
         "price": 24.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "4",
         "aisle": 11,
         "shelf": 17
@@ -4243,6 +4714,7 @@
         "name": "Lush Lime Luxury Towel Set",
         "price": 59.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "5",
         "aisle": 14,
         "shelf": 33
@@ -4252,6 +4724,7 @@
         "name": "Cozy Winter Sweater Collection",
         "price": 199.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "1",
         "aisle": 2,
         "shelf": 49
@@ -4261,6 +4734,7 @@
         "name": "Luxury Artisan Soap Collection",
         "price": 24.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "1",
         "aisle": 4,
         "shelf": 45
@@ -4270,6 +4744,7 @@
         "name": "Luxe Plush Spa Towels",
         "price": 49.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "5",
         "aisle": 8,
         "shelf": 11
@@ -4279,6 +4754,7 @@
         "name": "Cozy Comfort Knit Blanket Set",
         "price": 79.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "2",
         "aisle": 17,
         "shelf": 6
@@ -4288,6 +4764,7 @@
         "name": "Eco-Chic Microfiber Towel Set",
         "price": 24.99,
         "category": "bathing",
+        "img": "https://m.media-amazon.com/images/I/61eNwImROXL._AC_UF1000,1000_QL80_.jpg",
         "size": "5",
         "aisle": 17,
         "shelf": 6
@@ -4297,6 +4774,7 @@
         "name": "Pastel Pink Silicone Basting Brush",
         "price": 12.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "4",
         "aisle": 20,
         "shelf": 37
@@ -4306,6 +4784,7 @@
         "name": "Mermaid Magic Makeup Brush Set",
         "price": 39.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "4",
         "aisle": 10,
         "shelf": 4
@@ -4315,6 +4794,7 @@
         "name": "Peach Perfect Shaving Kit",
         "price": 24.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "5",
         "aisle": 2,
         "shelf": 39
@@ -4324,6 +4804,7 @@
         "name": "Luxe Pro Makeup Brush Set",
         "price": 49.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "2",
         "aisle": 2,
         "shelf": 47
@@ -4333,6 +4814,7 @@
         "name": "Blush Beauty Essentials Kit",
         "price": 79.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "1",
         "aisle": 17,
         "shelf": 33
@@ -4342,6 +4824,7 @@
         "name": "Luxe Gentleman's Shaving Set",
         "price": 129.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "1",
         "aisle": 18,
         "shelf": 22
@@ -4351,6 +4834,7 @@
         "name": "Eco-Friendly Safety Razor Set",
         "price": 34.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "1",
         "aisle": 9,
         "shelf": 40
@@ -4360,6 +4844,7 @@
         "name": "SmoothGlide Precision Razor",
         "price": 14.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "4",
         "aisle": 8,
         "shelf": 4
@@ -4369,6 +4854,7 @@
         "name": "Sleek Glide Pro Razor",
         "price": 14.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "4",
         "aisle": 13,
         "shelf": 22
@@ -4378,6 +4864,7 @@
         "name": "Classic Gentleman's Shaving Kit",
         "price": 79.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "4",
         "aisle": 6,
         "shelf": 22
@@ -4387,6 +4874,7 @@
         "name": "Charcoal Fusion Toothbrush",
         "price": 12.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "2",
         "aisle": 2,
         "shelf": 23
@@ -4396,6 +4884,7 @@
         "name": "Vibrant Coral Dental Companion",
         "price": 4.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "1",
         "aisle": 8,
         "shelf": 32
@@ -4405,6 +4894,7 @@
         "name": "DuoClean Electric Toothbrush Set",
         "price": 79.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "3",
         "aisle": 6,
         "shelf": 45
@@ -4414,6 +4904,7 @@
         "name": "Eco-Friendly Cotton Swab Set",
         "price": 12.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "4",
         "aisle": 9,
         "shelf": 7
@@ -4423,6 +4914,7 @@
         "name": "Sleek Stainless Steel Nail Clipper",
         "price": 12.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "3",
         "aisle": 2,
         "shelf": 24
@@ -4432,6 +4924,7 @@
         "name": "Precision Thinning Shears",
         "price": 29.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "3",
         "aisle": 20,
         "shelf": 49
@@ -4441,6 +4934,7 @@
         "name": "Vibrant Vegan Toothbrush",
         "price": 8.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "4",
         "aisle": 19,
         "shelf": 47
@@ -4450,6 +4944,7 @@
         "name": "Sleek Stainless Steel Crafting Scissors",
         "price": 14.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "1",
         "aisle": 13,
         "shelf": 23
@@ -4459,6 +4954,7 @@
         "name": "EcoSmile Bamboo Toothbrush Set",
         "price": 14.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "1",
         "aisle": 13,
         "shelf": 21
@@ -4468,6 +4964,7 @@
         "name": "Eco-Friendly Bamboo Toothbrush Set",
         "price": 12.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "4",
         "aisle": 13,
         "shelf": 18
@@ -4477,6 +4974,7 @@
         "name": "Authentic Chinese Meatball Soup Bowl",
         "price": 12.99,
         "category": "cooking",
+        "img": "https://cdn.shopify.com/s/files/1/0762/6480/0571/files/image2-min_1000x.jpg?v=1712123174",
         "size": "3",
         "aisle": 19,
         "shelf": 17
@@ -4486,6 +4984,7 @@
         "name": "Deluxe Chinese Dumpling Steamer Set",
         "price": 39.99,
         "category": "cooking",
+        "img": "https://cdn.shopify.com/s/files/1/0762/6480/0571/files/image2-min_1000x.jpg?v=1712123174",
         "size": "2",
         "aisle": 17,
         "shelf": 45
@@ -4495,6 +4994,7 @@
         "name": "French Cuisine Masterpiece Print",
         "price": 49.99,
         "category": "cooking",
+        "img": "https://cdn.shopify.com/s/files/1/0762/6480/0571/files/image2-min_1000x.jpg?v=1712123174",
         "size": "1",
         "aisle": 14,
         "shelf": 33
@@ -4504,6 +5004,7 @@
         "name": "French Cuisine Pastry Delight",
         "price": 12.99,
         "category": "cooking",
+        "img": "https://cdn.shopify.com/s/files/1/0762/6480/0571/files/image2-min_1000x.jpg?v=1712123174",
         "size": "1",
         "aisle": 2,
         "shelf": 16
@@ -4513,6 +5014,7 @@
         "name": "Indonesian Cuisine Cookbook",
         "price": 24.99,
         "category": "cooking",
+        "img": "https://cdn.shopify.com/s/files/1/0762/6480/0571/files/image2-min_1000x.jpg?v=1712123174",
         "size": "2",
         "aisle": 11,
         "shelf": 16
@@ -4522,6 +5024,7 @@
         "name": "Italian Cuisine Culinary Experience",
         "price": 89.99,
         "category": "cooking",
+        "img": "https://cdn.shopify.com/s/files/1/0762/6480/0571/files/image2-min_1000x.jpg?v=1712123174",
         "size": "2",
         "aisle": 20,
         "shelf": 32
@@ -4531,6 +5034,7 @@
         "name": "Tuscan Elegance Pasta Print",
         "price": 24.99,
         "category": "cooking",
+        "img": "https://cdn.shopify.com/s/files/1/0762/6480/0571/files/image2-min_1000x.jpg?v=1712123174",
         "size": "2",
         "aisle": 16,
         "shelf": 1
@@ -4540,6 +5044,7 @@
         "name": "Sushi Lovers' Delight Cookbook",
         "price": 24.99,
         "category": "cooking",
+        "img": "https://cdn.shopify.com/s/files/1/0762/6480/0571/files/image2-min_1000x.jpg?v=1712123174",
         "size": "3",
         "aisle": 12,
         "shelf": 46
@@ -4549,6 +5054,7 @@
         "name": "Moroccan Cuisine Cookbook",
         "price": 24.99,
         "category": "cooking",
+        "img": "https://cdn.shopify.com/s/files/1/0762/6480/0571/files/image2-min_1000x.jpg?v=1712123174",
         "size": "3",
         "aisle": 3,
         "shelf": 46
@@ -4558,6 +5064,7 @@
         "name": "Spanish Cuisine Delights Cookbook",
         "price": 24.99,
         "category": "cooking",
+        "img": "https://cdn.shopify.com/s/files/1/0762/6480/0571/files/image2-min_1000x.jpg?v=1712123174",
         "size": "2",
         "aisle": 8,
         "shelf": 3
@@ -4567,6 +5074,7 @@
         "name": "Swedish Salmon Culinary Experience",
         "price": 24.99,
         "category": "cooking",
+        "img": "https://cdn.shopify.com/s/files/1/0762/6480/0571/files/image2-min_1000x.jpg?v=1712123174",
         "size": "2",
         "aisle": 12,
         "shelf": 6
@@ -4576,6 +5084,7 @@
         "name": "Vibrant Thai Vegetable Curry Bowl",
         "price": 14.99,
         "category": "cooking",
+        "img": "https://cdn.shopify.com/s/files/1/0762/6480/0571/files/image2-min_1000x.jpg?v=1712123174",
         "size": "4",
         "aisle": 20,
         "shelf": 2
@@ -4585,6 +5094,7 @@
         "name": "Thai Cuisine Cooking Kit",
         "price": 39.99,
         "category": "cooking",
+        "img": "https://cdn.shopify.com/s/files/1/0762/6480/0571/files/image2-min_1000x.jpg?v=1712123174",
         "size": "2",
         "aisle": 4,
         "shelf": 15
@@ -4594,6 +5104,7 @@
         "name": "Turkish Delight Kunefe Dessert",
         "price": 12.99,
         "category": "cooking",
+        "img": "https://cdn.shopify.com/s/files/1/0762/6480/0571/files/image2-min_1000x.jpg?v=1712123174",
         "size": "5",
         "aisle": 15,
         "shelf": 9
@@ -4603,6 +5114,7 @@
         "name": "Authentic Turkish Falafel Kit",
         "price": 24.99,
         "category": "cooking",
+        "img": "https://cdn.shopify.com/s/files/1/0762/6480/0571/files/image2-min_1000x.jpg?v=1712123174",
         "size": "3",
         "aisle": 14,
         "shelf": 10
@@ -11236,6 +11748,7 @@
         "name": "Artisanal Cultured Butter Block",
         "price": 8.99,
         "category": "dairy",
+        "img": "",
         "size": "5",
         "aisle": 14,
         "shelf": 6
@@ -11245,6 +11758,7 @@
         "name": "Artisanal Whipped Body Butter",
         "price": 24.99,
         "category": "dairy",
+        "img": "",
         "size": "1",
         "aisle": 15,
         "shelf": 37
@@ -11254,6 +11768,7 @@
         "name": "Artisanal Blue Cheese Delight",
         "price": 24.99,
         "category": "dairy",
+        "img": "",
         "size": "2",
         "aisle": 13,
         "shelf": 13
@@ -11263,6 +11778,7 @@
         "name": "Artisan Herb-Infused Soap Bar",
         "price": 8.99,
         "category": "dairy",
+        "img": "",
         "size": "5",
         "aisle": 6,
         "shelf": 48
@@ -11272,6 +11788,7 @@
         "name": "Artisanal Blue Cheese Feast",
         "price": 29.99,
         "category": "dairy",
+        "img": "",
         "size": "4",
         "aisle": 2,
         "shelf": 3
@@ -11281,6 +11798,7 @@
         "name": "Gourmet Cheese and Grape Board",
         "price": 49.99,
         "category": "dairy",
+        "img": "",
         "size": "2",
         "aisle": 15,
         "shelf": 27
@@ -11290,6 +11808,7 @@
         "name": "Gourmet Fruit and Cracker Platter",
         "price": 39.99,
         "category": "dairy",
+        "img": "",
         "size": "1",
         "aisle": 18,
         "shelf": 8
@@ -11299,6 +11818,7 @@
         "name": "Artisanal Cheese Duo Sampler",
         "price": 24.99,
         "category": "dairy",
+        "img": "",
         "size": "5",
         "aisle": 9,
         "shelf": 27
@@ -11308,6 +11828,7 @@
         "name": "Artisanal Cheese Tasting Trio",
         "price": 24.99,
         "category": "dairy",
+        "img": "",
         "size": "2",
         "aisle": 5,
         "shelf": 45
@@ -11317,6 +11838,7 @@
         "name": "Artisanal Cheese Board Delight",
         "price": 49.99,
         "category": "dairy",
+        "img": "",
         "size": "3",
         "aisle": 6,
         "shelf": 44
@@ -11326,6 +11848,7 @@
         "name": "Artisanal Aged Parmesan Chunks",
         "price": 14.99,
         "category": "dairy",
+        "img": "",
         "size": "1",
         "aisle": 1,
         "shelf": 13
@@ -11335,6 +11858,7 @@
         "name": "Artisanal Cheese and Grape Platter",
         "price": 49.99,
         "category": "dairy",
+        "img": "",
         "size": "3",
         "aisle": 15,
         "shelf": 39
@@ -11344,6 +11868,7 @@
         "name": "Artisanal Mozzarella Pearls Set",
         "price": 24.99,
         "category": "dairy",
+        "img": "",
         "size": "5",
         "aisle": 8,
         "shelf": 13
@@ -11353,6 +11878,7 @@
         "name": "Artisanal Cheese and Salt Set",
         "price": 34.99,
         "category": "dairy",
+        "img": "",
         "size": "2",
         "aisle": 7,
         "shelf": 28
@@ -11362,6 +11888,7 @@
         "name": "Gourmet Cheese and Charcuterie Platter",
         "price": 49.99,
         "category": "dairy",
+        "img": "",
         "size": "1",
         "aisle": 20,
         "shelf": 35
@@ -11371,6 +11898,7 @@
         "name": "Artisanal Mountain Cheese Wheel",
         "price": 24.99,
         "category": "dairy",
+        "img": "",
         "size": "3",
         "aisle": 18,
         "shelf": 4
@@ -11380,6 +11908,7 @@
         "name": "Artisanal Mason Jar Milk Set",
         "price": 14.99,
         "category": "dairy",
+        "img": "",
         "size": "1",
         "aisle": 1,
         "shelf": 32
@@ -11389,6 +11918,7 @@
         "name": "Vintage Milk Bottle Set",
         "price": 24.99,
         "category": "dairy",
+        "img": "",
         "size": "3",
         "aisle": 18,
         "shelf": 15
@@ -11398,6 +11928,7 @@
         "name": "Blissful Berry Granola Parfait",
         "price": 8.99,
         "category": "dairy",
+        "img": "",
         "size": "2",
         "aisle": 17,
         "shelf": 47
@@ -11407,6 +11938,7 @@
         "name": "Tropical Sunrise Parfait Jar",
         "price": 8.99,
         "category": "dairy",
+        "img": "",
         "size": "2",
         "aisle": 11,
         "shelf": 42
@@ -11416,6 +11948,7 @@
         "name": "Strawberry Oat Parfait Jars",
         "price": 8.99,
         "category": "dairy",
+        "img": "",
         "size": "3",
         "aisle": 7,
         "shelf": 34
@@ -21793,6 +22326,7 @@
         "name": "Earthly Hues Eyeshadow Quad",
         "price": 38.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "3",
         "aisle": 15,
         "shelf": 28
@@ -21802,6 +22336,7 @@
         "name": "Sunshine Lash Booster Mascara",
         "price": 18.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "3",
         "aisle": 9,
         "shelf": 21
@@ -21811,6 +22346,7 @@
         "name": "Rosy Glow Beauty Duo",
         "price": 29.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "1",
         "aisle": 2,
         "shelf": 43
@@ -21820,6 +22356,7 @@
         "name": "Chic Lips Color Pop Set",
         "price": 49.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "2",
         "aisle": 12,
         "shelf": 36
@@ -21829,6 +22366,7 @@
         "name": "Glamour Essentials Makeup Set",
         "price": 59.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "3",
         "aisle": 13,
         "shelf": 8
@@ -21838,6 +22376,7 @@
         "name": "Glamour Essentials Makeup Set",
         "price": 49.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "4",
         "aisle": 7,
         "shelf": 40
@@ -21847,6 +22386,7 @@
         "name": "Pro Brush Collection Set",
         "price": 79.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "2",
         "aisle": 6,
         "shelf": 42
@@ -21856,6 +22396,7 @@
         "name": "LashFusion Volumizing Mascara",
         "price": 18.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "5",
         "aisle": 4,
         "shelf": 24
@@ -21865,6 +22406,7 @@
         "name": "Vibrant Spectrum Nail Polish Set",
         "price": 29.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "5",
         "aisle": 12,
         "shelf": 30
@@ -21874,6 +22416,7 @@
         "name": "Ombre Blush Brush Deluxe",
         "price": 24.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "1",
         "aisle": 11,
         "shelf": 46
@@ -21883,6 +22426,7 @@
         "name": "Flawless Finish Concealer Palette",
         "price": 34.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "5",
         "aisle": 14,
         "shelf": 11
@@ -21892,6 +22436,7 @@
         "name": "Creme Match Made Foundation",
         "price": 32.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "1",
         "aisle": 11,
         "shelf": 24
@@ -21901,6 +22446,7 @@
         "name": "Allure Rouge Lipstick Collection",
         "price": 79.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "5",
         "aisle": 15,
         "shelf": 16
@@ -21910,6 +22456,7 @@
         "name": "Intense Matte Dream Lipstick",
         "price": 24.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "2",
         "aisle": 8,
         "shelf": 23
@@ -21919,6 +22466,7 @@
         "name": "Makeup Brush Essentials Set",
         "price": 24.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "1",
         "aisle": 16,
         "shelf": 2
@@ -21928,6 +22476,7 @@
         "name": "Golden Glamour Lipstick",
         "price": 24.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "1",
         "aisle": 8,
         "shelf": 7
@@ -21937,6 +22486,7 @@
         "name": "Rose Gold Precision Makeup Brush",
         "price": 24.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "2",
         "aisle": 13,
         "shelf": 45
@@ -21946,6 +22496,7 @@
         "name": "Vibrant Red Storage Bowl",
         "price": 12.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "5",
         "aisle": 8,
         "shelf": 2
@@ -21955,6 +22506,7 @@
         "name": "Glamour Glow Duo Lipstick Set",
         "price": 24.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "1",
         "aisle": 15,
         "shelf": 38
@@ -21964,6 +22516,7 @@
         "name": "Luxe Lash Enhancer Mascara",
         "price": 24.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "2",
         "aisle": 3,
         "shelf": 47
@@ -21982,6 +22535,7 @@
         "name": "Lavender Breeze Striped Henley",
         "price": 29.99,
         "category": "shirt",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1rl4rLrCl4daXg_FkGJaVwFFHUM1O1XhA&s",
         "size": "1",
         "aisle": 16,
         "shelf": 4
@@ -21991,6 +22545,7 @@
         "name": "Blush Brilliance Compact",
         "price": 24.99,
         "category": "grooming",
+        "img": "https://m.media-amazon.com/images/I/71r7t8ph3tL.jpg",
         "size": "4",
         "aisle": 5,
         "shelf": 15

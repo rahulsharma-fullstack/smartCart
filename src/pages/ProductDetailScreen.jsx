@@ -98,7 +98,7 @@ export default function ProductDetailScreen() {
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center">
                   <img
-                    src="../no_img.png"
+                    src={product.img ? product.img : "../no_img.png"}
                     alt={product.name}
                     className="w-24 h-24 object-cover rounded-lg mr-4"
                   />

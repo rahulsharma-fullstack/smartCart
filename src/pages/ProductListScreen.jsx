@@ -115,7 +115,7 @@ export default function ProductListScreen() {
                       <div className="w-1/3 sm:w-full">
                         <div className="aspect-w-1 aspect-h-1 sm:aspect-w-16 sm:aspect-h-9">
                           <img
-                            src="../no_img.png"
+                            src={product.img ? product.img : "../no_img.png"}
                             alt={product.name}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                           />

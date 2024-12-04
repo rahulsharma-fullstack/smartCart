@@ -14,7 +14,7 @@ const db = admin.firestore();
 
 // Read JSON file and parse it
 const jsonData = JSON.parse(
-  await readFile(new URL('./src/data/products.json', import.meta.url))
+  await readFile(new URL('./src/data/test.json', import.meta.url))
 );
 
 // Upload data to Firestore
