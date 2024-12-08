@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../firebaseConfig";
-import { Search } from "lucide-react";
+import { Search, Loader2 } from "lucide-react";
 import axios from "axios";
 
 export default function SearchScreen() {
@@ -13,6 +13,7 @@ export default function SearchScreen() {
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [productsData, setProductsData] = useState([]);
   const [validatedRecommendations, setValidatedRecommendations] = useState([]);
+  const [isLoadingRecommendations, setIsLoadingRecommendations] = useState(false);
   const searchRef = useRef(null);
   const navigate = useNavigate();
   const { cart } = useCart();
@@ -47,6 +48,8 @@ export default function SearchScreen() {
         console.warn("No valid product to fetch recommendations for.");
         return;
       }
+
+      setIsLoadingRecommendations(true);
 
       try {
         let recommendedItems = [];
@@ -118,6 +121,8 @@ export default function SearchScreen() {
       } catch (error) {
         console.error("Error fetching/validating recommendations: ", error);
         setValidatedRecommendations([]);
+      } finally {
+        setIsLoadingRecommendations(false);
       }
     };
 
@@ -238,6 +243,12 @@ export default function SearchScreen() {
               ? `Frequently Bought Together with ${lastAddedProduct.name}`
               : "Explore These Popular Products"}
           </h2>
+          {isLoadingRecommendations ? (
+            <div className="flex items-center justify-center py-12">
+              <Loader2 className="h-8 w-8 animate-spin text-blue-600" />
+              <span className="ml-2 text-gray-600">Loading recommendations...</span>
+            </div>
+          ) : (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {displayedProducts.map((product) => (
               <div
@@ -272,6 +283,7 @@ export default function SearchScreen() {
               </div>
             ))}
           </div>
+          )}
         </div>
       </div>
     </div>
