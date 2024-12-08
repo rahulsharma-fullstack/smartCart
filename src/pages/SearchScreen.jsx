@@ -129,7 +129,8 @@ export default function SearchScreen() {
   }, [lastAddedProduct]);
 
   const getRandomProducts = (count) => {
-    const shuffled = [...productsData].sort(() => 0.5 - Math.random());
+    const productsWithImages = productsData.filter(product => product.img);
+    const shuffled = [...productsWithImages].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
   };
 
