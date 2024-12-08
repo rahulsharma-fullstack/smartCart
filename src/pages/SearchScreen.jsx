@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../firebaseConfig";
 import { Search } from "lucide-react";
 import axios from "axios";
@@ -12,7 +12,7 @@ export default function SearchScreen() {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [productsData, setProductsData] = useState([]);
-  const [recommendedProducts, setRecommendedProducts] = useState([]);
+  const [validatedRecommendations, setValidatedRecommendations] = useState([]);
   const searchRef = useRef(null);
   const navigate = useNavigate();
   const { cart } = useCart();
@@ -38,9 +38,9 @@ export default function SearchScreen() {
     fetchProducts();
   }, []);
 
-  // Fetch recommendations based on the last added product
+  // Fetch and validate recommendations based on the last added product
   useEffect(() => {
-    const fetchRecommendations = async () => {
+    const fetchAndValidateRecommendations = async () => {
       const useMockResponse = false;
 
       if (!lastAddedProduct || !lastAddedProduct.name) {
@@ -49,9 +49,10 @@ export default function SearchScreen() {
       }
 
       try {
+        let recommendedItems = [];
+
         if (useMockResponse) {
-          const recommendedItems = ["Milk", "Chocolate", "Cookies"];
-          setRecommendedProducts(recommendedItems);
+          recommendedItems = ["Milk", "Chocolate", "Cookies"];
         } else {
           const response = await axios.post(
             "https://api.openai.com/v1/chat/completions",
@@ -60,7 +61,7 @@ export default function SearchScreen() {
               messages: [
                 {
                   role: "user",
-                  content: `Suggest 6 products to buy with ${lastAddedProduct.name},  Return as 1 word JSON array of strings. e.g., ["Milk", "Butter", "Jam"]`,
+                  content: `Suggest 6 products to buy with ${lastAddedProduct.name}. Return as 1 word JSON array of strings. e.g., ["Milk", "Butter", "Jam"]`,
                 },
               ],
             },
@@ -73,25 +74,55 @@ export default function SearchScreen() {
           );
 
           const recommendedItemsText = response.data.choices[0].message.content;
-          const recommendedItems = JSON.parse(recommendedItemsText);
-          if (Array.isArray(recommendedItems)) {
-            setRecommendedProducts(recommendedItems);
+          recommendedItems = JSON.parse(recommendedItemsText);
+        }
+
+        if (Array.isArray(recommendedItems)) {
+          // Create case-insensitive queries for each recommended item
+          const validatedItems = [];
+
+          for (const item of recommendedItems) {
+            try {
+              const itemName = item.toLowerCase();
+              const productsRef = collection(db, "products");
+
+              // Get all products and filter on the client side
+              const querySnapshot = await getDocs(productsRef);
+
+              // Filter products that match the recommended item name
+              const matchingProducts = querySnapshot.docs.filter((doc) => {
+                const productName = doc.data().name.toLowerCase();
+                return productName.includes(itemName);
+              });
+
+              if (matchingProducts.length > 0) {
+                // Get the first matching product
+                // Add only the validated product name
+                validatedItems.push({
+                  name: item, // Use the name suggested by OpenAI
+                  isRecommended: true,
+                });
+              }
+            } catch (error) {
+              console.error(`Error validating product ${item}:`, error);
+            }
+          }
+
+          // Only update recommendations if we found valid products
+          if (validatedItems.length > 0) {
+            setValidatedRecommendations(validatedItems);
           } else {
-            console.error(
-              "Unexpected response format, expected an array:",
-              recommendedItems
-            );
-            setRecommendedProducts([]);
+            setValidatedRecommendations([]);
           }
         }
       } catch (error) {
-        console.error("Error fetching recommendations: ", error);
-        setRecommendedProducts([]);
+        console.error("Error fetching/validating recommendations: ", error);
+        setValidatedRecommendations([]);
       }
     };
 
     const timeout = setTimeout(() => {
-      fetchRecommendations();
+      fetchAndValidateRecommendations();
     }, 500);
 
     return () => clearTimeout(timeout);
@@ -139,12 +170,8 @@ export default function SearchScreen() {
   };
 
   const displayedProducts =
-    recommendedProducts.length > 0
-      ? recommendedProducts.map((productName) => ({
-          id: productName,
-          name: productName,
-          isRecommended: true,
-        }))
+    validatedRecommendations.length > 0
+      ? validatedRecommendations
       : getRandomProducts(4);
 
   return (
@@ -179,6 +206,25 @@ export default function SearchScreen() {
                 </button>
               </div>
             </form>
+
+            {/* Search Suggestions */}
+            {showSuggestions && suggestions.length > 0 && (
+              <div className="absolute z-10 w-full mt-2 bg-white rounded-lg shadow-lg">
+                {suggestions.map((product, index) => (
+                  <div
+                    key={product.id}
+                    onClick={() => handleSuggestionClick(product)}
+                    className={`px-4 py-2 cursor-pointer ${
+                      index === selectedIndex
+                        ? "bg-blue-50"
+                        : "hover:bg-gray-50"
+                    }`}
+                  >
+                    {product.name}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -187,26 +233,26 @@ export default function SearchScreen() {
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-lg font-bold text-gray-800 mb-4">
-            {recommendedProducts.length > 0
+            {validatedRecommendations.length > 0 && lastAddedProduct
               ? `Frequently Bought Together with ${lastAddedProduct.name}`
               : "Explore These Popular Products"}
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {displayedProducts.map((product) => (
               <div
-                key={product.id}
+                key={product.id || product.name}
                 onClick={() => handleRecommendationClick(product.name)}
                 className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden cursor-pointer group"
               >
-                <div className="aspect-w-1 aspect-h-1 w-full">
-                  {product.isRecommended ? null : (
+                {validatedRecommendations.length === 0 && (
+                  <div className="aspect-w-1 aspect-h-1 w-full">
                     <img
-                      src={product.img ? product.img : "../no_img.png"}
+                      src={product.img}
                       alt={product.name}
                       className="w-full h-38 object-cover group-hover:scale-105 transition-transform"
                     />
-                  )}
-                </div>
+                  </div>
+                )}
                 <div className="p-4">
                   <h3 className="text-lg font-semibold text-gray-800">
                     {product.name}
@@ -215,6 +261,11 @@ export default function SearchScreen() {
                     <span className="text-xs text-blue-600">
                       Recommended AI
                     </span>
+                  )}
+                  {product.price && (
+                    <p className="text-gray-600 mt-1">
+                      ${product.price.toFixed(2)}
+                    </p>
                   )}
                 </div>
               </div>

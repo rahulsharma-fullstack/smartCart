@@ -1,143 +1,149 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../firebaseConfig";
+import { Search } from "lucide-react";
+import axios from "axios";
 
 export default function SearchScreen() {
-  const [query, setQuery] = useState("");
-  const [suggestions, setSuggestions] = useState([]);
-  const [showSuggestions, setShowSuggestions] = useState(false);
-  const [selectedIndex, setSelectedIndex] = useState(-1);
-  const [productsData, setProductsData] = useState([]);
-  const searchRef = useRef(null);
-  const navigate = useNavigate();
-  const { cart } = useCart();
+  // ... existing state variables ...
+  const [validatedRecommendations, setValidatedRecommendations] = useState([]);
 
-  const hasItemsInCart = cart.length > 0;
-  const lastAddedProduct = hasItemsInCart ? cart[cart.length - 1] : null;
-
-  // Fetch products from Firebase
+  // Fetch recommendations and validate against Firebase
   useEffect(() => {
-    const fetchProducts = async () => {
+    const fetchAndValidateRecommendations = async () => {
+      const useMockResponse = false;
+
+      if (!lastAddedProduct || !lastAddedProduct.name) {
+        console.warn("No valid product to fetch recommendations for.");
+        return;
+      }
+
       try {
-        const querySnapshot = await getDocs(collection(db, "products"));
-        const products = querySnapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
-        setProductsData(products);
+        let recommendedItems = [];
+        
+        if (useMockResponse) {
+          recommendedItems = ["Milk", "Chocolate", "Cookies"];
+        } else {
+          const response = await axios.post(
+            "https://api.openai.com/v1/chat/completions",
+            {
+              model: "gpt-3.5-turbo-0125",
+              messages: [
+                {
+                  role: "user",
+                  content: `Suggest 6 products to buy with ${lastAddedProduct.name}. Return as 1 word JSON array of strings. e.g., ["Milk", "Butter", "Jam"]`,
+                },
+              ],
+            },
+            {
+              headers: {
+                Authorization: `Bearer ${import.meta.env.VITE_OPENAI_API_KEY}`,
+                "Content-Type": "application/json",
+              },
+            }
+          );
+
+          const recommendedItemsText = response.data.choices[0].message.content;
+          recommendedItems = JSON.parse(recommendedItemsText);
+        }
+
+        if (Array.isArray(recommendedItems)) {
+          // Create case-insensitive queries for each recommended item
+          const validatedItems = [];
+          
+          for (const item of recommendedItems) {
+            const itemName = item.toLowerCase();
+            const productsRef = collection(db, "products");
+            const q = query(
+              productsRef,
+              where("name", ">=", itemName),
+              where("name", "<=", itemName + "\uf8ff")
+            );
+            
+            const querySnapshot = await getDocs(q);
+            
+            if (!querySnapshot.empty) {
+              // Get the first matching product
+              const product = querySnapshot.docs[0].data();
+              validatedItems.push({
+                id: querySnapshot.docs[0].id,
+                name: product.name,
+                img: product.img,
+                price: product.price,
+                isRecommended: true
+              });
+            }
+          }
+
+          // Only update recommendations if we found valid products
+          if (validatedItems.length > 0) {
+            setValidatedRecommendations(validatedItems);
+          } else {
+            // If no valid recommendations, fall back to random products
+            setValidatedRecommendations([]);
+          }
+        }
       } catch (error) {
-        console.error("Error fetching products:", error);
+        console.error("Error fetching/validating recommendations: ", error);
+        setValidatedRecommendations([]);
       }
     };
 
-    fetchProducts();
-  }, []);
+    const timeout = setTimeout(() => {
+      fetchAndValidateRecommendations();
+    }, 500);
 
-  const handleInputChange = (e) => {
-    const value = e.target.value;
-    setQuery(value);
+    return () => clearTimeout(timeout);
+  }, [lastAddedProduct]);
 
-    if (value.trim()) {
-      const filteredProducts = productsData.filter((product) =>
-        product.name.toLowerCase().includes(value.toLowerCase())
-      );
-      setSuggestions(filteredProducts);
-      setShowSuggestions(true);
-    } else {
-      setSuggestions([]);
-      setShowSuggestions(false);
-    }
-    setSelectedIndex(-1);
-  };
+  // Update the displayedProducts logic
+  const displayedProducts = validatedRecommendations.length > 0
+    ? validatedRecommendations
+    : getRandomProducts(4);
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    if (query.trim()) {
-      navigate(`/products/${encodeURIComponent(query.trim())}`);
-      setShowSuggestions(false);
-    }
-  };
-
-  const handleKeyDown = (e) => {
-    if (suggestions.length > 0) {
-      if (e.key === "ArrowDown") {
-        e.preventDefault();
-        setSelectedIndex((prev) =>
-          prev < suggestions.length - 1 ? prev + 1 : 0
-        );
-      } else if (e.key === "ArrowUp") {
-        e.preventDefault();
-        setSelectedIndex((prev) =>
-          prev > 0 ? prev - 1 : suggestions.length - 1
-        );
-      } else if (e.key === "Enter" && selectedIndex >= 0) {
-        e.preventDefault();
-        const selected = suggestions[selectedIndex];
-        handleSuggestionClick(selected);
-      } else if (e.key === "Escape") {
-        setShowSuggestions(false);
-      }
-    }
-  };
-
-  const handleSuggestionClick = (product) => {
-    setQuery(product.name);
-    navigate(`/products/${encodeURIComponent(product.name)}`);
-    setShowSuggestions(false);
-  };
-
-  const handleClickOutside = (e) => {
-    if (searchRef.current && !searchRef.current.contains(e.target)) {
-      setShowSuggestions(false);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
+  // Rest of the component remains the same...
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4">
-      <h1 className="text-3xl font-bold mb-8">Find Products in Store</h1>
-      <div className="w-full max-w-md relative" ref={searchRef}>
-        <form onSubmit={handleSearch} className="relative">
-          <input
-            type="text"
-            value={query}
-            onChange={handleInputChange}
-            onKeyDown={handleKeyDown}
-            onFocus={() => setShowSuggestions(true)}
-            placeholder="Search for a product..."
-            className="w-full px-4 py-2 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-          <button
-            type="submit"
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 px-4 py-1 text-sm text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            Search
-          </button>
-        </form>
-
-        {showSuggestions && suggestions.length > 0 && (
-          <div className="absolute z-10 w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg max-h-60 overflow-y-auto">
-            {suggestions.map((product, index) => (
+    <div className="min-h-screen bg-gray-50">
+      {/* ... existing JSX ... */}
+      
+      {/* Update the recommendations section */}
+      <div className="container mx-auto px-4 py-8">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-lg font-bold text-gray-800 mb-4">
+            {validatedRecommendations.length > 0
+              ? `Frequently Bought Together with ${lastAddedProduct.name}`
+              : "Explore These Popular Products"}
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {displayedProducts.map((product) => (
               <div
                 key={product.id}
-                onClick={() => handleSuggestionClick(product)}
-                className={`px-4 py-2 cursor-pointer hover:bg-gray-100 ${
-                  index === selectedIndex ? "bg-gray-100" : ""
-                }`}
+                onClick={() => handleRecommendationClick(product.name)}
+                className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden cursor-pointer group"
               >
-                <span className="font-medium">{product.name}</span>
+                <div className="aspect-w-1 aspect-h-1 w-full">
+                  <img
+                    src={product.img ? product.img : "../no_img.png"}
+                    alt={product.name}
+                    className="w-full h-38 object-cover group-hover:scale-105 transition-transform"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    {product.name}
+                  </h3>
+                  {product.isRecommended && (
+                    <span className="text-xs text-blue-600">
+                      Recommended AI
+                    </span>
+                  )}
+                </div>
               </div>
             ))}
           </div>
-        )}
+        </div>
       </div>
     </div>
   );
