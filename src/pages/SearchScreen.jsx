@@ -246,7 +246,7 @@ export default function SearchScreen() {
           {isLoadingRecommendations ? (
             <div className="flex items-center justify-center py-12">
               <Loader2 className="h-8 w-8 animate-spin text-blue-600" />
-              <span className="ml-2 text-gray-600">Loading recommendations...</span>
+              <span className="ml-2 text-blue-600 font-bold text-center">AI Recommendations....</span>
             </div>
           ) : (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
