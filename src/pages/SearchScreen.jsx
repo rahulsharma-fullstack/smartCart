@@ -64,7 +64,7 @@ export default function SearchScreen() {
               messages: [
                 {
                   role: "user",
-                  content: `Suggest 6 products to buy with ${lastAddedProduct.name}. Return as 1 word JSON array of strings. e.g., ["Milk", "Butter", "Jam"]`,
+                  content: `Suggest 10 products to buy with ${lastAddedProduct.name}. Return as 1 word JSON array of strings. e.g., ["Milk", "Butter", "Jam"]`,
                 },
               ],
             },
